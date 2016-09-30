@@ -1,0 +1,11 @@
+examples: []
+children: []
+uid: traffic-manager
+name: az network traffic-manager
+description: ''
+summary: Route incoming traffic for high performance and availability.
+Metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/commit/c8e59f62b96bccc29e37c6273ec825f43b77cd71
