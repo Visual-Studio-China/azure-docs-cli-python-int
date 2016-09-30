@@ -3,11 +3,12 @@
     "content": [
       {
         "files": [
+          "**/*.pycliyml",
           "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
-          "cli/azure/**",
+          "azure-cli-docs-int/**",
           "**/includes/**"
         ]
       }
@@ -16,20 +17,23 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "breadcrumb.json"
         ],
         "exclude": [
           "**/obj/**",
-          "cli/azure/**",
+          "azure-cli-docs-int/**",
           "**/includes/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/azure-cli-docs-int/azure/breadcrumb.json"
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "cli/azure"
+    "dest": "azure-cli-docs-int"
   }
 }
