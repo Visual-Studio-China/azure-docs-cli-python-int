@@ -8,7 +8,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "azure-cli-docs-int/**",
+          "cli/**",
           "**/includes/**"
         ]
       }
@@ -22,7 +22,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "azure-cli-docs-int/**",
+          "cli/**",
           "**/includes/**"
         ]
       }
@@ -30,10 +30,10 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/azure-cli-docs-int/azure/breadcrumb.json"
+      "breadcrumb_path": "/cli/azure/breadcrumb.json"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "azure-cli-docs-int"
+    "dest": "cli/azure"
   }
 }
