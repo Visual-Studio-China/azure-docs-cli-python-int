@@ -4,8 +4,8 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "azure-cli-docs",
-      "build_source_folder": "azure-cli-docs",
+      "docset_name": "azure-cli-docs-int",
+      "build_source_folder": "azure-cli-docs-int",
       "build_output_subfolder": "cli/azure",
       "locale": "en-us",
       "version": 0,
