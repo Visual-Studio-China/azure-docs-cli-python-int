@@ -38,7 +38,7 @@
     {
       "path_to_root": "azurecli",
       "id": "opbuild.templates.azurecli",
-      "version": "1.16.0-alpha-085-g1047a52",
+      "version": "latest-prerelease",
       "nuget_feed": "https://www.myget.org/F/op-dev/api/v2"
     }
   ]
