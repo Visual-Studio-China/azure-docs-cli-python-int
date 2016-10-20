@@ -30,7 +30,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/cli/azure/breadcrumb.json"
+      "breadcrumb_path": "/cli/azure/breadcrumb.json",
+      "ms.technology": "azure cli",
+      "ms.topic": "reference",
+      "manager": "visual-studio-china",
+      "author": "visual-studio-china",
+      "keywords": "azure, cli, command line"
     },
     "fileMetadata": {},
     "template": [],
