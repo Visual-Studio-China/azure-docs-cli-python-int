@@ -31,11 +31,17 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/cli/azure/breadcrumb.json",
+      "ms.prod": "azure cli",
+      "ms.service": "azure cli",
       "ms.technology": "azure cli",
+      "keywords": "azure, cli, command line",
+      "brand": "azure",
+      "author": "openpublishbuild",
+      "ms.author": "douge",
+      "manager": "douge",
       "ms.topic": "reference",
-      "manager": "visual-studio-china",
-      "author": "visual-studio-china",
-      "keywords": "azure, cli, command line"
+      "ms.devlang": "python",
+      "ms.date": "11/16/2016"
     },
     "fileMetadata": {},
     "template": [],
