@@ -240,7 +240,7 @@ children:
   uid: az_vm_deallocate
   name: az vm deallocate
   description: See <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-capture-image/">https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-capture-image/</a> for an end-to-end tutorial.
-  summary: Shuts down the Virtual Machine and releases the compute resources.
+  summary: Shuts down the virtual machine and releases the compute resources.
   Metadata: {}
 - htmlId: delete
   examples: []
@@ -317,7 +317,7 @@ children:
   uid: az_vm_generalize
   name: az vm generalize
   description: See <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-capture-image/">https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-capture-image/</a> for an end-to-end tutorial.
-  summary: Sets the state of the VM as Generalized.
+  summary: Sets the state of the virtual machine to generalized.
   Metadata: {}
 - htmlId: get-instance-view
   examples: []
@@ -476,7 +476,7 @@ children:
   uid: az_vm_list-usage
   name: az vm list-usage
   description: ''
-  summary: Lists compute usages for a subscription.
+  summary: Gets, for the specified location, the current compute resource usage information as well as the limits for compute resources under the subscription.
   Metadata: {}
 - htmlId: list-vm-resize-options
   examples: []
@@ -511,7 +511,7 @@ children:
   uid: az_vm_list-vm-resize-options
   name: az vm list-vm-resize-options
   description: ''
-  summary: Lists all available virtual machine sizes it can be resized to for a virtual machine.
+  summary: Lists all available virtual machine sizes to which the specified virtual machine can be resized.
   Metadata: {}
 - htmlId: open-port
   examples: []
@@ -699,7 +699,7 @@ children:
   uid: az_vm_show
   name: az vm show
   description: ''
-  summary: The operation to get a virtual machine.
+  summary: Retrieves information about the model view or the instance view of a virtual machine.
   Metadata: {}
 - htmlId: start
   examples: []
@@ -768,7 +768,7 @@ children:
     description: ''
   uid: az_vm_stop
   name: az vm stop
-  description: ''
+  description: The virtual machine can be restarted with the same provisioned resources. You are still charged for this virtual machine.
   summary: The operation to power off (stop) a virtual machine.
   Metadata: {}
 - htmlId: update
@@ -833,6 +833,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/98572bac3cdff9eb2d106140cdf352a6d2979162/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 10/25/2016 4:11:32 AM
-  ms.date: 10/25/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 11/15/2016 10:24:07 PM
+  ms.date: 11/15/2016

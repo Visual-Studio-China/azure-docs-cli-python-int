@@ -77,6 +77,39 @@ children:
   description: If resource group is provided, IoT Hubs in target resource group will be listed. Otherwise, IoT Hubs in your subscription will be listed.
   summary: List IoT Hubs in your subscription or resource group.
   Metadata: {}
+- htmlId: list-skus
+  examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: IoT Hub name.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_iot_hub_list-skus
+  name: az iot hub list-skus
+  description: ''
+  summary: List all valid pricing tiers.
+  Metadata: {}
 - htmlId: show
   examples: []
   parameters:
@@ -117,7 +150,7 @@ children:
     summary: IoT Hub name.
     description: ''
   - name: --policy-name
-    summary: The access policy you choose to use.
+    summary: Shared access policy to use.
     description: ''
     defaultValue: iothubowner
   - name: --resource-group -g
@@ -144,16 +177,16 @@ children:
   uid: az_iot_hub_show-connection-string
   name: az iot hub show-connection-string
   description: If resource group and IoT Hub name are not provided, connection strings for all IoT Hubs in your subscription will be returned. If only resource group is provided, connection strings for all IoT Hubs in the resource group will be returned. If both resource group and IoT Hub name are provided, connection string of the IoT Hub will be returned.
-  summary: Show connection string of target Azure IoT Hub.
+  summary: Show connection string of an IoT Hub.
   Metadata: {}
 uid: az_iot_hub
 name: az iot hub
 description: ''
-summary: ''
+summary: Manage IoT Hubs.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/808513cb14c217ad62ee36197a337c63d354984c/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 11/2/2016 3:57:45 PM
-  ms.date: 11/2/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 11/15/2016 10:24:07 PM
+  ms.date: 11/15/2016

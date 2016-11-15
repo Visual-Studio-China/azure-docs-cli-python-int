@@ -1,16 +1,16 @@
-htmlId: dcos
+htmlId: kubernetes
 examples: []
 children:
-- htmlId: browse
+- htmlId: get-credentials
   examples: []
   parameters:
-  - name: --name -n
+  - name: --dns-prefix
     isRequired: true
-    summary: The primary resource name.
+    summary: ''
     description: ''
-  - name: --resource-group -g
+  - name: --location -l
     isRequired: true
-    summary: Name of resource group.
+    summary: Location.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -30,10 +30,10 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_acs_dcos_browse
-  name: az acs dcos browse
+  uid: az_acs_kubernetes_get-credentials
+  name: az acs kubernetes get-credentials
   description: ''
-  summary: Creates an SSH tunnel to the Azure container service, and opens the Mesosphere DC/OS dashboard in the browser.
+  summary: ''
   Metadata: {}
 - htmlId: install-cli
   examples: []
@@ -41,11 +41,11 @@ children:
   - name: --client-version
     summary: ''
     description: ''
-    defaultValue: 1.8
+    defaultValue: 1.4.5
   - name: --install-location
     summary: ''
     description: ''
-    defaultValue: C:Program Files (x86)dcos.exe
+    defaultValue: C:Program Files (x86)kubectl.exe
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
     description: ''
@@ -64,15 +64,15 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_acs_dcos_install-cli
-  name: az acs dcos install-cli
+  uid: az_acs_kubernetes_install-cli
+  name: az acs kubernetes install-cli
   description: ''
-  summary: Downloads the dcos command line from Mesosphere.
+  summary: Downloads the kubectl command line from Kubernetes.
   Metadata: {}
-uid: az_acs_dcos
-name: az acs dcos
+uid: az_acs_kubernetes
+name: az acs kubernetes
 description: ''
-summary: Commands to manage a DCOS orchestrated Azure container service.
+summary: ''
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
