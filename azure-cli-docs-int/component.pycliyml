@@ -64,7 +64,7 @@ children:
   examples: []
   parameters:
   - name: --add
-    summary: The name of an additional component to install.
+    summary: The names of additional components to install (space separated).
     description: ''
   - name: --link -l
     summary: If a url or path to an html file, parse for links to archives. If local path or file:// url that's a directory, then look for archives in the directory listing.
