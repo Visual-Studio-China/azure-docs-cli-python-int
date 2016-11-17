@@ -12,6 +12,9 @@ children:
     isRequired: true
     summary: Name of resource group.
     description: ''
+  - name: --disable-browser
+    summary: Do not open browser after opening a proxy to the cluster web user interface.
+    description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
     description: ''
