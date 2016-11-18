@@ -25,7 +25,7 @@ children:
   uid: az_configure
   name: az configure
   description: ''
-  summary: Interactive experience for setting up the Azure CLI.
+  summary: Configure Azure CLI 2.0 Preview or view your configuration. The command is interactive, so just type az configure and respond to the prompts.
   Metadata: {}
 - htmlId: feedback
   examples: []
