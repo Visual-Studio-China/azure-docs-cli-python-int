@@ -48,6 +48,9 @@ children:
   - title: Revoke the service principal when done with it
     code: az ad app delete --id <name>
   parameters:
+  - name: --expanded-view
+    summary: Once created, display more information like subscription and cloud environments.
+    description: ''
   - name: --name -n
     summary: An unique uri. If missing, the command will generate one.
     description: ''

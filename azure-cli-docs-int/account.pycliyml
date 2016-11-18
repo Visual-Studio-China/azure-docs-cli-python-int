@@ -115,6 +115,9 @@ children:
 - htmlId: show
   examples: []
   parameters:
+  - name: --expanded-view
+    summary: Display more information like service principal's password and cloud environments.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription.
     description: ''
