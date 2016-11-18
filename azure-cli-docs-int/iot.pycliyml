@@ -9,6 +9,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 11/15/2016 10:24:07 PM
-  ms.date: 11/15/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/119d95b3fb6b68782d11fb8e7934b568cdc1a24a/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 11/18/2016 4:37:16 PM
+  ms.date: 11/18/2016

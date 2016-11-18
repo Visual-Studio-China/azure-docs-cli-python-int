@@ -1,88 +1,20 @@
-htmlId: hub
+htmlId: message
 examples: []
 children:
-- htmlId: create
+- htmlId: abandon
   examples: []
   parameters:
-  - name: --name -n
+  - name: --device-id -d
+    isRequired: true
+    summary: Device Id.
+    description: ''
+  - name: --hub-name
     isRequired: true
     summary: IoT Hub name.
     description: ''
-  - name: --resource-group -g
+  - name: --lock-token
     isRequired: true
-    summary: Name of resource group.
-    description: ''
-  - name: --location -l
-    summary: Location of your IoT Hub. Default is the location of target resource group.
-    description: ''
-  - name: --sku
-    summary: Pricing tier for Azure IoT Hub. Default value is F1, which is free. Note that only one free IoT Hub instance is allowed in each subscription. Exception will be thrown if free instances exceed one.
-    description: ''
-    defaultValue: F1
-    parameterValueGroup:
-    - F1, S1, S2, S3
-  - name: --unit
-    summary: Units in your IoT Hub.
-    description: ''
-    defaultValue: 1
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: az_iot_hub_create
-  name: az iot hub create
-  description: See <a href="https://azure.microsoft.com/en-us/services/iot-hub/">https://azure.microsoft.com/en-us/services/iot-hub/</a> for an intro to Azure IoT Hub.
-  summary: Create an Azure IoT Hub.
-  Metadata: {}
-- htmlId: list
-  examples: []
-  parameters:
-  - name: --resource-group -g
-    summary: Name of resource group.
-    description: ''
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: az_iot_hub_list
-  name: az iot hub list
-  description: If resource group is provided, IoT Hubs in target resource group will be listed. Otherwise, IoT Hubs in your subscription will be listed.
-  summary: List IoT Hubs in your subscription or resource group.
-  Metadata: {}
-- htmlId: list-skus
-  examples: []
-  parameters:
-  - name: --name -n
-    isRequired: true
-    summary: IoT Hub name.
+    summary: Message lock token.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group.
@@ -105,21 +37,161 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_iot_hub_list-skus
-  name: az iot hub list-skus
+  uid: az_iot_device_message_abandon
+  name: az iot device message abandon
   description: ''
-  summary: List all valid pricing tiers.
+  summary: Abandon a cloud-to-device message.
   Metadata: {}
-- htmlId: show
+- htmlId: complete
   examples: []
   parameters:
-  - name: --name -n
+  - name: --device-id -d
+    isRequired: true
+    summary: Device Id.
+    description: ''
+  - name: --hub-name
+    isRequired: true
+    summary: IoT Hub name.
+    description: ''
+  - name: --lock-token
+    isRequired: true
+    summary: Message lock token.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_iot_device_message_complete
+  name: az iot device message complete
+  description: ''
+  summary: Complete a cloud-to-device message.
+  Metadata: {}
+- htmlId: receive
+  examples: []
+  parameters:
+  - name: --device-id -d
+    isRequired: true
+    summary: Device Id.
+    description: ''
+  - name: --hub-name
+    isRequired: true
+    summary: IoT Hub name.
+    description: ''
+  - name: --lock-timeout
+    summary: In case a message returned to this call, this specifies the amount of time in seconds, the message will be invisible to other receive calls.
+    description: ''
+    defaultValue: 60
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_iot_device_message_receive
+  name: az iot device message receive
+  description: ''
+  summary: Receive a cloud-to-device message.
+  Metadata: {}
+- htmlId: reject
+  examples: []
+  parameters:
+  - name: --device-id -d
+    isRequired: true
+    summary: Device Id.
+    description: ''
+  - name: --hub-name
+    isRequired: true
+    summary: IoT Hub name.
+    description: ''
+  - name: --lock-token
+    isRequired: true
+    summary: Message lock token.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_iot_device_message_reject
+  name: az iot device message reject
+  description: ''
+  summary: Reject a cloud-to-device message.
+  Metadata: {}
+- htmlId: send
+  examples: []
+  parameters:
+  - name: --device-id -d
+    isRequired: true
+    summary: Device Id.
+    description: ''
+  - name: --hub-name
     isRequired: true
     summary: IoT Hub name.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group.
     description: ''
+  - name: --correlation-id
+    summary: Device-to-cloud message correlation Id.
+    description: ''
+  - name: --data
+    summary: Device-to-cloud message body.
+    description: ''
+    defaultValue: Ping from Azure CLI
+  - name: --message-id
+    summary: Device-to-cloud message Id.
+    description: ''
+  - name: --user-id
+    summary: Device-to-cloud message user Id.
+    description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
     description: ''
@@ -138,123 +210,15 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_iot_hub_show
-  name: az iot hub show
+  uid: az_iot_device_message_send
+  name: az iot device message send
   description: ''
-  summary: Show non-security metadata of an IoT Hub.
+  summary: Send a device-to-cloud message.
   Metadata: {}
-- htmlId: show-connection-string
-  examples: []
-  parameters:
-  - name: --key
-    summary: The key to use.
-    description: ''
-    defaultValue: primary
-    parameterValueGroup:
-    - primary, secondary
-  - name: --name -n
-    summary: IoT Hub name.
-    description: ''
-  - name: --policy-name
-    summary: Shared access policy to use.
-    description: ''
-    defaultValue: iothubowner
-  - name: --resource-group -g
-    summary: Name of resource group.
-    description: ''
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: az_iot_hub_show-connection-string
-  name: az iot hub show-connection-string
-  description: If resource group and IoT Hub name are not provided, connection strings for all IoT Hubs in your subscription will be returned. If only resource group is provided, connection strings for all IoT Hubs in the resource group will be returned. If both resource group and IoT Hub name are provided, connection string of the IoT Hub will be returned.
-  summary: Show connection string of an IoT Hub.
-  Metadata: {}
-- htmlId: show-quota-metrics
-  examples: []
-  parameters:
-  - name: --name -n
-    isRequired: true
-    summary: IoT Hub name.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group.
-    description: ''
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: az_iot_hub_show-quota-metrics
-  name: az iot hub show-quota-metrics
-  description: ''
-  summary: Show quota metrics for an IoT Hub.
-  Metadata: {}
-- htmlId: show-stats
-  examples: []
-  parameters:
-  - name: --name -n
-    isRequired: true
-    summary: IoT Hub name.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group.
-    description: ''
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: az_iot_hub_show-stats
-  name: az iot hub show-stats
-  description: ''
-  summary: Show stats of an IoT Hub.
-  Metadata: {}
-uid: az_iot_hub
-name: az iot hub
+uid: az_iot_device_message
+name: az iot device message
 description: ''
-summary: Manage IoT Hubs.
+summary: IoT device messaging commands.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
