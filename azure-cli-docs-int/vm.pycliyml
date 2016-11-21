@@ -108,7 +108,7 @@ children:
     summary: Names or IDs of existing NICs to reference.  The first NIC will be the primary NIC.
     description: ''
   - name: --nsg
-    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
+    summary: Name or ID of the resource.  Creates new by default. Use "" for none.
     description: ''
   - name: --nsg-rule
     summary: Network security group rule to create. Defaults open ports for allowing RDP on Windows and allowing SSH on Linux.
@@ -122,7 +122,7 @@ children:
     summary: Static private IP address (e.g. 10.0.0.5).
     description: ''
   - name: --public-ip-address
-    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
+    summary: Name or ID of the resource.  Creates new by default. Use "" for none.
     description: ''
   - name: --public-ip-address-allocation
     summary: ''

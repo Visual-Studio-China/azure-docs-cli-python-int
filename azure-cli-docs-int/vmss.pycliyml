@@ -49,7 +49,7 @@ children:
     description: ''
     defaultValue: 2
   - name: --load-balancer
-    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
+    summary: Name or ID of the resource.  Creates new by default. Use "" for none.
     description: ''
   - name: --load-balancer-backend-pool-name
     summary: Name of load balancer backend pool.
@@ -68,7 +68,7 @@ children:
     description: ''
     defaultValue: osdiskimage
   - name: --public-ip-address
-    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
+    summary: Name or ID of the resource.  Creates new by default. Use "" for none.
     description: ''
   - name: --public-ip-address-allocation
     summary: ''

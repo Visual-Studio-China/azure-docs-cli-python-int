@@ -47,8 +47,8 @@ children:
   - name: --private-ip-address
     summary: Static private IP address to use.
     description: ''
-  - name: --public-ip
-    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
+  - name: --public-ip-address
+    summary: Name or ID of a public IP address. Uses existing resource or creates new if specified, or none if omitted.
     description: ''
   - name: --public-ip-address-allocation
     summary: Specify the kind of public IP allocation for new public IPs.
@@ -76,7 +76,7 @@ children:
     parameterValueGroup:
     - Standard
   - name: --subnet
-    summary: Name or ID of the resource.  Creates new by default.
+    summary: Name or ID of the subnet. Will create resource if it does not exist. If name specified, also specify --vnet-name.
     description: ''
     defaultValue: default
   - name: --subnet-address-prefix
@@ -114,7 +114,7 @@ children:
   uid: az_network_application-gateway_create
   name: az network application-gateway create
   description: ''
-  summary: Create or update a virtual machine.
+  summary: Create a new application gateway.
   Metadata: {}
 - htmlId: delete
   examples: []
@@ -149,7 +149,7 @@ children:
   uid: az_network_application-gateway_delete
   name: az network application-gateway delete
   description: ''
-  summary: The delete ApplicationGateway operation deletes the specified application gateway.
+  summary: Delete an application gateway.
   Metadata: {}
 - htmlId: list
   examples: []
@@ -178,7 +178,7 @@ children:
   uid: az_network_application-gateway_list
   name: az network application-gateway list
   description: ''
-  summary: ''
+  summary: List application gateways in a resource group or subscription.
   Metadata: {}
 - htmlId: show
   examples: []
@@ -213,7 +213,7 @@ children:
   uid: az_network_application-gateway_show
   name: az network application-gateway show
   description: ''
-  summary: The Get ApplicationGateway operation retrieves information about the specified application gateway.
+  summary: Show details of an application gateway.
   Metadata: {}
 - htmlId: start
   examples: []
@@ -248,7 +248,7 @@ children:
   uid: az_network_application-gateway_start
   name: az network application-gateway start
   description: ''
-  summary: The Start ApplicationGateway operation starts application gateway in the specified resource group through Network resource provider.
+  summary: Start an application gateway.
   Metadata: {}
 - htmlId: stop
   examples: []
@@ -283,7 +283,7 @@ children:
   uid: az_network_application-gateway_stop
   name: az network application-gateway stop
   description: ''
-  summary: The STOP ApplicationGateway operation stops application gateway in the specified resource group through Network resource provider.
+  summary: Stop an application gateway.
   Metadata: {}
 - htmlId: update
   examples: []
@@ -327,7 +327,7 @@ children:
   uid: az_network_application-gateway_update
   name: az network application-gateway update
   description: ''
-  summary: ''
+  summary: Update an application gateway.
   Metadata: {}
 uid: az_network_application-gateway
 name: az network application-gateway
@@ -337,6 +337,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  updated_at: 11/15/2016 10:24:07 PM
-  ms.date: 11/15/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/fb95934a212a85fd3b350ee5be0fbf3de371753c/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  updated_at: 11/21/2016 6:17:02 PM
+  ms.date: 11/21/2016

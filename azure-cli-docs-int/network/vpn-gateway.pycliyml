@@ -8,10 +8,6 @@ children:
     isRequired: true
     summary: Gateway name.
     description: ''
-  - name: --public-ip-address
-    isRequired: true
-    summary: Name or ID of the resource.  Uses existing resource.
-    description: ''
   - name: --resource-group -g
     isRequired: true
     summary: Name of resource group.
@@ -31,6 +27,9 @@ children:
     - ExpressRoute, Vpn
   - name: --location -l
     summary: Location.
+    description: ''
+  - name: --public-ip-address
+    summary: Name or ID of an existing public IP address.
     description: ''
   - name: --sku
     summary: ''
@@ -68,7 +67,7 @@ children:
   uid: az_network_vpn-gateway_create
   name: az network vpn-gateway create
   description: ''
-  summary: Create or update a virtual machine.
+  summary: Create a VPN gateway.
   Metadata: {}
 - htmlId: delete
   examples: []
@@ -103,7 +102,7 @@ children:
   uid: az_network_vpn-gateway_delete
   name: az network vpn-gateway delete
   description: ''
-  summary: The Delete VirtualNetworkGateway operation deletes the specified virtual network Gateway through Network resource provider.
+  summary: Delete a VPN gateway.
   Metadata: {}
 - htmlId: list
   examples: []
@@ -133,7 +132,7 @@ children:
   uid: az_network_vpn-gateway_list
   name: az network vpn-gateway list
   description: ''
-  summary: The List VirtualNetworkGateways operation retrieves all the virtual network gateways stored.
+  summary: List VPN gateways in a resource group or subscription.
   Metadata: {}
 - htmlId: reset
   examples: []
@@ -172,7 +171,7 @@ children:
   uid: az_network_vpn-gateway_reset
   name: az network vpn-gateway reset
   description: ''
-  summary: The Reset VirtualNetworkGateway operation resets the primary of the virtual network gateway in the specified resource group through Network resource provider.
+  summary: Reset a VPN gateway.
   Metadata: {}
 - htmlId: show
   examples: []
@@ -207,7 +206,7 @@ children:
   uid: az_network_vpn-gateway_show
   name: az network vpn-gateway show
   description: ''
-  summary: The Get VirtualNetworkGateway operation retrieves information about the specified virtual network gateway through Network resource provider.
+  summary: Show details of a VPN gateway.
   Metadata: {}
 - htmlId: update
   examples: []
@@ -254,7 +253,7 @@ children:
   uid: az_network_vpn-gateway_update
   name: az network vpn-gateway update
   description: ''
-  summary: ''
+  summary: Update a VPN gateway.
   Metadata: {}
 uid: az_network_vpn-gateway
 name: az network vpn-gateway
@@ -264,6 +263,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  updated_at: 11/15/2016 10:24:07 PM
-  ms.date: 11/15/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/fb95934a212a85fd3b350ee5be0fbf3de371753c/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  updated_at: 11/21/2016 6:17:02 PM
+  ms.date: 11/21/2016
