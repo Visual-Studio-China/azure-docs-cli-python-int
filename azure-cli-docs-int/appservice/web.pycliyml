@@ -46,7 +46,7 @@ children:
     isRequired: true
     summary: Name of the new webapp.
     description: ''
-  - name: --plan
+  - name: --plan -p
     isRequired: true
     summary: Name or resource id of the app service plan. Use 'appservice plan create' to get one.
     description: ''
