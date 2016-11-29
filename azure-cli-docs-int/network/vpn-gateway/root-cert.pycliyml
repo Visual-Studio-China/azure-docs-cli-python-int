@@ -89,6 +89,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/fb95934a212a85fd3b350ee5be0fbf3de371753c/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  updated_at: 11/21/2016 6:17:02 PM
-  ms.date: 11/21/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/3e4d2600fa4af979083b93441662fc49451a435b/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  updated_at: 11/29/2016 12:59:48 AM
+  ms.date: 11/29/2016
