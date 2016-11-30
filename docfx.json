@@ -2,28 +2,34 @@
   "build": {
     "content": [
       {
+        "src": "azure-cli-docs-int",
         "files": [
           "**/*.pycliyml",
           "**/*.md"
         ],
         "exclude": [
+          "refTOC.md",
           "**/obj/**",
           "cli/**",
           "**/includes/**"
+        ]
+      },
+      {
+        "src": "conceptual-docs",
+        "files": [
+          "**.md"
+        ],
+        "exclude":[
+          "toc.md",
+          "**/toc.md"
         ]
       }
     ],
     "resource": [
       {
+        "src": "breadcrumb",
         "files": [
-          "**/*.png",
-          "**/*.jpg",
           "breadcrumb.json"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "cli/**",
-          "**/includes/**"
         ]
       }
     ],
