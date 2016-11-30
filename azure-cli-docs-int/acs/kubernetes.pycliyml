@@ -34,12 +34,16 @@ children:
   examples: []
   parameters:
   - name: --dns-prefix
-    isRequired: true
     summary: ''
     description: ''
   - name: --location -l
-    isRequired: true
     summary: Location.
+    description: ''
+  - name: --name -n
+    summary: ''
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
