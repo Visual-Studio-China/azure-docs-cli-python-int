@@ -3,11 +3,14 @@
 [String] $conceptDocPath = "conceptual-docs"
 )
 
-Write-Host "Start merging TOC in folder: " + $refDocPath + " and " + $conceptDocPath
+Write-Host "Start merging TOC in folder: $refDocPath and $conceptDocPath"
 
 $conceptTocFile = [System.IO.Path]::Combine($conceptDocPath, "TOC.md")
 if(-not (Test-Path $conceptTocFile))
-{ return }
+{
+  Write-Host "Conceptual toc file $conceptTocFile doesn't exist" 
+  exit(1) 
+}
 
 $conceptLines = Get-Content $conceptTocFile
 $refTocFile = [System.IO.Path]::Combine($refDocPath, "refTOC.md")
@@ -30,19 +33,20 @@ foreach($line in $conceptLines)
   }
   if($curLevel -eq 0)
   {
-    Write-Host "Unexpected toc content: " + $line
+    Write-Host "Unexpected toc content: $line"
+    exit(1)
   }
 
   if($level -eq 0 -and $curLevel -ne 1)
   {
-    Write-Host "First toc line must be start with only one #: " + $line
-    return
+    Write-Host "First toc line must be start with only one #: $line"
+    exit(1)
   }
   
   if($curLevel -gt $level + 1)
   {
-    Write-Host "Invalid toc line: " + $line
-    return
+    Write-Host "Invalid toc line: $line"
+    exit(1)
   }
 
   $level = $curLevel
