@@ -45,6 +45,9 @@ children:
   - name: --resource-group -g
     summary: Name of resource group.
     description: ''
+  - name: --user
+    summary: ''
+    description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
     description: ''
