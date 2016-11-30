@@ -8,6 +8,7 @@
           "**/*.md"
         ],
         "exclude": [
+          "refTOC.md",
           "**/obj/**",
           "cli/**",
           "**/includes/**"
