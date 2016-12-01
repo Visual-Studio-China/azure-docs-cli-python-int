@@ -6,7 +6,7 @@ children:
   parameters:
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: ACS cluster name.
     description: ''
   - name: --resource-group -g
     isRequired: true
