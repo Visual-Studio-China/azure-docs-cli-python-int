@@ -262,11 +262,11 @@ children:
 uid: az_appservice_web
 name: az appservice web
 description: ''
-summary: ''
+summary: Commands to manage web apps.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 11/15/2016 10:24:07 PM
-  ms.date: 11/15/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/af06180d90f6bf90afe16163ee9ce7d7bff3db69/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  updated_at: 12/1/2016 12:03:06 AM
+  ms.date: 12/1/2016
