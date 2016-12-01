@@ -179,7 +179,15 @@ children:
   summary: Show metadata of a device in an IoT Hub.
   Metadata: {}
 - htmlId: show-connection-string
-  examples: []
+  examples:
+  - title: Show connection string of a device in an IoT Hub using primary key.
+    code: az iot device show-connection-string --hub-name my-iot-hub --device-id my-device
+  - title: Show connection string of a device in an IoT Hub using secondary key.
+    code: az iot device show-connection-string --hub-name my-iot-hub --device-id my-device --key secondary
+  - title: Show connection strings of default number of devices in an IoT Hub using primary key.
+    code: az iot device show-connection-string --hub-name my-iot-hub
+  - title: Show connection strings of top 100 devices in an IoT Hub using primary key.
+    code: az iot device show-connection-string --hub-name my-iot-hub --top 100
   parameters:
   - name: --hub-name
     isRequired: true
@@ -224,6 +232,54 @@ children:
   description: If device id is not provided, connection strings for all devices in your IoT Hub will be returned. Otherwise, connection string of target device will be returned.
   summary: Show connection string of device(s) in an IoT Hub.
   Metadata: {}
+- htmlId: update
+  examples:
+  - title: Disable a device.
+    code: az iot device update --hub-name my-iot-hub --device-id my-device --set status=disabled
+  parameters:
+  - name: --device-id -d
+    isRequired: true
+    summary: Device Id.
+    description: ''
+  - name: --hub-name
+    isRequired: true
+    summary: IoT Hub name.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_iot_device_update
+  name: az iot device update
+  description: ''
+  summary: Update metadata of a device in an IoT Hub.
+  Metadata: {}
 uid: az_iot_device
 name: az iot device
 description: ''
@@ -232,6 +288,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/119d95b3fb6b68782d11fb8e7934b568cdc1a24a/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 11/18/2016 4:37:16 PM
-  ms.date: 11/18/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/a317d187ef42d04c2da303266a2a9bafa5f292df/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 12/1/2016 7:47:39 PM
+  ms.date: 12/1/2016

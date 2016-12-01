@@ -2,7 +2,11 @@ htmlId: consumer-group
 examples: []
 children:
 - htmlId: create
-  examples: []
+  examples:
+  - title: Create new consumer group `cg1` in default event hub endpoint `events`.
+    code: az iot hub consumer-group create --hub-name my-iot-hub --name cg1
+  - title: Create new consumer group `cg1` in operation monitoring event hub endpoint `operationsMonitoringEvents`.
+    code: az iot hub consumer-group create --hub-name my-iot-hub --event-hub-name operationsMonitoringEvents --name cg1
   parameters:
   - name: --hub-name
     isRequired: true
@@ -13,7 +17,7 @@ children:
     summary: Event hub consumer group name.
     description: ''
   - name: --event-hub-name
-    summary: Target event hub name.
+    summary: Event hub endpoint name.
     description: ''
     defaultValue: events
   - name: --resource-group -g
@@ -45,18 +49,19 @@ children:
 - htmlId: delete
   examples: []
   parameters:
-  - name: --hub-name
-    isRequired: true
-    summary: IoT Hub name.
-    description: ''
-  - name: --name -n
-    isRequired: true
-    summary: Event hub consumer group name.
-    description: ''
   - name: --event-hub-name
-    summary: Target event hub name.
+    summary: Event hub endpoint name.
     description: ''
     defaultValue: events
+  - name: --hub-name
+    summary: IoT Hub name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Event hub consumer group name.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group.
     description: ''
@@ -86,14 +91,16 @@ children:
 - htmlId: list
   examples: []
   parameters:
-  - name: --hub-name
-    isRequired: true
-    summary: IoT Hub name.
-    description: ''
   - name: --event-hub-name
-    summary: Target event hub name.
+    summary: Event hub endpoint name.
     description: ''
     defaultValue: events
+  - name: --hub-name
+    summary: IoT Hub name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group.
     description: ''
@@ -123,18 +130,19 @@ children:
 - htmlId: show
   examples: []
   parameters:
-  - name: --hub-name
-    isRequired: true
-    summary: IoT Hub name.
-    description: ''
-  - name: --name -n
-    isRequired: true
-    summary: Event hub consumer group name.
-    description: ''
   - name: --event-hub-name
-    summary: Target event hub name.
+    summary: Event hub endpoint name.
     description: ''
     defaultValue: events
+  - name: --hub-name
+    summary: IoT Hub name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Event hub consumer group name.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group.
     description: ''
@@ -169,6 +177,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/119d95b3fb6b68782d11fb8e7934b568cdc1a24a/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 11/18/2016 4:37:16 PM
-  ms.date: 11/18/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/a317d187ef42d04c2da303266a2a9bafa5f292df/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 12/1/2016 7:47:39 PM
+  ms.date: 12/1/2016

@@ -2,7 +2,13 @@ htmlId: hub
 examples: []
 children:
 - htmlId: create
-  examples: []
+  examples:
+  - title: Create an IoT Hub with free pricing tier F1, in the region of resource group.
+    code: az iot hub create --resource-group my-resource-group --name my-iot-hub
+  - title: Create an IoT Hub with standard pricing tier S1, in the region of resource group.
+    code: az iot hub create --resource-group my-resource-group --name my-iot-hub --sku S1
+  - title: Create an IoT Hub with free pricing tier F1, in `westus` region.
+    code: az iot hub create --resource-group my-resource-group --name my-iot-hub --location westus
   parameters:
   - name: --name -n
     isRequired: true
@@ -80,8 +86,10 @@ children:
 - htmlId: list-skus
   examples: []
   parameters:
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
   - name: --name -n
-    isRequired: true
     summary: IoT Hub name.
     description: ''
   - name: --resource-group -g
@@ -113,8 +121,10 @@ children:
 - htmlId: show
   examples: []
   parameters:
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
   - name: --name -n
-    isRequired: true
     summary: IoT Hub name.
     description: ''
   - name: --resource-group -g
@@ -144,7 +154,15 @@ children:
   summary: Show non-security metadata of an IoT Hub.
   Metadata: {}
 - htmlId: show-connection-string
-  examples: []
+  examples:
+  - title: Show connection string of an IoT Hub using default policy (`iothubowner`) and primary key.
+    code: az iot hub show-connection-string --name my-iot-hub
+  - title: Show connection string of an IoT Hub using policy `service` and secondary key.
+    code: az iot hub show-connection-string --name my-iot-hub --policy-name service --key secondary
+  - title: Show connection strings of all IoT Hubs in a resource group.
+    code: az iot hub show-connection-string --resource-group my-resource-group
+  - title: Show connection strings of all IoT Hubs in current subscription.
+    code: az iot hub show-connection-string
   parameters:
   - name: --key
     summary: The key to use.
@@ -152,13 +170,16 @@ children:
     defaultValue: primary
     parameterValueGroup:
     - primary, secondary
-  - name: --name -n
-    summary: IoT Hub name.
-    description: ''
   - name: --policy-name
     summary: Shared access policy to use.
     description: ''
     defaultValue: iothubowner
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: IoT Hub name.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group.
     description: ''
@@ -188,8 +209,10 @@ children:
 - htmlId: show-quota-metrics
   examples: []
   parameters:
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
   - name: --name -n
-    isRequired: true
     summary: IoT Hub name.
     description: ''
   - name: --resource-group -g
@@ -221,8 +244,10 @@ children:
 - htmlId: show-stats
   examples: []
   parameters:
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
   - name: --name -n
-    isRequired: true
     summary: IoT Hub name.
     description: ''
   - name: --resource-group -g
@@ -259,6 +284,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/119d95b3fb6b68782d11fb8e7934b568cdc1a24a/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 11/18/2016 4:37:16 PM
-  ms.date: 11/18/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/a317d187ef42d04c2da303266a2a9bafa5f292df/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 12/1/2016 7:47:39 PM
+  ms.date: 12/1/2016

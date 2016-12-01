@@ -84,7 +84,11 @@ children:
   summary: Complete a cloud-to-device message.
   Metadata: {}
 - htmlId: receive
-  examples: []
+  examples:
+  - title: Receive a cloud-to-device message from IoT Hub with default lock timeout.
+    code: az iot device message receive --hub-name my-iot-hub --device-id my-device
+  - title: Receive a cloud-to-device message from IoT Hub with lock timeout of 300 seconds.
+    code: az iot device message receive --hub-name my-iot-hub --device-id my-device --lock-timeout 300
   parameters:
   - name: --device-id -d
     isRequired: true
@@ -166,7 +170,11 @@ children:
   summary: Reject a cloud-to-device message.
   Metadata: {}
 - htmlId: send
-  examples: []
+  examples:
+  - title: Send a device-to-cloud message to IoT Hub with default message.
+    code: az iot device message send --hub-name my-iot-hub --device-id my-device
+  - title: Send a device-to-cloud message to IoT Hub with custom message.
+    code: az iot device message send --hub-name my-iot-hub --device-id my-device --data "Custom Message"
   parameters:
   - name: --device-id -d
     isRequired: true
@@ -223,6 +231,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/119d95b3fb6b68782d11fb8e7934b568cdc1a24a/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 11/18/2016 4:37:16 PM
-  ms.date: 11/18/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/a317d187ef42d04c2da303266a2a9bafa5f292df/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 12/1/2016 7:47:39 PM
+  ms.date: 12/1/2016
