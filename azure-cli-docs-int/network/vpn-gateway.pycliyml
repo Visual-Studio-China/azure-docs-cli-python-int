@@ -8,19 +8,23 @@ children:
     isRequired: true
     summary: Gateway name.
     description: ''
+  - name: --public-ip-address
+    isRequired: true
+    summary: Name or ID of an existing public IP address.
+    description: ''
   - name: --resource-group -g
     isRequired: true
     summary: Name of resource group.
     description: ''
-  - name: --subnet-id
+  - name: --vnet
     isRequired: true
-    summary: Subnet ID for the VPN gateway. Subnet must be named GatewaySubnet.
+    summary: Name or ID of an existing virtual network which has a subnet named 'GatewaySubnet'.
     description: ''
   - name: --enable-bgp
     summary: Enable BGP (Border Gateway Protocol).
     description: ''
   - name: --gateway-type
-    summary: ''
+    summary: The gateway type.
     description: ''
     defaultValue: Vpn
     parameterValueGroup:
@@ -31,11 +35,8 @@ children:
   - name: --no-wait
     summary: Do not wait for the long running operation to finish.
     description: ''
-  - name: --public-ip-address
-    summary: Name or ID of an existing public IP address.
-    description: ''
   - name: --sku
-    summary: ''
+    summary: VPN gateway SKU.
     description: ''
     defaultValue: Basic
     parameterValueGroup:
@@ -44,7 +45,7 @@ children:
     summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --vpn-type
-    summary: ''
+    summary: VPN gateway type.
     description: ''
     defaultValue: RouteBased
     parameterValueGroup:
@@ -217,9 +218,38 @@ children:
   - name: --address-prefixes
     summary: List of address prefixes for the VPN gateway.  Prerequisite for uploading certificates.
     description: ''
+  - name: --enable-bgp
+    summary: Enable BGP (Border Gateway Protocol).
+    description: ''
+    parameterValueGroup:
+    - false, true
+  - name: --gateway-type
+    summary: The gateway type.
+    description: ''
+    parameterValueGroup:
+    - ExpressRoute, Vpn
   - name: --no-wait
     summary: Do not wait for the long running operation to finish.
     description: ''
+  - name: --public-ip-address
+    summary: Name or ID of a public IP address.
+    description: ''
+  - name: --sku
+    summary: VPN gateway SKU.
+    description: ''
+    parameterValueGroup:
+    - Basic, HighPerformance, Standard
+  - name: --tags
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --vnet
+    summary: Name or ID of a virtual network that contains a subnet named 'GatewaySubnet'.
+    description: ''
+  - name: --vpn-gateway-type
+    summary: VPN gateway type.
+    description: ''
+    parameterValueGroup:
+    - PolicyBased, RouteBased
   - name: --ids
     summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
