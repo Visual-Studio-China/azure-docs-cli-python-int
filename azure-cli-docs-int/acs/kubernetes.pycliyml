@@ -36,6 +36,10 @@ children:
   - name: --dns-prefix
     summary: ''
     description: ''
+  - name: --file -f
+    summary: ''
+    description: ''
+    defaultValue: C:Usersappveyor.kubeconfig
   - name: --location -l
     summary: Location.
     description: ''
