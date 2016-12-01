@@ -1,0 +1,28 @@
+clone_folder: c:\projects\azure-docs-cli-python
+
+environment:
+  access_token:
+    secure: lKL9L+iWTZa++yug50bwow4i7OxIdSd1xdF19hyvTL/cA1PDXdrPDGgyG8qNCY13
+
+install:
+  - git checkout master
+
+before_build:
+  - ps: |
+        if($env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL -ne $env:GIT_USER_EMAIL)
+        {
+          $env:is_ci_build_enabled=$true
+          echo "CI build is enabled"
+        }
+        
+build_script:
+  - ps: |
+        if($env:is_ci_build_enabled)
+        {
+          .\merge-toc.ps1 $env:REF_DOC_FOLDER $env:CONCEPTUAL_DOC_FOLDER
+        }
+
+on_success:
+  - cmd: if "%is_ci_build_enabled%" == "True" (
+           git add . && (git diff --quiet --exit-code --cached || git commit -m "Merge TOC by CI" && git push -u origin master && echo "Document updated")
+         )
