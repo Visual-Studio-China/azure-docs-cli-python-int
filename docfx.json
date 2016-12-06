@@ -2,7 +2,7 @@
   "build": {
     "content": [
       {
-        "src": "azure-cli-docs-int",
+        "src": "docs-ref-autogen",
         "files": [
           "**/*.pycliyml",
           "**/*.md"
@@ -15,7 +15,7 @@
         ]
       },
       {
-        "src": "conceptual-docs",
+        "src": "docs-ref-conceptual",
         "files": [
           "**.md"
         ],

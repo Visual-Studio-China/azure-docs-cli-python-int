@@ -1,6 +1,6 @@
 ﻿param(
-[String] $refDocPath = "azure-cli-docs",
-[String] $conceptDocPath = "conceptual-docs"
+[String] $refDocPath = "docs-ref-autogen",
+[String] $conceptDocPath = "docs-ref-conceptual"
 )
 
 Write-Host "Start merging TOC in folder: $refDocPath and $conceptDocPath"
