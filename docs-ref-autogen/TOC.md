@@ -1,4 +1,5 @@
-# [Install the Azure CLI 2.0 'Preview' ](..\docs-ref-conceptual\install-az-cli2.md)
+# [Get started](..\docs-ref-conceptual\get-started-with-az-cli3.md)
+## [Install the Azure CLI 2.0 'Preview' ](..\docs-ref-conceptual\install-az-cli2.md)
 ## [Get started](..\docs-ref-conceptual\get-started-with-az-cli2.md)
 ## [Old and new CLIs](..\docs-ref-conceptual\old-and-new-clis.md)
 ## [Azure Ref Commands](index.pycliyml)
