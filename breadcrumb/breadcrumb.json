@@ -5,7 +5,7 @@
         "level": 1,
         "children": [
             {
-                "href": "/cli/azure/install-az-cli2/",
+                "href": "/cli/azure/install-az-cli2",
                 "homepage": "/cli/azure/install-az-cli2",
                 "toc_title": "Install",
                 "level": 2
