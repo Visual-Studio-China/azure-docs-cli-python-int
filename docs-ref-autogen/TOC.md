@@ -7,7 +7,7 @@
 ## [Open ports and endpoints to a Linux VM](..\docs-ref-conceptual\..\..\azure\virtual-machines\virtual-machines-linux-nsg-quickstart?toc=%2fcli%2fazure%2ftoc.json)
 ## [Create an Azure Container Service cluster](..\docs-ref-conceptual\..\..\azure\container-service\container-service-create-acs-cluster-cli?toc=%2fcli%2fazure%2ftoc.json)
 ## [Create an IoT hub](..\docs-ref-conceptual\..\..\azure\iot-hub\iot-hub-create-using-cli?toc=%2fcli%2fazure%2ftoc.json)
-## [Azure Ref Commands](index.pycliyml)
+## [Reference](index.pycliyml)
 ### [az account](account.pycliyml)
 ### [az acr](acr.pycliyml)
 #### [az acr credential](acr\credential.pycliyml)
