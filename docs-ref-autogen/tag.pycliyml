@@ -1,5 +1,10 @@
 htmlId: tag
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: add-value
   examples: []
@@ -34,6 +39,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_tag_add-value
   name: az tag add-value
@@ -69,6 +79,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_tag_create
   name: az tag create
@@ -104,6 +119,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_tag_delete
   name: az tag delete
@@ -135,6 +155,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_tag_list
   name: az tag list
@@ -174,6 +199,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_tag_remove-value
   name: az tag remove-value
@@ -188,6 +218,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/e0e9890e9d3a1dd71e85a69b295ef021128f80b8/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 12/9/2016 1:27:00 AM
-  ms.date: 12/9/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

@@ -1,5 +1,10 @@
 htmlId: account
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: clear
   examples: []
@@ -26,6 +31,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_account_clear
   name: az account clear
@@ -61,6 +71,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_account_list
   name: az account list
@@ -92,6 +107,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_account_list-locations
   name: az account list-locations
@@ -127,6 +147,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_account_set
   name: az account set
@@ -166,6 +191,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_account_show
   name: az account show
@@ -180,6 +210,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/01b0e4ae6b530b146549c6b3827216de6fc321c1/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  updated_at: 12/8/2016 8:56:09 PM
-  ms.date: 12/8/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

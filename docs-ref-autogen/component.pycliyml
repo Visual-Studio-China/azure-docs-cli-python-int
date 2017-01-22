@@ -1,5 +1,10 @@
 htmlId: component
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: list
   examples: []
@@ -26,6 +31,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_component_list
   name: az component list
@@ -57,6 +67,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_component_list-available
   name: az component list-available
@@ -92,6 +107,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_component_remove
   name: az component remove
@@ -139,6 +159,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_component_update
   name: az component update
@@ -153,6 +178,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/01b0e4ae6b530b146549c6b3827216de6fc321c1/src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
-  updated_at: 12/8/2016 8:56:09 PM
-  ms.date: 12/8/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-component/azure/cli/command_modules/component/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

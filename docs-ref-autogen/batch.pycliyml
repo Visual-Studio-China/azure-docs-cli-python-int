@@ -1,8 +1,0 @@
-htmlId: batch
-examples: []
-children: []
-uid: az_batch
-name: az batch
-description: ''
-summary: Commands for working with Azure Batch.
-Metadata: {}

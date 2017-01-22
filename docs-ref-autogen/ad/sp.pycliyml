@@ -1,5 +1,10 @@
 htmlId: sp
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: create
   examples: []
@@ -30,6 +35,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_sp_create
   name: az ad sp create
@@ -59,7 +69,7 @@ children:
     description: ''
   - name: --name -n
     isRequired: False
-    summary: A display name or an app id uri. Command will generate one if missing.
+    summary: An unique uri. If missing, the command will generate one.
     description: ''
   - name: --password
     isRequired: False
@@ -101,6 +111,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_sp_create-for-rbac
   name: az ad sp create-for-rbac
@@ -136,6 +151,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_sp_delete
   name: az ad sp delete
@@ -179,6 +199,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_sp_list
   name: az ad sp list
@@ -190,7 +215,7 @@ children:
   parameters:
   - name: --name -n
     isRequired: True
-    summary: The name, can be the app id uri, app id guid, or display name.
+    summary: The uri representing the name of the service principal.
     description: ''
   - name: --password
     isRequired: False
@@ -223,6 +248,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_sp_reset-credentials
   name: az ad sp reset-credentials
@@ -258,6 +288,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_sp_show
   name: az ad sp show
@@ -272,6 +307,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/487f0196fc30715f5cf70b7c781185b5c2a5bf18/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  updated_at: 11/15/2016 10:24:07 PM
-  ms.date: 11/15/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

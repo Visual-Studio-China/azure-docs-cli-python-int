@@ -1,12 +1,17 @@
 htmlId: route-table
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: create
   examples: []
   parameters:
   - name: --name -n
     isRequired: True
-    summary: The name of the route table.
+    summary: Name for route table.
     description: ''
   - name: --resource-group -g
     isRequired: True
@@ -42,11 +47,16 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_route-table_create
   name: az network route-table create
   description: ''
-  summary: Create a new route table.
+  summary: Create or update a virtual machine.
   Metadata: {}
 - htmlId: delete
   examples: []
@@ -85,11 +95,16 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_route-table_delete
   name: az network route-table delete
   description: ''
-  summary: Delete a route table.
+  summary: The Delete RouteTable operation deletes the specified Route Table.
   Metadata: {}
 - htmlId: list
   examples: []
@@ -120,11 +135,16 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_route-table_list
   name: az network route-table list
   description: ''
-  summary: List route tables in a resource group or subscription.
+  summary: ''
   Metadata: {}
 - htmlId: show
   examples: []
@@ -167,19 +187,20 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_route-table_show
   name: az network route-table show
   description: ''
-  summary: Show details of a route table.
+  summary: The Get RouteTables operation retrieves information about the specified route table.
   Metadata: {}
 - htmlId: update
   examples: []
   parameters:
-  - name: --tags
-    isRequired: False
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
-    description: ''
   - name: --ids
     isRequired: False
     summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
@@ -226,20 +247,25 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_route-table_update
   name: az network route-table update
   description: ''
-  summary: Update a route table.
+  summary: ''
   Metadata: {}
 uid: az_network_route-table
 name: az network route-table
 description: ''
-summary: Commands to manage route tables.
+summary: Manage route tables.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/18025718b3d546653aba340dbe2758c7463d0ca1/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  updated_at: 1/10/2017 4:27:54 PM
-  ms.date: 1/10/2017
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016
