@@ -1,6 +1,6 @@
-# [Overview](..\docs-ref-conceptual\verview.md)
-## [Install](..\docs-ref-conceptual\nstall-az-cli2.md)
-## [Get started](..\docs-ref-conceptual\et-started-with-az-cli2.md)
+# [Overview](../docs-ref-conceptual/verview.md)
+## [Install](../docs-ref-conceptual/nstall-az-cli2.md)
+## [Get started](../docs-ref-conceptual/et-started-with-az-cli2.md)
 # How to
 ## [Create a Linux VM](/azure/virtual-machines/virtual-machines-linux-quick-create-cli?toc=%2fcli%2fazure%2ftoc.json)
 ## [Create a complete Linux environment](/azure/virtual-machines/virtual-machines-linux-create-cli-complete?toc=%2fcli%2fazure%2ftoc.json)
@@ -187,7 +187,7 @@
 #### [az storage table policy](storage\table\policy.pycliyml)
 ## [az tag](tag.pycliyml)
 ## [az taskhelp](taskhelp.pycliyml)
-## [az vm](vm.pycliyml)
+## [Virtual Machine](vm.pycliyml)
 ### [az vm access](vm\access.pycliyml)
 ### [az vm availability-set](vm\availability-set.pycliyml)
 ### [az vm capture](xref:az_vm_capture)
