@@ -1,6 +1,6 @@
-# [Overview](../docs-ref-conceptual/verview.md)
-## [Install](../docs-ref-conceptual/nstall-az-cli2.md)
-## [Get started](../docs-ref-conceptual/et-started-with-az-cli2.md)
+# [Overview](../docs-ref-autogen/overview.md)
+## [Install](../docs-ref-autogen/install-az-cli2.md)
+## [Get started](../docs-ref-autogen/get-started-with-az-cli2.md)
 # How to
 ## [Create a Linux VM](/azure/virtual-machines/virtual-machines-linux-quick-create-cli?toc=%2fcli%2fazure%2ftoc.json)
 ## [Create a complete Linux environment](/azure/virtual-machines/virtual-machines-linux-create-cli-complete?toc=%2fcli%2fazure%2ftoc.json)
