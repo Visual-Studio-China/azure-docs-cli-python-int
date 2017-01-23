@@ -50,7 +50,8 @@ foreach($line in $conceptLines)
   }
 
   $level = $curLevel
-  # $line = $line.Replace("](", "](..\" + $conceptDocPath + "\");
+  #fix the link to point correct conceptual doc, leave absolute link alone
+  $line = $line -replace '\][ ]*\([ ]*([a-zA-Z])',"](..\$conceptDocPath\$1"
   $finalTocLines.Add($line)
 }
 

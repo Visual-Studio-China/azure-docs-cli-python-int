@@ -1,10 +1,5 @@
 htmlId: group
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: create
   examples: []
@@ -43,11 +38,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_create
   name: az group create
@@ -87,11 +77,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_delete
   name: az group delete
@@ -127,11 +112,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_exists
   name: az group exists
@@ -175,11 +155,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_export
   name: az group export
@@ -215,11 +190,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_list
   name: az group list
@@ -255,11 +225,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_show
   name: az group show
@@ -307,11 +272,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_update
   name: az group update
@@ -377,11 +337,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_group_wait
   name: az group wait
@@ -392,10 +347,4 @@ uid: az_group
 name: az group
 description: ''
 summary: Commands to manage resource groups.
-Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+Metadata: {}

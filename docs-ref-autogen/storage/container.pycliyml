@@ -1,10 +1,5 @@
 htmlId: container
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: create
   examples: []
@@ -68,11 +63,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_create
   name: az storage container create
@@ -144,11 +134,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_delete
   name: az storage container delete
@@ -204,11 +189,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_exists
   name: az storage container exists
@@ -304,11 +284,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_generate-sas
   name: az storage container generate-sas
@@ -376,11 +351,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_list
   name: az storage container list
@@ -453,11 +423,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_set-permission
   name: az storage container set-permission
@@ -517,11 +482,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_show
   name: az storage container show
@@ -581,11 +541,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_container_show-permission
   name: az storage container show-permission
@@ -600,6 +555,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/8d9b0f732dbcc9655d8f52812aad437338dabb8c/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 12/9/2016 7:29:47 PM
+  ms.date: 12/9/2016

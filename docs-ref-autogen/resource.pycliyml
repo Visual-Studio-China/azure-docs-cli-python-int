@@ -1,10 +1,5 @@
 htmlId: resource
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: delete
   examples:
@@ -65,11 +60,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_delete
   name: az resource delete
@@ -135,11 +125,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_list
   name: az resource list
@@ -183,11 +168,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_move
   name: az resource move
@@ -257,11 +237,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_show
   name: az resource show
@@ -329,11 +304,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_tag
   name: az resource tag
@@ -401,11 +371,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_update
   name: az resource update
@@ -420,6 +385,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/e0e9890e9d3a1dd71e85a69b295ef021128f80b8/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 12/9/2016 1:27:00 AM
+  ms.date: 12/9/2016

@@ -1,10 +1,5 @@
 htmlId: consumer-group
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: create
   examples:
@@ -52,11 +47,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_consumer-group_create
   name: az iot hub consumer-group create
@@ -109,11 +99,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_consumer-group_delete
   name: az iot hub consumer-group delete
@@ -162,11 +147,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_consumer-group_list
   name: az iot hub consumer-group list
@@ -219,11 +199,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_consumer-group_show
   name: az iot hub consumer-group show
@@ -238,6 +213,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/5b0a3f9df0bdbed2f2ea9ac4502a589cc6a9e333/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  updated_at: 1/10/2017 5:29:15 PM
+  ms.date: 1/10/2017

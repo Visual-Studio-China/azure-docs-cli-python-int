@@ -1,10 +1,5 @@
 htmlId: az
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: configure
   examples: []
@@ -31,11 +26,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-configure/azure/cli/command_modules/configure/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_configure
   name: az configure
@@ -67,11 +57,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-feedback/azure/cli/command_modules/feedback/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_feedback
   name: az feedback
@@ -125,11 +110,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_login
   name: az login
@@ -165,11 +145,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_logout
   name: az logout
@@ -184,6 +159,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/01b0e4ae6b530b146549c6b3827216de6fc321c1/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+  updated_at: 12/8/2016 8:56:09 PM
+  ms.date: 12/8/2016

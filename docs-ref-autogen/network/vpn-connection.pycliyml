@@ -1,10 +1,5 @@
 htmlId: vpn-connection
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: create
   examples: []
@@ -20,6 +15,14 @@ children:
   - name: --vnet-gateway1
     isRequired: True
     summary: Connect from this gateway to another gateway or express route circuit.
+    description: ''
+  - name: --authorization-key
+    isRequired: False
+    summary: The authorization key for the VPN connection.
+    description: ''
+  - name: --enable-bgp
+    isRequired: False
+    summary: Enable BGP for this VPN connection.
     description: ''
   - name: --express-route-circuit2
     isRequired: False
@@ -43,6 +46,10 @@ children:
     summary: Shared IPSec key, base64 contents of the certificate file or file path.
     description: ''
     defaultValue: none
+  - name: --tags
+    isRequired: False
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
   - name: --vnet-gateway2
     isRequired: False
     summary: Connect to this vnet gateway from vnet gateway 1 using connection type Vnet2Vnet.
@@ -69,11 +76,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vpn-connection_create
   name: az network vpn-connection create
@@ -117,11 +119,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vpn-connection_delete
   name: az network vpn-connection delete
@@ -157,11 +154,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vpn-connection_list
   name: az network vpn-connection list
@@ -205,11 +197,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vpn-connection_show
   name: az network vpn-connection show
@@ -219,9 +206,22 @@ children:
 - htmlId: update
   examples: []
   parameters:
+  - name: --enable-bgp
+    isRequired: False
+    summary: Enable BGP (Border Gateway Protocol).
+    description: ''
+    parameterValueGroup: false, true
   - name: --routing-weight
     isRequired: False
     summary: Connection routing weight.
+    description: ''
+  - name: --shared-key
+    isRequired: False
+    summary: Shared IPSec key, base64 contents of the certificate file or file path.
+    description: ''
+  - name: --tags
+    isRequired: False
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --ids
     isRequired: False
@@ -269,11 +269,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vpn-connection_update
   name: az network vpn-connection update
@@ -288,6 +283,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/18025718b3d546653aba340dbe2758c7463d0ca1/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  updated_at: 1/10/2017 4:27:54 PM
+  ms.date: 1/10/2017

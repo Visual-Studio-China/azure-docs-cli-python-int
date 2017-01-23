@@ -1,20 +1,13 @@
 htmlId: vm
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: capture
   examples:
   - title: Process to deallocate, generalize, and capture a stopped virtual machine
     code: >-
       az vm deallocate -g my_rg -n my_vm_name
-
-      az vm generalize -g my_rg -n my_vm_name
-
-      az vm capture -g my_rg -n my_vm_name --vhd-name-prefix my_prefix
+                              az vm generalize -g my_rg -n my_vm_name
+                              az vm capture -g my_rg -n my_vm_name --vhd-name-prefix my_prefix
   parameters:
   - name: --vhd-name-prefix
     isRequired: True
@@ -64,11 +57,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_capture
   name: az vm capture
@@ -80,7 +68,7 @@ children:
   - title: Create a Linux VM with SSH key authentication, add a public DNS entry and add to an existing Virtual Network and Availability Set.
     code: az vm create -n my_vm_name -g myrg --image <linux image from 'az vm image list'> --authentication-type ssh --vnet my_existing_vnet --subnet-name subnet1 --availability-set my_existing_availability_set --public-ip-address-dns-name my_globally_unique_vm_dns_name --ssh-key-value "<ssh-rsa-key, key-file-path or not specified for default-key-path>"
   - title: Create a simple Windows Server VM with private IP address only
-    code: "az vm create -n my_vm_name -g myrg --admin-username myadmin --admin-password Password@1234 \n --public-ip-address \"\" --image Win2012R2Datacenter"
+    code: "az vm create -n my_vm_name -g myrg --admin-username myadmin --admin-password Password@1234 \n                         --public-ip-address \"\" --image Win2012R2Datacenter"
   - title: Create a simple Windows Server VM with public IP address and DNS entry
     code: az vm create -n my_vm_name -g myrg --admin-username myadmin --admin-password Password@1234 --public-ip-address-dns-name my_globally_unique_vm_dns_name --image Win2012R2Datacenter
   parameters:
@@ -89,10 +77,8 @@ children:
     summary: OS image (URN alias, URN or URI).
     description: >-
       URN aliases: CentOS, CoreOS, Debian, openSUSE, RHEL, SLES, UbuntuLTS, Win2008SP1, Win2012Datacenter, Win2012R2Datacenter.
-
-      Example URN: MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:latest.
-
-      Example URI: http://<storageAccount>.blob.core.windows.net/vhds/osdiskimage.vhd.
+                                          Example URN: MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:latest.
+                                          Example URI: http://<storageAccount>.blob.core.windows.net/vhds/osdiskimage.vhd.
     valueFrom: az vm image list, az vm image show
   - name: --name -n
     isRequired: True
@@ -110,7 +96,7 @@ children:
     isRequired: False
     summary: Username for the Virtual Machine.
     description: ''
-    defaultValue: eriwan
+    defaultValue: appveyor
   - name: --authentication-type
     isRequired: False
     summary: Password or SSH public key authentication. Defaults to password for Windows and SSH public key for Linux.
@@ -245,11 +231,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_create
   name: az vm create
@@ -261,10 +242,8 @@ children:
   - title: Process to deallocate, generalize, and capture a stopped virtual machine
     code: >-
       az vm deallocate -g my_rg -n my_vm_name
-
-      az vm generalize -g my_rg -n my_vm_name
-
-      az vm capture -g my_rg -n my_vm_name --vhd-name-prefix my_prefix
+                              az vm generalize -g my_rg -n my_vm_name
+                              az vm capture -g my_rg -n my_vm_name --vhd-name-prefix my_prefix
   parameters:
   - name: --ids
     isRequired: False
@@ -300,11 +279,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_deallocate
   name: az vm deallocate
@@ -348,11 +322,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_delete
   name: az vm delete
@@ -364,10 +333,8 @@ children:
   - title: Process to deallocate, generalize, and capture a stopped virtual machine
     code: >-
       az vm deallocate -g my_rg -n my_vm_name
-
-      az vm generalize -g my_rg -n my_vm_name
-
-      az vm capture -g my_rg -n my_vm_name --vhd-name-prefix my_prefix
+                              az vm generalize -g my_rg -n my_vm_name
+                              az vm capture -g my_rg -n my_vm_name --vhd-name-prefix my_prefix
   parameters:
   - name: --ids
     isRequired: False
@@ -403,11 +370,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_generalize
   name: az vm generalize
@@ -451,11 +413,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_get-instance-view
   name: az vm get-instance-view
@@ -491,11 +448,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_list
   name: az vm list
@@ -539,11 +491,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_list-ip-addresses
   name: az vm list-ip-addresses
@@ -579,11 +526,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_list-sizes
   name: az vm list-sizes
@@ -619,11 +561,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_list-usage
   name: az vm list-usage
@@ -667,11 +604,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_list-vm-resize-options
   name: az vm list-vm-resize-options
@@ -723,11 +655,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_open-port
   name: az vm open-port
@@ -771,11 +698,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_redeploy
   name: az vm redeploy
@@ -823,11 +745,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_resize
   name: az vm resize
@@ -871,11 +788,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_restart
   name: az vm restart
@@ -923,11 +835,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_show
   name: az vm show
@@ -971,11 +878,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_start
   name: az vm start
@@ -1019,11 +921,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_stop
   name: az vm stop
@@ -1093,11 +990,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_update
   name: az vm update
@@ -1171,11 +1063,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_wait
   name: az vm wait
@@ -1190,6 +1077,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/0e2f45e2a59ad6adda39bef0869266daf9b53aaa/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 1/5/2017 12:17:14 AM
+  ms.date: 1/5/2017

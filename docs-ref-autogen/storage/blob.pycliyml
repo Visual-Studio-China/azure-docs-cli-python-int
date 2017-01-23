@@ -1,10 +1,5 @@
 htmlId: blob
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - htmlId: delete
   examples: []
@@ -88,11 +83,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_delete
   name: az storage blob delete
@@ -202,11 +192,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_download
   name: az storage blob download
@@ -270,11 +255,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_download-batch
   name: az storage blob download-batch
@@ -338,11 +318,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_exists
   name: az storage blob exists
@@ -442,11 +417,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_generate-sas
   name: az storage blob generate-sas
@@ -522,11 +492,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_list
   name: az storage blob list
@@ -610,11 +575,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_show
   name: az storage blob show
@@ -698,11 +658,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_snapshot
   name: az storage blob snapshot
@@ -806,11 +761,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_update
   name: az storage blob update
@@ -940,11 +890,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_upload
   name: az storage blob upload
@@ -1078,11 +1023,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_upload-batch
   name: az storage blob upload-batch
@@ -1144,11 +1084,6 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_blob_url
   name: az storage blob url
@@ -1163,6 +1098,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/8d9b0f732dbcc9655d8f52812aad437338dabb8c/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 12/9/2016 7:29:47 PM
+  ms.date: 12/9/2016
