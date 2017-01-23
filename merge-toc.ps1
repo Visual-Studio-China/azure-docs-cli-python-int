@@ -125,7 +125,8 @@ foreach($line in $conceptLines)
   else
   {
     #fix the link to point correct conceptual doc, leave absolute link alone
-    $line = $line -replace '\][ ]*\([ ]*([a-zA-Z])',"](../$conceptDocPath/$1"
+    $line = $line -replace '\][ ]*\([ ]*([a-zA-Z])','](_REFDOCPATH_$1'
+    $line = $line.Replace("_REFDOCPATH_", "../$refDocPath/")
     $finalTocLines.Add($line)
   }
 }
