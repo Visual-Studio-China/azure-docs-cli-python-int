@@ -1,7 +1,23 @@
+commandList:
+- name: az appservice web config appsettings delete
+  description: Delete application settings.
+  href: '#delete'
+- name: az appservice web config appsettings show
+  description: Show application settings.
+  href: '#show'
+- name: az appservice web config appsettings update
+  description: Create or update application settings.
+  href: '#update'
 htmlId: appsettings
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
-- htmlId: delete
+- commandList: []
+  htmlId: delete
   examples: []
   parameters:
   - name: --setting-names
@@ -46,13 +62,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_config_appsettings_delete
   name: az appservice web config appsettings delete
   description: ''
   summary: Delete application settings.
   Metadata: {}
-- htmlId: show
+- commandList: []
+  htmlId: show
   examples: []
   parameters:
   - name: --slot
@@ -93,13 +115,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_config_appsettings_show
   name: az appservice web config appsettings show
   description: ''
   summary: Show application settings.
   Metadata: {}
-- htmlId: update
+- commandList: []
+  htmlId: update
   examples: []
   parameters:
   - name: --settings
@@ -144,6 +172,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_config_appsettings_update
   name: az appservice web config appsettings update
@@ -158,6 +191,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/3612b99b70d6b1c7e1859e1551bd90e932b72df4/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 12/16/2016 6:06:08 AM
-  ms.date: 12/16/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

@@ -1,7 +1,29 @@
+commandList:
+- name: az sql server firewall create
+  description: Create an Azure SQL server firewall rule.
+  href: '#create'
+- name: az sql server firewall delete
+  description: Deletes an Azure SQL server firewall rule.
+  href: '#delete'
+- name: az sql server firewall list
+  description: List the Azure SQL server firewall rules.
+  href: '#list'
+- name: az sql server firewall show
+  description: Show the details of an Azure SQL server firewall rule.
+  href: '#show'
+- name: az sql server firewall update
+  description: Update an Azure SQL server firewall rule.
+  href: '#update'
 htmlId: firewall
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
-- htmlId: create
+- commandList: []
+  htmlId: create
   examples: []
   parameters:
   - name: --firewall-rule-name
@@ -46,13 +68,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_firewall_create
   name: az sql server firewall create
   description: ''
   summary: Create an Azure SQL server firewall rule.
   Metadata: {}
-- htmlId: delete
+- commandList: []
+  htmlId: delete
   examples: []
   parameters:
   - name: --firewall-rule-name
@@ -89,13 +117,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_firewall_delete
   name: az sql server firewall delete
   description: ''
   summary: Deletes an Azure SQL server firewall rule.
   Metadata: {}
-- htmlId: list
+- commandList: []
+  htmlId: list
   examples: []
   parameters:
   - name: --resource-group -g
@@ -128,13 +162,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_firewall_list
   name: az sql server firewall list
   description: ''
   summary: List the Azure SQL server firewall rules.
   Metadata: {}
-- htmlId: show
+- commandList: []
+  htmlId: show
   examples: []
   parameters:
   - name: --firewall-rule-name
@@ -171,13 +211,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_firewall_show
   name: az sql server firewall show
   description: ''
   summary: Show the details of an Azure SQL server firewall rule.
   Metadata: {}
-- htmlId: update
+- commandList: []
+  htmlId: update
   examples: []
   parameters:
   - name: --firewall-rule-name
@@ -222,6 +268,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_firewall_update
   name: az sql server firewall update
@@ -232,4 +283,10 @@ uid: az_sql_server_firewall
 name: az sql server firewall
 description: ''
 summary: Commands to manage Azure SQL server's firewall rules.
-Metadata: {}
+Metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

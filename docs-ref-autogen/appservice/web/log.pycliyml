@@ -1,7 +1,23 @@
+commandList:
+- name: az appservice web log config
+  description: Configure web app logs.
+  href: '#config'
+- name: az appservice web log download
+  description: Download historical logs as a zip file.
+  href: '#download'
+- name: az appservice web log tail
+  description: ''
+  href: '#tail'
 htmlId: log
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
-- htmlId: config
+- commandList: []
+  htmlId: config
   examples: []
   parameters:
   - name: --application-logging
@@ -67,13 +83,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_log_config
   name: az appservice web log config
   description: ''
   summary: Configure web app logs.
   Metadata: {}
-- htmlId: download
+- commandList: []
+  htmlId: download
   examples: []
   parameters:
   - name: --log-file
@@ -119,13 +141,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_log_download
   name: az appservice web log download
   description: ''
   summary: Download historical logs as a zip file.
   Metadata: {}
-- htmlId: tail
+- commandList: []
+  htmlId: tail
   examples: []
   parameters:
   - name: --provider
@@ -170,6 +198,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_log_tail
   name: az appservice web log tail
@@ -184,6 +217,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/3612b99b70d6b1c7e1859e1551bd90e932b72df4/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 12/16/2016 6:06:08 AM
-  ms.date: 12/16/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

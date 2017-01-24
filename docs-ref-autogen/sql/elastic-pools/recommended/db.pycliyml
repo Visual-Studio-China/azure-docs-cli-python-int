@@ -1,15 +1,15 @@
 commandList:
-- name: az batch account keys list
-  description: Gets the account keys for the specified Batch account.
+- name: az sql elastic-pools recommended db list
+  description: Returns information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
   href: '#list'
-- name: az batch account keys renew
-  description: Regenerates the specified account key for the specified Batch account.
-  href: '#renew'
-htmlId: keys
+- name: az sql elastic-pools recommended db show
+  description: Gets information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
+  href: '#show'
+htmlId: db
 examples: []
 source:
   remote:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
     branch: master
     repo: https://github.com/Azure/azure-cli.git
 children:
@@ -17,13 +17,17 @@ children:
   htmlId: list
   examples: []
   parameters:
-  - name: --name -n
+  - name: --recommended-elastic-pool-name
     isRequired: True
-    summary: Name of the Batch account.
+    summary: The name of the Azure SQL Recommended Elastic Pool to be retrieved.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --server-name
+    isRequired: True
+    summary: The name of the Azure SQL server.
     description: ''
   - name: --debug
     isRequired: False
@@ -49,31 +53,34 @@ children:
     description: ''
   source:
     remote:
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_batch_account_keys_list
-  name: az batch account keys list
+  uid: az_sql_elastic-pools_recommended_db_list
+  name: az sql elastic-pools recommended db list
   description: ''
-  summary: Gets the account keys for the specified Batch account.
+  summary: Returns information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
   Metadata: {}
 - commandList: []
-  htmlId: renew
+  htmlId: show
   examples: []
   parameters:
-  - name: --key-name
+  - name: --database-name
     isRequired: True
-    summary: The type of account key to regenerate.
+    summary: The name of the Azure SQL database to be retrieved.
     description: ''
-    parameterValueGroup: Primary, Secondary
-  - name: --name -n
+  - name: --recommended-elastic-pool-name
     isRequired: True
-    summary: Name of the Batch account.
+    summary: The name of the Azure SQL Elastic Pool to be retrieved.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --server-name
+    isRequired: True
+    summary: The name of the Azure SQL server.
     description: ''
   - name: --debug
     isRequired: False
@@ -99,23 +106,23 @@ children:
     description: ''
   source:
     remote:
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_batch_account_keys_renew
-  name: az batch account keys renew
+  uid: az_sql_elastic-pools_recommended_db_show
+  name: az sql elastic-pools recommended db show
   description: ''
-  summary: Regenerates the specified account key for the specified Batch account.
+  summary: Gets information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
   Metadata: {}
-uid: az_batch_account_keys
-name: az batch account keys
+uid: az_sql_elastic-pools_recommended_db
+name: az sql elastic-pools recommended db
 description: ''
-summary: Commands to manage your Batch account keys.
+summary: Commands to see information about an Azure SQL database inside of Recommended Elastic Pool.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   updated_at: 10/10/2016 9:09:09 AM
   ms.date: 10/10/2016

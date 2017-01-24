@@ -1,7 +1,40 @@
+commandList:
+- name: az sql server create
+  description: Create a new Azure SQL server.
+  href: '#create'
+- name: az sql server delete
+  description: Deletes a SQL server.
+  href: '#delete'
+- name: az sql server firewall
+  description: Commands to manage Azure SQL server's firewall rules.
+  href: firewall
+  isGroup: true
+- name: az sql server list
+  description: List the SQL servers belong to given resource group.
+  href: '#list'
+- name: az sql server service-objective
+  description: Commands to show Azure SQL server's service objectives.
+  href: service-objective
+  isGroup: true
+- name: az sql server show
+  description: Gets information about an Azure SQL server.
+  href: '#show'
+- name: az sql server show-usage
+  description: Returns information about Azure SQL server usage.
+  href: '#show-usage'
+- name: az sql server update
+  description: Update an Azure SQL server.
+  href: '#update'
 htmlId: server
 examples: []
+source:
+  remote:
+    path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+    branch: master
+    repo: https://github.com/Azure/azure-cli.git
 children:
-- htmlId: create
+- commandList: []
+  htmlId: create
   examples: []
   parameters:
   - name: --resource-group -g
@@ -54,13 +87,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_create
   name: az sql server create
   description: ''
   summary: Create a new Azure SQL server.
   Metadata: {}
-- htmlId: delete
+- commandList: []
+  htmlId: delete
   examples: []
   parameters:
   - name: --resource-group -g
@@ -93,13 +132,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_delete
   name: az sql server delete
   description: ''
   summary: Deletes a SQL server.
   Metadata: {}
-- htmlId: list
+- commandList: []
+  htmlId: list
   examples: []
   parameters:
   - name: --resource-group -g
@@ -128,13 +173,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_list
   name: az sql server list
   description: ''
   summary: List the SQL servers belong to given resource group.
   Metadata: {}
-- htmlId: show
+- commandList: []
+  htmlId: show
   examples: []
   parameters:
   - name: --resource-group -g
@@ -167,13 +218,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_show
   name: az sql server show
   description: ''
   summary: Gets information about an Azure SQL server.
   Metadata: {}
-- htmlId: show-usage
+- commandList: []
+  htmlId: show-usage
   examples: []
   parameters:
   - name: --resource-group -g
@@ -206,13 +263,19 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_show-usage
   name: az sql server show-usage
   description: ''
   summary: Returns information about Azure SQL server usage.
   Metadata: {}
-- htmlId: update
+- commandList: []
+  htmlId: update
   examples: []
   parameters:
   - name: --resource-group -g
@@ -257,6 +320,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_sql_server_update
   name: az sql server update
@@ -267,4 +335,10 @@ uid: az_sql_server
 name: az sql server
 description: ''
 summary: Commands to manage servers.
-Metadata: {}
+Metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  updated_at: 10/10/2016 9:09:09 AM
+  ms.date: 10/10/2016

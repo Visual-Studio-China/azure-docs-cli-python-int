@@ -1,7 +1,15 @@
+commandList:
+- name: az sql elastic-pools recommended database list
+  description: Returns information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
+  href: '#list'
+- name: az sql elastic-pools recommended database show
+  description: Gets information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
+  href: '#show'
 htmlId: database
 examples: []
 children:
-- htmlId: list
+- commandList: []
+  htmlId: list
   examples: []
   parameters:
   - name: --recommended-elastic-pool-name
@@ -44,7 +52,8 @@ children:
   description: ''
   summary: Returns information about an Azure SQL database inside of an Azure SQL Recommended Elastic Pool.
   Metadata: {}
-- htmlId: show
+- commandList: []
+  htmlId: show
   examples: []
   parameters:
   - name: --database-name

@@ -1,7 +1,18 @@
+commandList:
+- name: az sql elastic-pools database list
+  description: Returns information about an Azure SQL database inside of an Azure SQL elastic pool.
+  href: '#list'
+- name: az sql elastic-pools database show
+  description: Gets information about an Azure SQL database inside of an Azure SQL elastic pool.
+  href: '#show'
+- name: az sql elastic-pools database show-activity
+  description: Returns information about activity on Azure SQL databases inside of an Azure SQL elastic pool.
+  href: '#show-activity'
 htmlId: database
 examples: []
 children:
-- htmlId: list
+- commandList: []
+  htmlId: list
   examples: []
   parameters:
   - name: --elastic-pool-name
@@ -44,7 +55,8 @@ children:
   description: ''
   summary: Returns information about an Azure SQL database inside of an Azure SQL elastic pool.
   Metadata: {}
-- htmlId: show
+- commandList: []
+  htmlId: show
   examples: []
   parameters:
   - name: --database-name
@@ -91,7 +103,8 @@ children:
   description: ''
   summary: Gets information about an Azure SQL database inside of an Azure SQL elastic pool.
   Metadata: {}
-- htmlId: show-activity
+- commandList: []
+  htmlId: show-activity
   examples: []
   parameters:
   - name: --elastic-pool-name
