@@ -187,7 +187,7 @@
 #### [az storage table policy](storage\table\policy.pycliyml)
 ## [az tag](tag.pycliyml)
 ## [az taskhelp](taskhelp.pycliyml)
-## [Virtual Machine](vm.pycliyml)
+## [az vm](vm.pycliyml)
 ### [az vm access](vm\access.pycliyml)
 ### [az vm availability-set](vm\availability-set.pycliyml)
 ### [az vm capture](xref:az_vm_capture)
