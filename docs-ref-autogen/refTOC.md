@@ -173,7 +173,7 @@
 ## [az vm](vm.pycliyml)
 ### [az vm access](vm\access.pycliyml)
 ### [az vm availability-set](vm\availability-set.pycliyml)
-### [az vm capture](xref:az_vm_capture)
+### [az vm capture](vm.pycliyml#capture)
 ### [az vm create](vm.pycliyml#create)
 ### [az vm boot-diagnostics](vm\boot-diagnostics.pycliyml)
 ### [az vm diagnostics](vm\diagnostics.pycliyml)
