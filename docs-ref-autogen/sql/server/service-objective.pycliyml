@@ -62,6 +62,10 @@ children:
   htmlId: show
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the service objective to retrieve.
+    description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
@@ -69,10 +73,6 @@ children:
   - name: --server-name
     isRequired: True
     summary: The name of the Azure SQL server.
-    description: ''
-  - name: --service-objective-name
-    isRequired: True
-    summary: The name of the service objective to retrieve.
     description: ''
   - name: --debug
     isRequired: False
@@ -115,6 +115,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/714ce68ebb5976d113ae44e72868c4441a7d705f/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  updated_at: 1/23/2017 7:00:24 PM
+  ms.date: 1/23/2017

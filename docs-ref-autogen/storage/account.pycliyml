@@ -1,6 +1,6 @@
 commandList:
 - name: az storage account check-name
-  description: Checks that account name is valid and is not in use.
+  description: Checks that the storage account name is valid and is not already in use.
   href: '#check-name'
 - name: az storage account create
   description: Create a storage account.
@@ -19,7 +19,7 @@ commandList:
   description: List storage accounts within a subscription or resource group.
   href: '#list'
 - name: az storage account show
-  description: Returns the properties for the specified storage account including but not limited to name, account type, location, and account status.
+  description: Returns the properties for the specified storage account including but not limited to name, SKU name, location, and account status.
   href: '#show'
 - name: az storage account show-connection-string
   description: Generate connection string for a storage account.
@@ -77,7 +77,7 @@ children:
   uid: az_storage_account_check-name
   name: az storage account check-name
   description: ''
-  summary: Checks that account name is valid and is not in use.
+  summary: Checks that the storage account name is valid and is not already in use.
   Metadata: {}
 - commandList: []
   htmlId: create
@@ -113,7 +113,7 @@ children:
     isRequired: False
     summary: Specifies which service(s) to encrypt.
     description: ''
-    parameterValueGroup: blob
+    parameterValueGroup: blob, file, queue, table
   - name: --kind
     isRequired: False
     summary: Indicates the type of storage account.
@@ -165,6 +165,10 @@ children:
   htmlId: delete
   examples: []
   parameters:
+  - name: --force
+    isRequired: False
+    summary: Do not prompt for confirmation.
+    description: ''
   - name: --ids
     isRequired: False
     summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
@@ -379,7 +383,7 @@ children:
   uid: az_storage_account_show
   name: az storage account show
   description: The ListKeys operation should be used to retrieve storage keys.
-  summary: Returns the properties for the specified storage account including but not limited to name, account type, location, and account status.
+  summary: Returns the properties for the specified storage account including but not limited to name, SKU name, location, and account status.
   Metadata: {}
 - commandList: []
   htmlId: show-connection-string
@@ -512,7 +516,7 @@ children:
     isRequired: False
     summary: Specifies which service(s) to encrypt.
     description: ''
-    parameterValueGroup: blob
+    parameterValueGroup: blob, file, queue, table
   - name: --sku
     isRequired: False
     summary: The storage account SKU.
@@ -580,6 +584,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/abc123/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 10/10/2016 9:09:09 AM
-  ms.date: 10/10/2016
+  gitcommit: https://github.com/Azure/azure-cli/blob/06e1d7a11177b3ab0bd7f72fd8140b872de7c9f5/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 1/24/2017 8:22:04 PM
+  ms.date: 1/24/2017

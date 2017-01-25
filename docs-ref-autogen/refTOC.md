@@ -765,6 +765,7 @@
 #### [az storage directory create](storage\directory.pycliyml#create)
 #### [az storage directory delete](storage\directory.pycliyml#delete)
 #### [az storage directory exists](storage\directory.pycliyml#exists)
+#### [az storage directory list](storage\directory.pycliyml#list)
 #### [az storage directory metadata](storage\directory\metadata.pycliyml)
 ##### [az storage directory metadata show](storage\directory\metadata.pycliyml#show)
 ##### [az storage directory metadata update](storage\directory\metadata.pycliyml#update)
