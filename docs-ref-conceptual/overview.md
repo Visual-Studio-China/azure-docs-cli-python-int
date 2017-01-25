@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.assetid: 80ae9f6c-adb7-483c-bfb4-fbb958e075ba
+open_to_public_contributors: True
 ---
 
 # Azure CLI 2.0 (Preview)
