@@ -87,11 +87,6 @@ children:
     isRequired: True
     summary: Relative DNS name for the traffic manager profile, resulting FQDN will be <uniqueDnsName>.trafficmanager.net, must be globally unique.
     description: ''
-  - name: --location -l
-    isRequired: False
-    summary: Location.
-    description: ''
-    defaultValue: global
   - name: --monitor-path
     isRequired: False
     summary: Path to monitor.
