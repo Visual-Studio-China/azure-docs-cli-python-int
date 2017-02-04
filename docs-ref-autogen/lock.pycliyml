@@ -1,31 +1,66 @@
 commandList:
-- name: az account clear
-  description: Clears all subscription from the CLI's local cache.
-  href: '#clear'
-- name: az account list
-  description: Get a list of subscriptions for the account.
+- name: az lock create
+  description: ''
+  href: '#create'
+- name: az lock delete
+  description: ''
+  href: '#delete'
+- name: az lock list
+  description: ''
   href: '#list'
-- name: az account list-locations
-  description: List supported regions of the current subscription.
-  href: '#list-locations'
-- name: az account set
-  description: Makes a subscription the current subscription.
-  href: '#set'
-- name: az account show
-  description: Show the details of a subscription.
+- name: az lock show
+  description: ''
   href: '#show'
-htmlId: account
+- name: az lock update
+  description: ''
+  href: '#update'
+htmlId: lock
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: clear
+  htmlId: create
   examples: []
   parameters:
+  - name: --name
+    isRequired: True
+    summary: ''
+    description: ''
+  - name: --level
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --lock-id
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --lock-type
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --notes
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --parent-resource-path
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --resource-group -g
+    isRequired: False
+    summary: Name of resource group.
+    description: ''
+  - name: --resource-name
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --resource-provider-namespace
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --resource-type
+    isRequired: False
+    summary: ''
+    description: ''
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -48,24 +83,95 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_account_clear
-  name: az account clear
-  description: To clear the current subscription, use az logout.
-  summary: Clears all subscription from the CLI's local cache.
+  uid: az_lock_create
+  name: az lock create
+  description: ''
+  summary: ''
+  Metadata: {}
+- commandList: []
+  htmlId: delete
+  examples: []
+  parameters:
+  - name: --name
+    isRequired: True
+    summary: The name of the lock.
+    description: ''
+  - name: --parent-resource-path
+    isRequired: False
+    summary: Path to a parent resource.
+    description: ''
+  - name: --resource-group -g
+    isRequired: False
+    summary: Name of resource group.
+    description: ''
+  - name: --resource-name
+    isRequired: False
+    summary: Name of a resource that has a lock.
+    description: ''
+  - name: --resource-provider-namespace
+    isRequired: False
+    summary: Name of a resource provider.
+    description: ''
+  - name: --resource-type
+    isRequired: False
+    summary: The type for the resource with the lock.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, list, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_lock_delete
+  name: az lock delete
+  description: ''
+  summary: ''
   Metadata: {}
 - commandList: []
   htmlId: list
   examples: []
   parameters:
-  - name: --all
+  - name: --filter-string
     isRequired: False
-    summary: List all subscriptions across all cloud environments.
+    summary: A query filter to use to restrict the results.
+    description: ''
+  - name: --parent-resource-path
+    isRequired: False
+    summary: Path to a parent resource.
+    description: ''
+  - name: --resource-group -g
+    isRequired: False
+    summary: Name of resource group.
+    description: ''
+  - name: --resource-name
+    isRequired: False
+    summary: Name of a resource that has a lock.
+    description: ''
+  - name: --resource-provider-namespace
+    isRequired: False
+    summary: Name of a resource provider.
+    description: ''
+  - name: --resource-type
+    isRequired: False
+    summary: The type for the resource with the lock.
     description: ''
   - name: --debug
     isRequired: False
@@ -89,106 +195,23 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_account_list
-  name: az account list
+  uid: az_lock_list
+  name: az lock list
   description: ''
-  summary: Get a list of subscriptions for the account.
-  Metadata: {}
-- commandList: []
-  htmlId: list-locations
-  examples: []
-  parameters:
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, list, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_account_list-locations
-  name: az account list-locations
-  description: ''
-  summary: List supported regions of the current subscription.
-  Metadata: {}
-- commandList: []
-  htmlId: set
-  examples: []
-  parameters:
-  - name: --subscription
-    isRequired: True
-    summary: Name or ID of subscription.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, list, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_account_set
-  name: az account set
-  description: ''
-  summary: Makes a subscription the current subscription.
+  summary: ''
   Metadata: {}
 - commandList: []
   htmlId: show
   examples: []
   parameters:
-  - name: --expanded-view
-    isRequired: False
-    summary: Display more information like service principal's password and cloud environments.
+  - name: --name
+    isRequired: True
+    summary: Name of the lock.
     description: ''
-  - name: --subscription
+  - name: --resource-group -g
     isRequired: False
-    summary: Name or ID of subscription.
+    summary: Name of resource group.
     description: ''
   - name: --debug
     isRequired: False
@@ -212,25 +235,70 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_account_show
-  name: az account show
-  description: If the subscription isn't specified, shows the details of the default subscription.
-  summary: Show the details of a subscription.
+  uid: az_lock_show
+  name: az lock show
+  description: ''
+  summary: ''
   Metadata: {}
-uid: az_account
-name: az account
+- commandList: []
+  htmlId: update
+  examples: []
+  parameters:
+  - name: --name
+    isRequired: True
+    summary: ''
+    description: ''
+  - name: --level
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --lock-id
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --lock-type
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --notes
+    isRequired: False
+    summary: ''
+    description: ''
+  - name: --resource-group -g
+    isRequired: False
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, list, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_lock_update
+  name: az lock update
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_lock
+name: az lock
 description: ''
-summary: Commands to manage subscriptions.
-Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/8bdfa68a6f51a8c7766e1b3578b415ae0d3fab88/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  updated_at: 2/3/2017 4:19:41 PM
-  ms.date: 2/3/2017
+summary: ''
+Metadata: {}
