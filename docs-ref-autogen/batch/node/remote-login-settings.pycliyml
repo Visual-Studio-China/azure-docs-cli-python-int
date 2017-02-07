@@ -1,8 +1,8 @@
 commandList:
-- name: az batch account autostorage-keys sync
-  description: Synchronizes access keys for the auto storage account configured for the specified Batch account.
-  href: autostorage-keys#sync
-htmlId: autostorage-keys
+- name: az batch node remote-login-settings show
+  description: Gets the settings required for remote login to a compute node.
+  href: remote-login-settings#show
+htmlId: remote-login-settings
 examples: []
 source:
   remote:
@@ -11,16 +11,28 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: sync
+  htmlId: show
   examples: []
   parameters:
-  - name: --name -n
+  - name: --node-id
     isRequired: True
-    summary: Name of the Batch account.
+    summary: The id of the compute node for which to obtain the remote login settings.
     description: ''
-  - name: --resource-group -g
+  - name: --pool-id
     isRequired: True
-    summary: Name of the resource group.
+    summary: The id of the pool that contains the compute node.
+    description: ''
+  - name: --account-endpoint
+    isRequired: False
+    summary: 'Batch service endpoint. Alternatively, set by environment variable: AZURE_BATCH_ENDPOINT.'
+    description: ''
+  - name: --account-key
+    isRequired: False
+    summary: 'Batch account key. Alternatively, set by environment variable: AZURE_BATCH_ACCESS_KEY.'
+    description: ''
+  - name: --account-name
+    isRequired: False
+    summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
     description: ''
   - name: --debug
     isRequired: False
@@ -50,15 +62,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_batch_account_autostorage-keys_sync
-  name: az batch account autostorage-keys sync
+  uid: az_batch_node_remote-login-settings_show
+  name: az batch node remote-login-settings show
   description: ''
-  summary: Synchronizes access keys for the auto storage account configured for the specified Batch account.
+  summary: Gets the settings required for remote login to a compute node.
   Metadata: {}
-uid: az_batch_account_autostorage-keys
-name: 'Azure CLI 2.0 (Preview): Batch account auto-storage keys - az batch account autostorage-keys'
+uid: az_batch_node_remote-login-settings
+name: az batch node remote-login-settings
 description: ''
-summary: Commands to manage the access keys for the auto storage account configured for your Batch account.
+summary: Commands to retrieve the remote login settings for a Batch compute node.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py

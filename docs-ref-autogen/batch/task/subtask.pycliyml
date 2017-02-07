@@ -1,8 +1,8 @@
 commandList:
-- name: az batch account autostorage-keys sync
-  description: Synchronizes access keys for the auto storage account configured for the specified Batch account.
-  href: autostorage-keys#sync
-htmlId: autostorage-keys
+- name: az batch task subtask list
+  description: Lists all of the subtasks that are associated with the specified multi-instance task.
+  href: subtask#list
+htmlId: subtask
 examples: []
 source:
   remote:
@@ -11,16 +11,32 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: sync
+  htmlId: list
   examples: []
   parameters:
-  - name: --name -n
+  - name: --job-id
     isRequired: True
-    summary: Name of the Batch account.
+    summary: The id of the job.
     description: ''
-  - name: --resource-group -g
+  - name: --task-id
     isRequired: True
-    summary: Name of the resource group.
+    summary: The id of the task.
+    description: ''
+  - name: --account-endpoint
+    isRequired: False
+    summary: 'Batch service endpoint. Alternatively, set by environment variable: AZURE_BATCH_ENDPOINT.'
+    description: ''
+  - name: --account-key
+    isRequired: False
+    summary: 'Batch account key. Alternatively, set by environment variable: AZURE_BATCH_ACCESS_KEY.'
+    description: ''
+  - name: --account-name
+    isRequired: False
+    summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
+    description: ''
+  - name: --select
+    isRequired: False
+    summary: An OData $select clause.
     description: ''
   - name: --debug
     isRequired: False
@@ -50,15 +66,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_batch_account_autostorage-keys_sync
-  name: az batch account autostorage-keys sync
+  uid: az_batch_task_subtask_list
+  name: az batch task subtask list
   description: ''
-  summary: Synchronizes access keys for the auto storage account configured for the specified Batch account.
+  summary: Lists all of the subtasks that are associated with the specified multi-instance task.
   Metadata: {}
-uid: az_batch_account_autostorage-keys
-name: 'Azure CLI 2.0 (Preview): Batch account auto-storage keys - az batch account autostorage-keys'
+uid: az_batch_task_subtask
+name: az batch task subtask
 description: ''
-summary: Commands to manage the access keys for the auto storage account configured for your Batch account.
+summary: Commands to manage subtask information of your Batch task.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py

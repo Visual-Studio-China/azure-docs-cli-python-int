@@ -1,8 +1,8 @@
 commandList:
-- name: az batch account autostorage-keys sync
-  description: Synchronizes access keys for the auto storage account configured for the specified Batch account.
-  href: autostorage-keys#sync
-htmlId: autostorage-keys
+- name: az batch pool usage-metrics list
+  description: Lists the usage metrics, aggregated by pool across individual time intervals, for the specified account.
+  href: usage-metrics#list
+htmlId: usage-metrics
 examples: []
 source:
   remote:
@@ -11,16 +11,32 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: sync
+  htmlId: list
   examples: []
   parameters:
-  - name: --name -n
-    isRequired: True
-    summary: Name of the Batch account.
+  - name: --account-endpoint
+    isRequired: False
+    summary: 'Batch service endpoint. Alternatively, set by environment variable: AZURE_BATCH_ENDPOINT.'
     description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of the resource group.
+  - name: --account-key
+    isRequired: False
+    summary: 'Batch account key. Alternatively, set by environment variable: AZURE_BATCH_ACCESS_KEY.'
+    description: ''
+  - name: --account-name
+    isRequired: False
+    summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
+    description: ''
+  - name: --end-time
+    isRequired: False
+    summary: The latest time from which to include metrics. This must be at least two hours before the current time.
+    description: ''
+  - name: --filter
+    isRequired: False
+    summary: An OData $filter clause.
+    description: ''
+  - name: --start-time
+    isRequired: False
+    summary: The earliest time from which to include metrics. This must be at least two and a half hours before the current time.
     description: ''
   - name: --debug
     isRequired: False
@@ -50,15 +66,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_batch_account_autostorage-keys_sync
-  name: az batch account autostorage-keys sync
+  uid: az_batch_pool_usage-metrics_list
+  name: az batch pool usage-metrics list
   description: ''
-  summary: Synchronizes access keys for the auto storage account configured for the specified Batch account.
+  summary: Lists the usage metrics, aggregated by pool across individual time intervals, for the specified account.
   Metadata: {}
-uid: az_batch_account_autostorage-keys
-name: 'Azure CLI 2.0 (Preview): Batch account auto-storage keys - az batch account autostorage-keys'
+uid: az_batch_pool_usage-metrics
+name: az batch pool usage-metrics
 description: ''
-summary: Commands to manage the access keys for the auto storage account configured for your Batch account.
+summary: Commands to view usage metrics of your Batch pools.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py

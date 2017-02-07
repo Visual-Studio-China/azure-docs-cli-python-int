@@ -1,8 +1,8 @@
 commandList:
-- name: az batch account autostorage-keys sync
-  description: Synchronizes access keys for the auto storage account configured for the specified Batch account.
-  href: autostorage-keys#sync
-htmlId: autostorage-keys
+- name: az batch job prep-release-status list
+  description: Lists the execution status of the Job Preparation and Job Release task for the specified job across the compute nodes where the job has run.
+  href: prep-release-status#list
+htmlId: prep-release-status
 examples: []
 source:
   remote:
@@ -11,16 +11,32 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: sync
+  htmlId: list
   examples: []
   parameters:
-  - name: --name -n
+  - name: --job-id
     isRequired: True
-    summary: Name of the Batch account.
+    summary: The id of the job.
     description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of the resource group.
+  - name: --account-endpoint
+    isRequired: False
+    summary: 'Batch service endpoint. Alternatively, set by environment variable: AZURE_BATCH_ENDPOINT.'
+    description: ''
+  - name: --account-key
+    isRequired: False
+    summary: 'Batch account key. Alternatively, set by environment variable: AZURE_BATCH_ACCESS_KEY.'
+    description: ''
+  - name: --account-name
+    isRequired: False
+    summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
+    description: ''
+  - name: --filter
+    isRequired: False
+    summary: An OData $filter clause.
+    description: ''
+  - name: --select
+    isRequired: False
+    summary: An OData $select clause.
     description: ''
   - name: --debug
     isRequired: False
@@ -50,15 +66,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_batch_account_autostorage-keys_sync
-  name: az batch account autostorage-keys sync
+  uid: az_batch_job_prep-release-status_list
+  name: az batch job prep-release-status list
   description: ''
-  summary: Synchronizes access keys for the auto storage account configured for the specified Batch account.
+  summary: Lists the execution status of the Job Preparation and Job Release task for the specified job across the compute nodes where the job has run.
   Metadata: {}
-uid: az_batch_account_autostorage-keys
-name: 'Azure CLI 2.0 (Preview): Batch account auto-storage keys - az batch account autostorage-keys'
+uid: az_batch_job_prep-release-status
+name: az batch job prep-release-status
 description: ''
-summary: Commands to manage the access keys for the auto storage account configured for your Batch account.
+summary: Commands to view the status of your job preparation and release tasks.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
