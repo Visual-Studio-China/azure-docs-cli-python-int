@@ -1,20 +1,14 @@
 commandList:
-- name: az vm nic add
-  description: Add network interface configurations to the virtual machine.
-  href: nic#add
-- name: az vm nic list
-  description: List network interface configurations attached to a virtual machine.
-  href: nic#list
-- name: az vm nic remove
-  description: Remove network interface configurations from the virtual machine.
-  href: nic#remove
-- name: az vm nic set
-  description: Replace existing network interface configurations on the virtual machine.
-  href: nic#set
-- name: az vm nic show
-  description: Show details of a network interface configuration attached to a virtual machine.
-  href: nic#show
-htmlId: nic
+- name: az vm unmanaged-disk attach
+  description: Attach an unmanaged disk.
+  href: unmanaged-disk#attach
+- name: az vm unmanaged-disk detach
+  description: Detach a disk from a Virtual Machine.
+  href: unmanaged-disk#detach
+- name: az vm unmanaged-disk list
+  description: List disks for a Virtual Machine.
+  href: unmanaged-disk#list
+htmlId: unmanaged-disk
 examples: []
 source:
   remote:
@@ -23,13 +17,9 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: add
+  htmlId: attach
   examples: []
   parameters:
-  - name: --nics
-    isRequired: True
-    summary: Names or IDs of NICs.
-    description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
@@ -38,9 +28,32 @@ children:
     isRequired: True
     summary: The name of the Virtual Machine.
     description: ''
-  - name: --primary-nic
+  - name: --caching
     isRequired: False
-    summary: Name or id of the primary NIC. If missing, the first of the NIC list will be the primary.
+    summary: Host caching policy.
+    description: ''
+    defaultValue: None
+    parameterValueGroup: None, ReadOnly, ReadWrite
+  - name: --lun
+    isRequired: False
+    summary: 0-based logical unit number (LUN). Max value depends on the Virutal Machine size.
+    description: ''
+  - name: --name -n
+    isRequired: False
+    summary: The data disk name(optional when create a new disk).
+    description: ''
+  - name: --new
+    isRequired: False
+    summary: Create a new disk.
+    description: ''
+  - name: --size-gb
+    isRequired: False
+    summary: ''
+    description: ''
+    defaultValue: 1023
+  - name: --vhd-uri
+    isRequired: False
+    summary: Virtual hard disk's uri. For example:https://mystorage.blob.core.windows.net/vhds/d1.vhd.
     description: ''
   - name: --debug
     isRequired: False
@@ -70,22 +83,75 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_vm_nic_add
-  name: az vm nic add
+  uid: az_vm_unmanaged-disk_attach
+  name: az vm unmanaged-disk attach
   description: ''
-  summary: Add network interface configurations to the virtual machine.
+  summary: Attach an unmanaged disk.
+  Metadata: {}
+- commandList: []
+  htmlId: detach
+  examples: []
+  parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The data disk name.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group.
+    description: ''
+  - name: --vm-name
+    isRequired: True
+    summary: The name of the Virtual Machine.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, list, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
+  children: []
+  uid: az_vm_unmanaged-disk_detach
+  name: az vm unmanaged-disk detach
+  description: ''
+  summary: Detach a disk from a Virtual Machine.
   Metadata: {}
 - commandList: []
   htmlId: list
   examples: []
   parameters:
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group.
+  - name: --ids
+    isRequired: False
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
-  - name: --vm-name
-    isRequired: True
+  - name: --name -n
+    isRequired: False
     summary: The name of the Virtual Machine.
+    description: ''
+  - name: --resource-group -g
+    isRequired: False
+    summary: Name of resource group.
     description: ''
   - name: --debug
     isRequired: False
@@ -115,170 +181,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_vm_nic_list
-  name: az vm nic list
+  uid: az_vm_unmanaged-disk_list
+  name: az vm unmanaged-disk list
   description: ''
-  summary: List network interface configurations attached to a virtual machine.
+  summary: List disks for a Virtual Machine.
   Metadata: {}
-- commandList: []
-  htmlId: remove
-  examples: []
-  parameters:
-  - name: --nics
-    isRequired: True
-    summary: Names or IDs of NICs.
-    description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group.
-    description: ''
-  - name: --vm-name
-    isRequired: True
-    summary: The name of the Virtual Machine.
-    description: ''
-  - name: --primary-nic
-    isRequired: False
-    summary: Name or id of the primary NIC. If missing, the first of the NIC list will be the primary.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, list, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_vm_nic_remove
-  name: az vm nic remove
-  description: ''
-  summary: Remove network interface configurations from the virtual machine.
-  Metadata: {}
-- commandList: []
-  htmlId: set
-  examples: []
-  parameters:
-  - name: --nics
-    isRequired: True
-    summary: Names or IDs of NICs.
-    description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group.
-    description: ''
-  - name: --vm-name
-    isRequired: True
-    summary: The name of the Virtual Machine.
-    description: ''
-  - name: --primary-nic
-    isRequired: False
-    summary: Name or id of the primary nic. If missing, the first element of nic list will be set to the primary.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, list, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_vm_nic_set
-  name: az vm nic set
-  description: ''
-  summary: Replace existing network interface configurations on the virtual machine.
-  Metadata: {}
-- commandList: []
-  htmlId: show
-  examples: []
-  parameters:
-  - name: --nic
-    isRequired: True
-    summary: NIC name or ID.
-    description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group.
-    description: ''
-  - name: --vm-name
-    isRequired: True
-    summary: The name of the Virtual Machine.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, list, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_vm_nic_show
-  name: az vm nic show
-  description: ''
-  summary: Show details of a network interface configuration attached to a virtual machine.
-  Metadata: {}
-uid: az_vm_nic
-name: 'Azure CLI 2.0 (Preview): VM network interfaces - az vm nic'
+uid: az_vm_unmanaged-disk
+name: az vm unmanaged-disk
 description: ''
-summary: Manage VM network interfaces, see also 'az network nic'.
+summary: Manage VM unmanaged data disks.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
