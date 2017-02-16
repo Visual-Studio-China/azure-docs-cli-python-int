@@ -1,20 +1,20 @@
 commandList:
-- name: az appservice web deployment slot auto-swap
-  description: Configure slot auto swap.
-  href: slot#auto-swap
-- name: az appservice web deployment slot create
-  description: Create a slot.
-  href: slot#create
-- name: az appservice web deployment slot delete
-  description: Delete a slot.
-  href: slot#delete
-- name: az appservice web deployment slot list
-  description: List all slots.
-  href: slot#list
-- name: az appservice web deployment slot swap
-  description: Swap slots.
-  href: slot#swap
-htmlId: slot
+- name: az appservice web config backup create
+  description: Create a backup of a web app.
+  href: backup#create
+- name: az appservice web config backup list
+  description: List all of an app's backups.
+  href: backup#list
+- name: az appservice web config backup restore
+  description: Restore an app from a backup.
+  href: backup#restore
+- name: az appservice web config backup show
+  description: Show a web app's backup schedule.
+  href: backup#show
+- name: az appservice web config backup update
+  description: Configure a new backup schedule.
+  href: backup#update
+htmlId: backup
 examples: []
 source:
   remote:
@@ -23,87 +23,42 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: auto-swap
-  examples: []
-  parameters:
-  - name: --slot
-    isRequired: True
-    summary: The name of the slot.
-    description: ''
-  - name: --auto-swap-slot
-    isRequired: False
-    summary: Target slot to auto swap.
-    description: ''
-    defaultValue: production
-  - name: --disable
-    isRequired: False
-    summary: Disable auto swap.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: Name of the webapp.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_appservice_web_deployment_slot_auto-swap
-  name: az appservice web deployment slot auto-swap
-  description: ''
-  summary: Configure slot auto swap.
-  Metadata: {}
-- commandList: []
   htmlId: create
   examples: []
   parameters:
-  - name: --name -n
+  - name: --container-url
     isRequired: True
-    summary: Name of the webapp.
+    summary: URL with SAS token to the blob storage container.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
     description: ''
-  - name: --slot
+  - name: --webapp-name
     isRequired: True
-    summary: The name of the slot.
+    summary: The name of the webapp.
     description: ''
-  - name: --configuration-source
+  - name: --backup-name
     isRequired: False
-    summary: ''
+    summary: Name of the backup. If unspecified, the backup will be named with the webapp name and a timestamp.
     description: ''
+  - name: --slot
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
+    description: ''
+  - name: --db-connection-string
+    isRequired: False
+    summary: Connection string for the database in the backup.
+    description: ''
+  - name: --db-name
+    isRequired: False
+    summary: Name of the database in the backup.
+    description: ''
+  - name: --db-type
+    isRequired: False
+    summary: Type of database in the backup.
+    description: ''
+    parameterValueGroup: LocalMySql, MySql, SqlAzure
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -132,79 +87,26 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_create
-  name: az appservice web deployment slot create
+  uid: az_appservice_web_config_backup_create
+  name: az appservice web config backup create
   description: ''
-  summary: Create a slot.
-  Metadata: {}
-- commandList: []
-  htmlId: delete
-  examples: []
-  parameters:
-  - name: --slot
-    isRequired: True
-    summary: The name of the slot.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: Name of the webapp.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_appservice_web_deployment_slot_delete
-  name: az appservice web deployment slot delete
-  description: ''
-  summary: Delete a slot.
+  summary: Create a backup of a web app.
   Metadata: {}
 - commandList: []
   htmlId: list
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: Name of the web.
-    description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --webapp-name
+    isRequired: True
+    summary: The name of the webapp.
+    description: ''
+  - name: --slot
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -234,34 +136,108 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_list
-  name: az appservice web deployment slot list
+  uid: az_appservice_web_config_backup_list
+  name: az appservice web config backup list
   description: ''
-  summary: List all slots.
+  summary: List all of an app's backups.
   Metadata: {}
 - commandList: []
-  htmlId: swap
+  htmlId: restore
   examples: []
   parameters:
-  - name: --slot
+  - name: --backup-name
     isRequired: True
-    summary: The name of the slot.
+    summary: Name of the backup to restore.
     description: ''
-  - name: --target-slot
-    isRequired: False
-    summary: Target slot to swap, default to 'production'.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: Name of the webapp.
+  - name: --container-url
+    isRequired: True
+    summary: URL with SAS token to the blob storage container.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --webapp-name
+    isRequired: True
+    summary: The name of the webapp.
+    description: ''
+  - name: --ignore-hostname-conflict
+    isRequired: False
+    summary: Ignores custom hostnames stored in the backup.
+    description: ''
+  - name: --overwrite
+    isRequired: False
+    summary: Overwrite the source webapp, if --target-name is not specified.
+    description: ''
+  - name: --slot
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
+    description: ''
+  - name: --target-name
+    isRequired: False
+    summary: The name to use for the restored webapp. If unspecified, will default to the name that was used when the backup was created.
+    description: ''
+  - name: --db-connection-string
+    isRequired: False
+    summary: Connection string for the database in the backup.
+    description: ''
+  - name: --db-name
+    isRequired: False
+    summary: Name of the database in the backup.
+    description: ''
+  - name: --db-type
+    isRequired: False
+    summary: Type of database in the backup.
+    description: ''
+    parameterValueGroup: LocalMySql, MySql, SqlAzure
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
+  children: []
+  uid: az_appservice_web_config_backup_restore
+  name: az appservice web config backup restore
+  description: ''
+  summary: Restore an app from a backup.
+  Metadata: {}
+- commandList: []
+  htmlId: show
+  examples: []
+  parameters:
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group.
+    description: ''
+  - name: --webapp-name
+    isRequired: True
+    summary: The name of the webapp.
+    description: ''
+  - name: --slot
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -291,15 +267,94 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_swap
-  name: az appservice web deployment slot swap
+  uid: az_appservice_web_config_backup_show
+  name: az appservice web config backup show
   description: ''
-  summary: Swap slots.
+  summary: Show a web app's backup schedule.
   Metadata: {}
-uid: az_appservice_web_deployment_slot
-name: 'Azure CLI 2.0 (Preview): Web Apps deployment slots - az appservice web deployment slot'
+- commandList: []
+  htmlId: update
+  examples: []
+  parameters:
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group.
+    description: ''
+  - name: --webapp-name
+    isRequired: True
+    summary: The name of the webapp.
+    description: ''
+  - name: --container-url
+    isRequired: False
+    summary: URL with SAS token to the blob storage container.
+    description: ''
+  - name: --frequency
+    isRequired: False
+    summary: How often to backup. Use a number followed by d or h, e.g. 5d = 5 days, 2h = 2 hours.
+    description: ''
+  - name: --retain-one
+    isRequired: False
+    summary: Always keep one backup, regardless of how old it is.
+    description: ''
+    parameterValueGroup: false, true
+  - name: --retention
+    isRequired: False
+    summary: How many days to keep a backup before automatically deleting it. Set to 0 for indefinite retention.
+    description: ''
+  - name: --slot
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
+    description: ''
+  - name: --db-connection-string
+    isRequired: False
+    summary: Connection string for the database in the backup.
+    description: ''
+  - name: --db-name
+    isRequired: False
+    summary: Name of the database in the backup.
+    description: ''
+  - name: --db-type
+    isRequired: False
+    summary: Type of database in the backup.
+    description: ''
+    parameterValueGroup: LocalMySql, MySql, SqlAzure
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
+  children: []
+  uid: az_appservice_web_config_backup_update
+  name: az appservice web config backup update
+  description: ''
+  summary: Configure a new backup schedule.
+  Metadata: {}
+uid: az_appservice_web_config_backup
+name: az appservice web config backup
 description: ''
-summary: Commands to manage deployment slots.
+summary: ''
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
