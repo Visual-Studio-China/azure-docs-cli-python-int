@@ -1,20 +1,26 @@
 commandList:
-- name: az network application-gateway http-settings create
-  description: Create new application gateway HTTP settings.
-  href: http-settings#create
-- name: az network application-gateway http-settings delete
-  description: Delete application gateway HTTP settings.
-  href: http-settings#delete
-- name: az network application-gateway http-settings list
-  description: List HTTP settings in an application gateway.
-  href: http-settings#list
-- name: az network application-gateway http-settings show
-  description: Show details of an application gateway HTTP settings.
-  href: http-settings#show
-- name: az network application-gateway http-settings update
-  description: Update an application gateway HTTP settings.
-  href: http-settings#update
-htmlId: http-settings
+- name: az network dns record-set srv add-record
+  description: ''
+  href: srv#add-record
+- name: az network dns record-set srv create
+  description: Create an empty SRV record set.
+  href: srv#create
+- name: az network dns record-set srv delete
+  description: Delete a SRV record set and all records within.
+  href: srv#delete
+- name: az network dns record-set srv list
+  description: List all SRV record sets in a zone.
+  href: srv#list
+- name: az network dns record-set srv remove-record
+  description: Remove SRV record from its record set.
+  href: srv#remove-record
+- name: az network dns record-set srv show
+  description: Show details of SRV record set.
+  href: srv#show
+- name: az network dns record-set srv update
+  description: ''
+  href: srv#update
+htmlId: srv
 examples: []
 source:
   remote:
@@ -23,47 +29,36 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: create
+  htmlId: add-record
   examples: []
   parameters:
-  - name: --gateway-name
+  - name: --port -r
     isRequired: True
-    summary: The name of the application gateway.
+    summary: Service port.
     description: ''
-  - name: --name -n
+  - name: --priority -p
     isRequired: True
-    summary: The name of the backed HTTP settings.
+    summary: Priority metric.
     description: ''
-  - name: --port
+  - name: --record-set-name -n
     isRequired: True
-    summary: The port number.
+    summary: The name of the record set relative to the zone. Creates a new record set if one does not exist.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
     description: ''
-  - name: --cookie-based-affinity
-    isRequired: False
-    summary: Enable or disable cookie based affinity.
+  - name: --target -t
+    isRequired: True
+    summary: Target domain name.
     description: ''
-    parameterValueGroup: Disabled, Enabled
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
+  - name: --weight -w
+    isRequired: True
+    summary: Weight metric.
     description: ''
-  - name: --probe
-    isRequired: False
-    summary: Name or ID of the probe to associate with the HTTP settings.
-    description: ''
-  - name: --protocol
-    isRequired: False
-    summary: The HTTP settings protocol.
-    description: ''
-    defaultValue: http
-    parameterValueGroup: Http, Https
-  - name: --timeout
-    isRequired: False
-    summary: Request timeout in seconds.
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
     description: ''
   - name: --debug
     isRequired: False
@@ -93,30 +88,100 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_http-settings_create
-  name: az network application-gateway http-settings create
+  uid: az_network_dns_record-set_srv_add-record
+  name: az network dns record-set srv add-record
   description: ''
-  summary: Create new application gateway HTTP settings.
+  summary: ''
+  Metadata: {}
+- commandList: []
+  htmlId: create
+  examples: []
+  parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the record set, relative to the name of the zone.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group.
+    description: ''
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
+    description: ''
+  - name: --if-match
+    isRequired: False
+    summary: The etag of Recordset.
+    description: ''
+  - name: --if-none-match
+    isRequired: False
+    summary: Defines the If-None-Match condition. Set to '*' to force Create-If-Not-Exist. Other values will be ignored.
+    description: ''
+  - name: --metadata
+    isRequired: False
+    summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
+    description: ''
+  - name: --ttl
+    isRequired: False
+    summary: ''
+    description: ''
+    defaultValue: 3600
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
+  children: []
+  uid: az_network_dns_record-set_srv_create
+  name: az network dns record-set srv create
+  description: ''
+  summary: Create an empty SRV record set.
   Metadata: {}
 - commandList: []
   htmlId: delete
   examples: []
   parameters:
-  - name: --gateway-name
-    isRequired: True
-    summary: The name of the application gateway.
-    description: ''
   - name: --name -n
     isRequired: True
-    summary: The name of the backed HTTP settings.
+    summary: The name of the record set, relative to the name of the zone.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
     description: ''
-  - name: --no-wait
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
+    description: ''
+  - name: --if-match
     isRequired: False
-    summary: Do not wait for the long running operation to finish.
+    summary: Defines the If-Match condition. The delete operation will be performed only if the ETag of the zone on the server matches this value.
+    description: ''
+  - name: --if-none-match
+    isRequired: False
+    summary: Defines the If-None-Match condition. The delete operation will be performed only if the ETag of the zone on the server does not match this value.
     description: ''
   - name: --debug
     isRequired: False
@@ -146,22 +211,22 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_http-settings_delete
-  name: az network application-gateway http-settings delete
+  uid: az_network_dns_record-set_srv_delete
+  name: az network dns record-set srv delete
   description: ''
-  summary: Delete application gateway HTTP settings.
+  summary: Delete a SRV record set and all records within.
   Metadata: {}
 - commandList: []
   htmlId: list
   examples: []
   parameters:
-  - name: --gateway-name
-    isRequired: True
-    summary: The name of the application gateway.
-    description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
     description: ''
   - name: --debug
     isRequired: False
@@ -191,26 +256,91 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_http-settings_list
-  name: az network application-gateway http-settings list
+  uid: az_network_dns_record-set_srv_list
+  name: az network dns record-set srv list
   description: ''
-  summary: List HTTP settings in an application gateway.
+  summary: List all SRV record sets in a zone.
+  Metadata: {}
+- commandList: []
+  htmlId: remove-record
+  examples: []
+  parameters:
+  - name: --port -r
+    isRequired: True
+    summary: Service port.
+    description: ''
+  - name: --priority -p
+    isRequired: True
+    summary: Priority metric.
+    description: ''
+  - name: --record-set-name -n
+    isRequired: True
+    summary: The name of the record set relative to the zone.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group.
+    description: ''
+  - name: --target -t
+    isRequired: True
+    summary: Target domain name.
+    description: ''
+  - name: --weight -w
+    isRequired: True
+    summary: Weight metric.
+    description: ''
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
+  children: []
+  uid: az_network_dns_record-set_srv_remove-record
+  name: az network dns record-set srv remove-record
+  description: ''
+  summary: Remove SRV record from its record set.
   Metadata: {}
 - commandList: []
   htmlId: show
   examples: []
   parameters:
-  - name: --gateway-name
-    isRequired: True
-    summary: The name of the application gateway.
-    description: ''
   - name: --name -n
     isRequired: True
-    summary: The name of the backed HTTP settings.
+    summary: The name of the record set, relative to the name of the zone.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
     description: ''
   - name: --debug
     isRequired: False
@@ -240,56 +370,38 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_http-settings_show
-  name: az network application-gateway http-settings show
+  uid: az_network_dns_record-set_srv_show
+  name: az network dns record-set srv show
   description: ''
-  summary: Show details of an application gateway HTTP settings.
+  summary: Show details of SRV record set.
   Metadata: {}
 - commandList: []
   htmlId: update
   examples: []
   parameters:
-  - name: --cookie-based-affinity
-    isRequired: False
-    summary: Enable or disable cookie based affinity.
-    description: ''
-    parameterValueGroup: Disabled, Enabled
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --port
-    isRequired: False
-    summary: The port number.
-    description: ''
-  - name: --probe
-    isRequired: False
-    summary: Name or ID of the probe to associate with the HTTP settings.
-    description: ''
-  - name: --protocol
-    isRequired: False
-    summary: The HTTP settings protocol.
-    description: ''
-    parameterValueGroup: Http, Https
-  - name: --timeout
-    isRequired: False
-    summary: Request timeout in seconds.
-    description: ''
-  - name: --gateway-name
-    isRequired: False
-    summary: The name of the application gateway.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
-    summary: The name of the backed HTTP settings.
+    isRequired: True
+    summary: The name of the record set, relative to the name of the zone.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group.
+    description: ''
+  - name: --zone-name -z
+    isRequired: True
+    summary: The name of the zone.
+    description: ''
+  - name: --if-match
+    isRequired: False
+    summary: The etag of Recordset.
+    description: ''
+  - name: --if-none-match
+    isRequired: False
+    summary: Defines the If-None-Match condition. Set to '*' to force Create-If-Not-Exist. Other values will be ignored.
+    description: ''
+  - name: --metadata
+    isRequired: False
+    summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
   - name: --add
     isRequired: False
@@ -331,15 +443,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_http-settings_update
-  name: az network application-gateway http-settings update
+  uid: az_network_dns_record-set_srv_update
+  name: az network dns record-set srv update
   description: ''
-  summary: Update an application gateway HTTP settings.
+  summary: ''
   Metadata: {}
-uid: az_network_application-gateway_http-settings
-name: 'Azure CLI 2.0 (Preview): HTTP settings - az network application-gateway http-settings'
+uid: az_network_dns_record-set_srv
+name: az network dns record-set srv
 description: ''
-summary: Manage application gateway HTTP settings.
+summary: Manage DNS SRV records.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
