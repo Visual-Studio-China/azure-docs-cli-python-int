@@ -9,10 +9,10 @@ commandList:
   description: Creates a readable secondary replica of an existing database.
   href: db#create-replica
 - name: az sql db delete
-  description: Deletes a database.
+  description: Deletes a database or data warehouse.
   href: db#delete
 - name: az sql db list
-  description: Lists all databases in a server, or all databases in an elastic pool.
+  description: Lists all databases and data warehouses in a server, or all databases in an elastic pool.
   href: db#list
 - name: az sql db replica-link
   description: Manage links between database replicas.
@@ -37,7 +37,7 @@ commandList:
   description: ''
   href: db#restore
 - name: az sql db show
-  description: Gets a database.
+  description: Gets a database or data warehouse.
   href: db#show
 - name: az sql db update
   description: Updates a database.
@@ -145,11 +145,15 @@ children:
     description: ''
   - name: --edition
     isRequired: False
-    summary: The edition of the Azure SQL database.
+    summary: The edition of the database.
     description: ''
   - name: --elastic-pool
     isRequired: False
     summary: The name of the elastic pool the database is in. If elasticPoolName and requestedServiceObjectiveName are both updated, the value of requestedServiceObjectiveName is ignored.
+    description: ''
+  - name: --max-size
+    isRequired: False
+    summary: 'The max storage size of the database. Only the following sizes are supported (in addition to limitations being placed on each edition): 100MB, 500MB, 1GB, 5GB, 10GB, 20GB, 30GB, 150GB, 200GB, 500GB. If no unit is specified, defaults to bytes (B).'
     description: ''
   - name: --sample-name
     isRequired: False
@@ -158,10 +162,6 @@ children:
   - name: --service-objective
     isRequired: False
     summary: The name of the configured service level objective of the database. This is the service level objective that is in the process of being applied to the database. Once successfully updated, it will match the value of serviceLevelObjective property.
-    description: ''
-  - name: --storage
-    isRequired: False
-    summary: 'The max storage of the database. Only the following sizes are supported (in addition to limitations being placed on each edition): 100MB, 500MB, 1GB, 5GB, 10GB, 20GB, 30GB, 150GB, 200GB, 500GB. If no unit is specified, defaults to bytes (B).'
     description: ''
   - name: --tags
     isRequired: False
@@ -316,7 +316,7 @@ children:
   uid: az_sql_db_delete
   name: az sql db delete
   description: ''
-  summary: Deletes a database.
+  summary: Deletes a database or data warehouse.
   Metadata: {}
 - commandList: []
   htmlId: list
@@ -365,7 +365,7 @@ children:
   uid: az_sql_db_list
   name: az sql db list
   description: ''
-  summary: Lists all databases in a server, or all databases in an elastic pool.
+  summary: Lists all databases and data warehouses in a server, or all databases in an elastic pool.
   Metadata: {}
 - commandList: []
   htmlId: restore
@@ -387,6 +387,10 @@ children:
     isRequired: True
     summary: Name of the Azure SQL server.
     description: ''
+  - name: --collation
+    isRequired: False
+    summary: The collation of the database. If createMode is not Default, this value is ignored.
+    description: ''
   - name: --dest-elastic-pool
     isRequired: False
     summary: The name of the elastic pool the database is in. If elasticPoolName and requestedServiceObjectiveName are both updated, the value of requestedServiceObjectiveName is ignored.
@@ -405,7 +409,11 @@ children:
     description: ''
   - name: --edition
     isRequired: False
-    summary: The edition of the Azure SQL database.
+    summary: The edition of the database.
+    description: ''
+  - name: --max-size
+    isRequired: False
+    summary: 'The max storage size of the database. Only the following sizes are supported (in addition to limitations being placed on each edition): 100MB, 500MB, 1GB, 5GB, 10GB, 20GB, 30GB, 150GB, 200GB, 500GB. If no unit is specified, defaults to bytes (B).'
     description: ''
   - name: --restore-point-in-time
     isRequired: False
@@ -495,7 +503,7 @@ children:
   uid: az_sql_db_show
   name: az sql db show
   description: ''
-  summary: Gets a database.
+  summary: Gets a database or data warehouse.
   Metadata: {}
 - commandList: []
   htmlId: update
@@ -517,13 +525,13 @@ children:
     isRequired: False
     summary: The name of the elastic pool to move the database into.
     description: ''
+  - name: --max-size
+    isRequired: False
+    summary: The new maximum size of the database expressed in bytes.
+    description: ''
   - name: --service-objective
     isRequired: False
     summary: The name of the new service objective. If this is a standalone db service objective and the db is currently in an elastic pool, then the db is removed from the pool.
-    description: ''
-  - name: --storage
-    isRequired: False
-    summary: The new maximum size of the database expressed in bytes.
     description: ''
   - name: --add
     isRequired: False
@@ -578,6 +586,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/51236c1bd0e71616982fc1af1c42b819c2af99a8/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  updated_at: 3/6/2017 9:13:45 PM
-  ms.date: 3/6/2017
+  gitcommit: https://github.com/Azure/azure-cli/blob/7d7ae5f528e85e28456558c6ebe03af68490fa98/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  updated_at: 3/9/2017 12:37:50 AM
+  ms.date: 3/9/2017
