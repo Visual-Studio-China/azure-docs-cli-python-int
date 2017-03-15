@@ -232,6 +232,6 @@ children:
   Metadata: {}
 uid: az_datalake_analytics_account_datalake-store
 name: az datalake analytics account datalake-store
-description: ''
+description: These commands are in preview.
 summary: Commands to manage Data Lake Analytics account linked Data Lake Store accounts.
 Metadata: {}
