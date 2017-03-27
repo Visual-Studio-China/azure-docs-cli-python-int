@@ -1,28 +1,20 @@
 commandList:
-- name: az datalake analytics catalog view list
-  description: Retrieves the list of views from the Data Lake Analytics catalog.
-  href: view#list
-- name: az datalake analytics catalog view show
-  description: Retrieves the specified view from the Data Lake Analytics catalog.
-  href: view#show
-htmlId: view
+- name: az dla catalog database list
+  description: Retrieves the list of databases from the Data Lake Analytics catalog.
+  href: database#list
+- name: az dla catalog database show
+  description: Retrieves the specified database from the Data Lake Analytics catalog.
+  href: database#show
+htmlId: database
 examples: []
 children:
 - commandList: []
   htmlId: list
   examples: []
   parameters:
-  - name: --database-name
-    isRequired: True
-    summary: The name of the database containing the views.
-    description: ''
-  - name: --schema-name
-    isRequired: True
-    summary: The name of the schema containing the views.
-    description: ''
   - name: --count
     isRequired: False
-    summary: The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.
+    summary: The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true.
     description: ''
   - name: --filter
     isRequired: False
@@ -38,11 +30,11 @@ children:
     description: ''
   - name: --skip
     isRequired: False
-    summary: The number of items to skip over before returning elements. Optional.
+    summary: The number of items to skip over before returning elements.
     description: ''
   - name: --top
     isRequired: False
-    summary: The number of items to return. Optional.
+    summary: Maximum number of items to return.
     description: ''
   - name: --account -n
     isRequired: False
@@ -75,10 +67,10 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_catalog_view_list
-  name: az datalake analytics catalog view list
+  uid: az_dla_catalog_database_list
+  name: az dla catalog database list
   description: ''
-  summary: Retrieves the list of views from the Data Lake Analytics catalog.
+  summary: Retrieves the list of databases from the Data Lake Analytics catalog.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -86,15 +78,7 @@ children:
   parameters:
   - name: --database-name
     isRequired: True
-    summary: The name of the database containing the view.
-    description: ''
-  - name: --schema-name
-    isRequired: True
-    summary: The name of the schema containing the view.
-    description: ''
-  - name: --view-name
-    isRequired: True
-    summary: The name of the view.
+    summary: The name of the database.
     description: ''
   - name: --account -n
     isRequired: False
@@ -127,13 +111,13 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_catalog_view_show
-  name: az datalake analytics catalog view show
+  uid: az_dla_catalog_database_show
+  name: az dla catalog database show
   description: ''
-  summary: Retrieves the specified view from the Data Lake Analytics catalog.
+  summary: Retrieves the specified database from the Data Lake Analytics catalog.
   Metadata: {}
-uid: az_datalake_analytics_catalog_view
-name: az datalake analytics catalog view
+uid: az_dla_catalog_database
+name: az dla catalog database
 description: These commands are in preview.
-summary: Commands to manage Data Lake Analytics catalog views.
+summary: Commands to manage Data Lake Analytics catalog databases.
 Metadata: {}

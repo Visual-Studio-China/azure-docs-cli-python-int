@@ -1,17 +1,17 @@
 commandList:
-- name: az datalake analytics account firewall create
+- name: az dla account firewall create
   description: Creates a firewall rule in the Data Lake Analytics account.
   href: firewall#create
-- name: az datalake analytics account firewall delete
+- name: az dla account firewall delete
   description: Deletes a firewall rule in the Data Lake Analytics account.
   href: firewall#delete
-- name: az datalake analytics account firewall list
+- name: az dla account firewall list
   description: Lists firewall rules in the Data Lake Analytics account.
   href: firewall#list
-- name: az datalake analytics account firewall show
+- name: az dla account firewall show
   description: Retrieves a firewall rule in the Data Lake Analytics account.
   href: firewall#show
-- name: az datalake analytics account firewall update
+- name: az dla account firewall update
   description: Updates a firewall rule in the Data Lake Analytics account.
   href: firewall#update
 htmlId: firewall
@@ -64,8 +64,8 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_account_firewall_create
-  name: az datalake analytics account firewall create
+  uid: az_dla_account_firewall_create
+  name: az dla account firewall create
   description: ''
   summary: Creates a firewall rule in the Data Lake Analytics account.
   Metadata: {}
@@ -112,8 +112,8 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_account_firewall_delete
-  name: az datalake analytics account firewall delete
+  uid: az_dla_account_firewall_delete
+  name: az dla account firewall delete
   description: ''
   summary: Deletes a firewall rule in the Data Lake Analytics account.
   Metadata: {}
@@ -156,8 +156,8 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_account_firewall_list
-  name: az datalake analytics account firewall list
+  uid: az_dla_account_firewall_list
+  name: az dla account firewall list
   description: ''
   summary: Lists firewall rules in the Data Lake Analytics account.
   Metadata: {}
@@ -204,8 +204,8 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_account_firewall_show
-  name: az datalake analytics account firewall show
+  uid: az_dla_account_firewall_show
+  name: az dla account firewall show
   description: ''
   summary: Retrieves a firewall rule in the Data Lake Analytics account.
   Metadata: {}
@@ -260,13 +260,13 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_account_firewall_update
-  name: az datalake analytics account firewall update
+  uid: az_dla_account_firewall_update
+  name: az dla account firewall update
   description: ''
   summary: Updates a firewall rule in the Data Lake Analytics account.
   Metadata: {}
-uid: az_datalake_analytics_account_firewall
-name: az datalake analytics account firewall
+uid: az_dla_account_firewall
+name: az dla account firewall
 description: These commands are in preview.
 summary: Commands to manage Data Lake Analytics account firewall rules.
 Metadata: {}

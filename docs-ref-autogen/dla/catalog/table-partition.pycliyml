@@ -1,20 +1,32 @@
 commandList:
-- name: az datalake analytics catalog database list
-  description: Retrieves the list of databases from the Data Lake Analytics catalog.
-  href: database#list
-- name: az datalake analytics catalog database show
-  description: Retrieves the specified database from the Data Lake Analytics catalog.
-  href: database#show
-htmlId: database
+- name: az dla catalog table-partition list
+  description: Retrieves the list of table partitions from the Data Lake Analytics catalog.
+  href: table-partition#list
+- name: az dla catalog table-partition show
+  description: Retrieves the specified table partition from the Data Lake Analytics catalog.
+  href: table-partition#show
+htmlId: table-partition
 examples: []
 children:
 - commandList: []
   htmlId: list
   examples: []
   parameters:
+  - name: --database-name
+    isRequired: True
+    summary: The name of the database containing the partitions.
+    description: ''
+  - name: --schema-name
+    isRequired: True
+    summary: The name of the schema containing the partitions.
+    description: ''
+  - name: --table-name
+    isRequired: True
+    summary: The name of the table containing the partitions.
+    description: ''
   - name: --count
     isRequired: False
-    summary: The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.
+    summary: The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true.
     description: ''
   - name: --filter
     isRequired: False
@@ -30,11 +42,11 @@ children:
     description: ''
   - name: --skip
     isRequired: False
-    summary: The number of items to skip over before returning elements. Optional.
+    summary: The number of items to skip over before returning elements.
     description: ''
   - name: --top
     isRequired: False
-    summary: The number of items to return. Optional.
+    summary: Maximum number of items to return.
     description: ''
   - name: --account -n
     isRequired: False
@@ -67,10 +79,10 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_catalog_database_list
-  name: az datalake analytics catalog database list
+  uid: az_dla_catalog_table-partition_list
+  name: az dla catalog table-partition list
   description: ''
-  summary: Retrieves the list of databases from the Data Lake Analytics catalog.
+  summary: Retrieves the list of table partitions from the Data Lake Analytics catalog.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -78,7 +90,19 @@ children:
   parameters:
   - name: --database-name
     isRequired: True
-    summary: The name of the database.
+    summary: The name of the database containing the partition.
+    description: ''
+  - name: --partition-name
+    isRequired: True
+    summary: The name of the table partition.
+    description: ''
+  - name: --schema-name
+    isRequired: True
+    summary: The name of the schema containing the partition.
+    description: ''
+  - name: --table-name
+    isRequired: True
+    summary: The name of the table containing the partition.
     description: ''
   - name: --account -n
     isRequired: False
@@ -111,13 +135,13 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_datalake_analytics_catalog_database_show
-  name: az datalake analytics catalog database show
+  uid: az_dla_catalog_table-partition_show
+  name: az dla catalog table-partition show
   description: ''
-  summary: Retrieves the specified database from the Data Lake Analytics catalog.
+  summary: Retrieves the specified table partition from the Data Lake Analytics catalog.
   Metadata: {}
-uid: az_datalake_analytics_catalog_database
-name: az datalake analytics catalog database
+uid: az_dla_catalog_table-partition
+name: az dla catalog table-partition
 description: These commands are in preview.
-summary: Commands to manage Data Lake Analytics catalog databases.
+summary: Commands to manage Data Lake Analytics catalog table partitions.
 Metadata: {}
