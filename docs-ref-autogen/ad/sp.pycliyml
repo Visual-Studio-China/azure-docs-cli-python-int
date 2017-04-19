@@ -23,7 +23,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -59,7 +59,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_create
   name: az ad sp create
@@ -106,7 +106,7 @@ children:
     isRequired: False
     summary: A display name or an app id uri. Command will generate one if missing.
     description: ''
-  - name: --password
+  - name: --password -p
     isRequired: False
     summary: The password used to login. If missing, command will generate one.
     description: ''
@@ -154,7 +154,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_create-for-rbac
   name: az ad sp create-for-rbac
@@ -195,7 +195,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_delete
   name: az ad sp delete
@@ -244,7 +244,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_list
   name: az ad sp list
@@ -302,7 +302,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_reset-credentials
   name: az ad sp reset-credentials
@@ -343,7 +343,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_show
   name: az ad sp show
@@ -355,9 +355,9 @@ name: 'Azure CLI 2.0 (Preview): AAD service principals - az ad sp'
 description: ''
 summary: Manage Azure Active Directory service principals for automation authentication.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
   updated_at: 3/23/2017 6:37:38 PM
   ms.date: 3/23/2017

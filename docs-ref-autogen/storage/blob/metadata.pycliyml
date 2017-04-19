@@ -11,7 +11,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: show
@@ -95,7 +95,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_storage_blob_metadata_show
   name: az storage blob metadata show
@@ -184,7 +184,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_storage_blob_metadata_update
   name: az storage blob metadata update
@@ -196,9 +196,9 @@ name: 'Azure CLI 2.0 (Preview): Blob storage metadata - az storage blob metadata
 description: ''
 summary: Manage blob metadata.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/de6fe792ae1b21a1436e620f0d522227fa039e81/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 4/10/2017 5:11:31 PM
-  ms.date: 4/10/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 4/14/2017 11:08:50 PM
+  ms.date: 4/14/2017

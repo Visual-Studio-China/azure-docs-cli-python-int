@@ -131,7 +131,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -244,7 +244,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_create
   name: az network lb create
@@ -255,16 +255,12 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The load balancer name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -293,7 +289,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_delete
   name: az network lb delete
@@ -334,7 +330,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_list
   name: az network lb list
@@ -345,21 +341,17 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: --expand
-    isRequired: False
-    summary: Expand references resources.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The load balancer name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --expand
+    isRequired: False
+    summary: Expands referenced resources.
     description: ''
   - name: --debug
     isRequired: False
@@ -387,7 +379,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_show
   name: az network lb show
@@ -398,16 +390,12 @@ children:
   htmlId: update
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The load balancer name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --add
@@ -448,7 +436,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_update
   name: az network lb update
@@ -460,9 +448,9 @@ name: 'Azure CLI 2.0 (Preview): Load balancers - az network lb'
 description: ''
 summary: Use a load balancer to deliver high availability and network performance to your applications.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

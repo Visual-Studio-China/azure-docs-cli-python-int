@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: clear
@@ -52,7 +52,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_account_clear
   name: az account clear
@@ -93,7 +93,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_account_list
   name: az account list
@@ -130,7 +130,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_account_list-locations
   name: az account list-locations
@@ -171,7 +171,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_account_set
   name: az account set
@@ -216,7 +216,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_account_show
   name: az account show
@@ -228,9 +228,9 @@ name: 'Azure CLI 2.0 (Preview): Subscriptions - az account'
 description: ''
 summary: Manage subscriptions.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/96fd150a68b6f81444df6c6aa0f1e8bd4e9874e1/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/96fd150a68b6f81444df6c6aa0f1e8bd4e9874e1/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
   updated_at: 3/15/2017 8:57:14 PM
   ms.date: 3/15/2017

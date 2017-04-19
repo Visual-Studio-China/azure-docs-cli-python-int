@@ -238,7 +238,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: capture
@@ -255,6 +255,14 @@ children:
                               az vm generalize --ids ${vms_ids}
                               az vm capture --ids ${vms_ids} --vhd-name-prefix MyPrefix
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --vhd-name-prefix
     isRequired: True
     summary: The VHD name prefix specify for the VM disks.
@@ -269,18 +277,6 @@ children:
     summary: The storage account container name to save the disks.
     description: ''
     defaultValue: vhds
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
-    description: ''
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -307,7 +303,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_capture
   name: az vm capture
@@ -322,16 +318,12 @@ children:
   - title: Convert VM with unmanaged disks to managed by Ids
     code: az vm convert --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -360,7 +352,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_convert
   name: az vm convert
@@ -584,7 +576,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_create
   name: az vm create
@@ -606,21 +598,17 @@ children:
                               az vm generalize --ids ${vms_ids}
                               az vm capture --ids ${vms_ids} --vhd-name-prefix MyPrefix
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -648,7 +636,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_deallocate
   name: az vm deallocate
@@ -663,6 +651,14 @@ children:
   - title: Delete a virtual machine by Ids
     code: az vm delete --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --no-wait
     isRequired: False
     summary: Do not wait for the long running operation to finish.
@@ -670,18 +666,6 @@ children:
   - name: --yes -y
     isRequired: False
     summary: Do not prompt for confirmation.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
     isRequired: False
@@ -709,7 +693,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_delete
   name: az vm delete
@@ -756,7 +740,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_format-secret
   name: az vm format-secret
@@ -778,21 +762,17 @@ children:
                               az vm generalize --ids ${vms_ids}
                               az vm capture --ids ${vms_ids} --vhd-name-prefix MyPrefix
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -820,7 +800,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_generalize
   name: az vm generalize
@@ -835,16 +815,12 @@ children:
   - title: Get instance view by Ids
     code: az vm get-instance-view --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -873,7 +849,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_get-instance-view
   name: az vm get-instance-view
@@ -924,7 +900,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list
   name: az vm list
@@ -939,10 +915,6 @@ children:
   - title: Get IP addresses for VMs by Ids
     code: az vm list-ip-addresses --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
     isRequired: False
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
@@ -977,7 +949,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-ip-addresses
   name: az vm list-ip-addresses
@@ -1020,7 +992,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-sizes
   name: az vm list-sizes
@@ -1063,7 +1035,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-usage
   name: az vm list-usage
@@ -1078,16 +1050,12 @@ children:
   - title: List all available VM sizes for resizing by VM Ids
     code: az vm list-vm-resize-options --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -1116,7 +1084,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-vm-resize-options
   name: az vm list-vm-resize-options
@@ -1133,9 +1101,17 @@ children:
   - title: Open all ports for multiple VMs by Ids
     code: az vm open-port --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the virtual machine to open inbound traffic on.
+    description: ''
   - name: --port
     isRequired: True
     summary: 'The port or port range (ex: 80-100) to open inbound traffic to. Use ''*'' to allow traffic to all ports.'
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --apply-to-subnet
     isRequired: False
@@ -1150,18 +1126,6 @@ children:
     summary: Rule priority, between 100 (highest priority) and 4096 (lowest priority). Must be unique for each rule in the collection.
     description: ''
     defaultValue: 900
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the virtual machine to open inbound traffic on.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
-    description: ''
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -1188,7 +1152,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_open-port
   name: az vm open-port
@@ -1203,21 +1167,17 @@ children:
   - title: Redeploy VMs by VM Ids
     code: az vm redeploy --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -1245,7 +1205,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_redeploy
   name: az vm redeploy
@@ -1260,6 +1220,14 @@ children:
   - title: Resize VMs by VM Ids
     code: az vm redeploy --size Standard_DS3_v2 --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --size
     isRequired: True
     summary: Sizes such as Standard_A4, Standard_F4s, etc.
@@ -1267,18 +1235,6 @@ children:
   - name: --no-wait
     isRequired: False
     summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
     isRequired: False
@@ -1306,7 +1262,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_resize
   name: az vm resize
@@ -1321,21 +1277,17 @@ children:
   - title: Restart VM by by VM Ids
     code: az vm restart --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -1363,7 +1315,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_restart
   name: az vm restart
@@ -1378,21 +1330,17 @@ children:
   - title: Show VM details by by VM Ids
     code: az vm show -d --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --show-details -d
-    isRequired: False
-    summary: Show public ip address, FQDN, and power states. command will run slow.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --show-details -d
+    isRequired: False
+    summary: Show public ip address, FQDN, and power states. command will run slow.
     description: ''
   - name: --debug
     isRequired: False
@@ -1420,7 +1368,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_show
   name: az vm show
@@ -1435,21 +1383,17 @@ children:
   - title: Start stopped VMs by by VM Ids
     code: az vm start --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -1477,7 +1421,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_start
   name: az vm start
@@ -1492,21 +1436,17 @@ children:
   - title: Stop running VMs by by VM Ids
     code: az vm stop --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -1534,7 +1474,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_stop
   name: az vm stop
@@ -1555,21 +1495,17 @@ children:
   - title: Remove the fourth NIC from a VM.
     code: az <command> -n name -g group --remove networkProfile.networkInterfaces 3
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --add
     isRequired: False
@@ -1609,7 +1545,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_update
   name: az vm update
@@ -1624,16 +1560,12 @@ children:
   - title: Wait until VMs are deleted by Ids
     code: az vm wait --deleted --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --created
@@ -1692,7 +1624,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_wait
   name: az vm wait
@@ -1704,9 +1636,9 @@ name: 'Azure CLI 2.0 (Preview): Virtual machines (VM) - az vm'
 description: ''
 summary: Provision Linux or Windows virtual machines in seconds.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
   updated_at: 4/5/2017 9:00:48 PM
   ms.date: 4/5/2017

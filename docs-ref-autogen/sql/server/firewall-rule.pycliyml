@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -72,7 +72,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_server_firewall-rule_create
   name: az sql server firewall-rule create
@@ -121,7 +121,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_server_firewall-rule_delete
   name: az sql server firewall-rule delete
@@ -166,7 +166,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_server_firewall-rule_list
   name: az sql server firewall-rule list
@@ -215,7 +215,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_server_firewall-rule_show
   name: az sql server firewall-rule show
@@ -272,7 +272,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_server_firewall-rule_update
   name: az sql server firewall-rule update
@@ -284,9 +284,9 @@ name: az sql server firewall-rule
 description: ''
 summary: Manage a server's firewall rules.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   updated_at: 3/25/2017 3:36:46 PM
   ms.date: 3/25/2017

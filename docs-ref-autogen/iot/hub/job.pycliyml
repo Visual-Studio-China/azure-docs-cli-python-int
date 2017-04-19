@@ -14,22 +14,18 @@ source:
   remote:
     path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: cancel
   examples: []
   parameters:
   - name: --hub-name
-    isRequired: False
+    isRequired: True
     summary: IoT Hub name.
     description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --job-id
-    isRequired: False
+    isRequired: True
     summary: Job Id.
     description: ''
   - name: --resource-group -g
@@ -62,7 +58,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_job_cancel
   name: az iot hub job cancel
@@ -74,12 +70,8 @@ children:
   examples: []
   parameters:
   - name: --hub-name
-    isRequired: False
+    isRequired: True
     summary: IoT Hub name.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --resource-group -g
     isRequired: False
@@ -111,7 +103,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_job_list
   name: az iot hub job list
@@ -123,15 +115,11 @@ children:
   examples: []
   parameters:
   - name: --hub-name
-    isRequired: False
+    isRequired: True
     summary: IoT Hub name.
     description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --job-id
-    isRequired: False
+    isRequired: True
     summary: Job Id.
     description: ''
   - name: --resource-group -g
@@ -164,7 +152,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_job_show
   name: az iot hub job show
@@ -176,9 +164,9 @@ name: 'Azure CLI 2.0 (Preview): IoT hub jobs - az iot hub job'
 description: These commands are in preview.
 summary: Manage jobs in an IoT Hub.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/41ecccdaa900301ba84dcd9c017e58354f9da601/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/41ecccdaa900301ba84dcd9c017e58354f9da601/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   updated_at: 3/15/2017 8:51:19 PM
   ms.date: 3/15/2017

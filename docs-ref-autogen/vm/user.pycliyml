@@ -14,7 +14,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: delete
@@ -24,6 +24,14 @@ children:
   - title: Delete User by VM Ids
     code: az az vm user delete -u username --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --username -u
     isRequired: True
     summary: The user name.
@@ -31,18 +39,6 @@ children:
   - name: --no-wait
     isRequired: False
     summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
     isRequired: False
@@ -70,7 +66,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_user_delete
   name: az vm user delete
@@ -85,21 +81,17 @@ children:
   - title: Reset SSH by VM Ids
     code: az vm user reset-ssh --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -127,7 +119,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_user_reset-ssh
   name: az vm user reset-ssh
@@ -144,6 +136,14 @@ children:
   - title: Set Linux User by VM Ids
     code: az vm user update -u username --ssh-key-value "$(< ~/.ssh/id_rsa.pub)" --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --username -u
     isRequired: True
     summary: The user name.
@@ -159,18 +159,6 @@ children:
   - name: --ssh-key-value
     isRequired: False
     summary: SSH public key file value or public key file path.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
     isRequired: False
@@ -198,7 +186,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_user_update
   name: az vm user update
@@ -210,9 +198,9 @@ name: az vm user
 description: ''
 summary: Manage a user account on a VM.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
   updated_at: 4/5/2017 9:00:48 PM
   ms.date: 4/5/2017

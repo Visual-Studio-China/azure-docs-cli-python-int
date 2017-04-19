@@ -252,7 +252,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -390,7 +390,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_create
   name: az network application-gateway create
@@ -401,21 +401,17 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -443,7 +439,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_delete
   name: az network application-gateway delete
@@ -484,7 +480,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_list
   name: az network application-gateway list
@@ -495,16 +491,12 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -533,7 +525,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_show
   name: az network application-gateway show
@@ -544,21 +536,17 @@ children:
   htmlId: show-backend-health
   examples: []
   parameters:
-  - name: --expand
-    isRequired: False
-    summary: Expands BackendAddressPool and BackendHttpSettings referenced in backend health.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --expand
+    isRequired: False
+    summary: Expands BackendAddressPool and BackendHttpSettings referenced in backend health.
     description: ''
   - name: --debug
     isRequired: False
@@ -586,7 +574,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_show-backend-health
   name: az network application-gateway show-backend-health
@@ -597,16 +585,12 @@ children:
   htmlId: start
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -635,7 +619,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_start
   name: az network application-gateway start
@@ -646,16 +630,12 @@ children:
   htmlId: stop
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -684,7 +664,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_stop
   name: az network application-gateway stop
@@ -695,6 +675,14 @@ children:
   htmlId: update
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: The name of the application gateway.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --capacity
     isRequired: False
     summary: ''
@@ -711,18 +699,6 @@ children:
   - name: --tags
     isRequired: False
     summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the application gateway.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --add
     isRequired: False
@@ -762,7 +738,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_update
   name: az network application-gateway update
@@ -773,16 +749,12 @@ children:
   htmlId: wait
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --created
@@ -841,7 +813,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_application-gateway_wait
   name: az network application-gateway wait
@@ -853,9 +825,9 @@ name: 'Azure CLI 2.0 (Preview): Application gateways - az network application-ga
 description: ''
 summary: Provides application-level routing and load balancing services.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

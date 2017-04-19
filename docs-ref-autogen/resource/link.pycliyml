@@ -3,13 +3,13 @@ commandList:
   description: ''
   href: link#create
 - name: az resource link delete
-  description: Deletes a resource link.
+  description: Deletes a resource link with the specified ID.
   href: link#delete
 - name: az resource link list
   description: ''
   href: link#list
 - name: az resource link show
-  description: Gets a resource link.
+  description: Gets a resource link with the specified ID.
   href: link#show
 - name: az resource link update
   description: ''
@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -64,7 +64,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_resource_link_create
   name: az resource link create
@@ -77,7 +77,7 @@ children:
   parameters:
   - name: --link-id
     isRequired: True
-    summary: The fully qualified Id of the resource link. For example, /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myGroup/Microsoft.Web/sites/mySite/Microsoft.Resources/links/myLink.
+    summary: The fully qualified ID of the resource link. Use the format, /subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/{provider-namespace}/{resource-type}/{resource-name}/Microsoft.Resources/links/{link-name}. For example, /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myGroup/Microsoft.Web/sites/mySite/Microsoft.Resources/links/myLink.
     description: ''
   - name: --debug
     isRequired: False
@@ -105,12 +105,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_resource_link_delete
   name: az resource link delete
   description: ''
-  summary: Deletes a resource link.
+  summary: Deletes a resource link with the specified ID.
   Metadata: {}
 - commandList: []
   htmlId: list
@@ -150,7 +150,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_resource_link_list
   name: az resource link list
@@ -191,12 +191,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_resource_link_show
   name: az resource link show
   description: ''
-  summary: Gets a resource link.
+  summary: Gets a resource link with the specified ID.
   Metadata: {}
 - commandList: []
   htmlId: update
@@ -240,7 +240,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_resource_link_update
   name: az resource link update
@@ -252,9 +252,9 @@ name: az resource link
 description: ''
 summary: ''
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/95f33fff1d13589a362d2d0e15f5b77a83bcaff8/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 4/5/2017 11:44:17 PM
-  ms.date: 4/5/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/273e7ccb86b29ce0a86ae651e76fa9034c3e6cfc/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 4/18/2017 2:53:53 AM
+  ms.date: 4/18/2017

@@ -33,7 +33,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -122,7 +122,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_vpn-connection_create
   name: az network vpn-connection create
@@ -133,16 +133,12 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: Connection name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -171,7 +167,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_vpn-connection_delete
   name: az network vpn-connection delete
@@ -212,7 +208,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_vpn-connection_list
   name: az network vpn-connection list
@@ -223,16 +219,12 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: Connection name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -261,7 +253,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_vpn-connection_show
   name: az network vpn-connection show
@@ -272,6 +264,14 @@ children:
   htmlId: update
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: Connection name.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --enable-bgp
     isRequired: False
     summary: Enable BGP (Border Gateway Protocol).
@@ -288,18 +288,6 @@ children:
   - name: --tags
     isRequired: False
     summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: Connection name.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --add
     isRequired: False
@@ -339,7 +327,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_vpn-connection_update
   name: az network vpn-connection update
@@ -351,9 +339,9 @@ name: 'Azure CLI 2.0 (Preview): VPN connections - az network vpn-connection'
 description: ''
 summary: Manage VPN connections.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

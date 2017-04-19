@@ -49,7 +49,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -137,7 +137,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_create
   name: az batch task create
@@ -214,7 +214,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_delete
   name: az batch task delete
@@ -279,7 +279,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_list
   name: az batch task list
@@ -352,7 +352,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_reactivate
   name: az batch task reactivate
@@ -441,7 +441,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_reset
   name: az batch task reset
@@ -522,7 +522,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_show
   name: az batch task show
@@ -595,7 +595,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_task_stop
   name: az batch task stop
@@ -607,9 +607,9 @@ name: az batch task
 description: ''
 summary: Manage your Batch tasks.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
   updated_at: 2/18/2017 7:03:08 PM
   ms.date: 2/18/2017

@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: list
@@ -78,7 +78,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_image_list
   name: az vm image list
@@ -127,7 +127,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_image_list-offers
   name: az vm image list-offers
@@ -172,7 +172,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_image_list-publishers
   name: az vm image list-publishers
@@ -223,7 +223,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_image_list-skus
   name: az vm image list-skus
@@ -284,7 +284,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_image_show
   name: az vm image show
@@ -296,9 +296,9 @@ name: 'Azure CLI 2.0 (Preview): VM images - az vm image'
 description: ''
 summary: Virtual machine images that are available in the Azure Marketplace.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
   updated_at: 4/5/2017 9:00:48 PM
   ms.date: 4/5/2017

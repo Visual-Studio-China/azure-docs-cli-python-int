@@ -11,7 +11,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: list
@@ -57,7 +57,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acr_repository_list
   name: az acr repository list
@@ -112,7 +112,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acr_repository_show-tags
   name: az acr repository show-tags
@@ -124,9 +124,9 @@ name: 'Azure CLI 2.0 (Preview): Container Registry repositories - az acr reposit
 description: ''
 summary: Manage repositories for Azure container registries.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/3b6324d00353405e547723056bb324fe3667731c/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/3b6324d00353405e547723056bb324fe3667731c/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
   updated_at: 3/21/2017 5:07:14 PM
   ms.date: 3/21/2017

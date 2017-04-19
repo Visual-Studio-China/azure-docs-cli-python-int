@@ -70,7 +70,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -146,7 +146,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_create
   name: az network express-route create
@@ -157,21 +157,17 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: --no-wait
-    isRequired: False
-    summary: Do not wait for the long running operation to finish.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: ExpressRoute circuit name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --debug
     isRequired: False
@@ -199,7 +195,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_delete
   name: az network express-route delete
@@ -210,16 +206,12 @@ children:
   htmlId: get-stats
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: ExpressRoute circuit name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -248,7 +240,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_get-stats
   name: az network express-route get-stats
@@ -289,7 +281,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_list
   name: az network express-route list
@@ -300,6 +292,10 @@ children:
   htmlId: list-arp-tables
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: ExpressRoute circuit name.
+    description: ''
   - name: --path
     isRequired: True
     summary: The path of the device.
@@ -309,16 +305,8 @@ children:
     isRequired: True
     summary: The name of the peering.
     description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: ExpressRoute circuit name.
-    description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -347,7 +335,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_list-arp-tables
   name: az network express-route list-arp-tables
@@ -358,6 +346,10 @@ children:
   htmlId: list-route-tables
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: ExpressRoute circuit name.
+    description: ''
   - name: --path
     isRequired: True
     summary: The path of the device.
@@ -367,16 +359,8 @@ children:
     isRequired: True
     summary: The name of the peering.
     description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: ExpressRoute circuit name.
-    description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -405,7 +389,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_list-route-tables
   name: az network express-route list-route-tables
@@ -442,7 +426,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_list-service-providers
   name: az network express-route list-service-providers
@@ -453,16 +437,12 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: ExpressRoute circuit name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -491,7 +471,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_show
   name: az network express-route show
@@ -502,6 +482,14 @@ children:
   htmlId: update
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: ExpressRoute circuit name.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --bandwidth
     isRequired: False
     summary: Bandwidth in Mbps of the circuit. It must exactly match one of the available bandwidth offers from the 'list-service-providers' command.
@@ -531,18 +519,6 @@ children:
   - name: --tags
     isRequired: False
     summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: ExpressRoute circuit name.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --add
     isRequired: False
@@ -582,7 +558,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_update
   name: az network express-route update
@@ -593,16 +569,12 @@ children:
   htmlId: wait
   examples: []
   parameters:
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: ExpressRoute circuit name.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --created
@@ -661,7 +633,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_express-route_wait
   name: az network express-route wait
@@ -673,9 +645,9 @@ name: 'Azure CLI 2.0 (Preview): Express routes - az network express-route'
 description: ''
 summary: Manage dedicated private network fiber connections to Azure.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

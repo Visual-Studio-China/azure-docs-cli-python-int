@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -93,7 +93,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_inbound-nat-rule_create
   name: az network lb inbound-nat-rule create
@@ -146,7 +146,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_inbound-nat-rule_delete
   name: az network lb inbound-nat-rule delete
@@ -191,7 +191,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_inbound-nat-rule_list
   name: az network lb inbound-nat-rule list
@@ -240,7 +240,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_inbound-nat-rule_show
   name: az network lb inbound-nat-rule show
@@ -251,6 +251,18 @@ children:
   htmlId: update
   examples: []
   parameters:
+  - name: --lb-name
+    isRequired: True
+    summary: The load balancer name.
+    description: ''
+  - name: --name -n
+    isRequired: True
+    summary: The name of the inbound NAT rule.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
   - name: --backend-port
     isRequired: False
     summary: Port number.
@@ -277,22 +289,6 @@ children:
     summary: ''
     description: ''
     parameterValueGroup: Tcp, Udp
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --lb-name
-    isRequired: False
-    summary: The load balancer name.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: The name of the inbound NAT rule.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
-    description: ''
   - name: --add
     isRequired: False
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
@@ -331,7 +327,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_network_lb_inbound-nat-rule_update
   name: az network lb inbound-nat-rule update
@@ -343,9 +339,9 @@ name: 'Azure CLI 2.0 (Preview): Inbound NAT address rules - az network lb inboun
 description: ''
 summary: Manage inbound NAT rules for a load balancer.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

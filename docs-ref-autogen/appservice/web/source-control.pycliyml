@@ -23,15 +23,23 @@ source:
   remote:
     path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: config
   examples: []
   parameters:
+  - name: --name -n
+    isRequired: True
+    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
+    description: ''
   - name: --repo-url
     isRequired: True
     summary: Repository url to pull the latest source from, e.g. <a href="https://github.com/foo/foo-web">https://github.com/foo/foo-web</a>.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --branch
     isRequired: False
@@ -55,18 +63,6 @@ children:
     isRequired: False
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    isRequired: False
-    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
-    description: ''
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -93,7 +89,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_source-control_config
   name: az appservice web source-control config
@@ -106,21 +102,17 @@ children:
   - title: Get a git endpoint for a web app and add it as a remote.
     code: "az appservice web source-control config-local-git     -g MyResourceGroup -n MyUniqueApp\n                        \n                        git remote add azure     https://<deploy_user_name>@MyUniqueApp.scm.azurewebsites.net/MyUniqueApp.git"
   parameters:
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --slot -s
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -148,7 +140,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_source-control_config-local-git
   name: az appservice web source-control config-local-git
@@ -159,21 +151,17 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --slot -s
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -201,7 +189,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_source-control_delete
   name: az appservice web source-control delete
@@ -212,21 +200,17 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --slot -s
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -254,7 +238,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_source-control_show
   name: az appservice web source-control show
@@ -265,21 +249,17 @@ children:
   htmlId: sync
   examples: []
   parameters:
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
-    description: ''
-  - name: --ids
-    isRequired: False
-    summary: One or more resource IDs (space delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
   - name: --name -n
-    isRequired: False
+    isRequired: True
     summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
-    isRequired: False
+    isRequired: True
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    description: ''
+  - name: --slot -s
+    isRequired: False
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -307,7 +287,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_source-control_sync
   name: az appservice web source-control sync
@@ -348,7 +328,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_source-control_update-token
   name: az appservice web source-control update-token
@@ -360,9 +340,9 @@ name: az appservice web source-control
 description: ''
 summary: Manage source control systems.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/62342bb48fa759f50675a994b107ddc6bc8479ed/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/62342bb48fa759f50675a994b107ddc6bc8479ed/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
   updated_at: 3/27/2017 9:44:14 PM
   ms.date: 3/27/2017

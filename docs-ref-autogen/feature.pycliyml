@@ -3,10 +3,10 @@ commandList:
   description: ''
   href: feature#list
 - name: az feature register
-  description: Registers for a previewed feature of a resource provider.
+  description: Registers the preview feature for the subscription.
   href: feature#register
 - name: az feature show
-  description: Get all features under the subscription.
+  description: Gets the preview feature with the specified name.
   href: feature#show
 htmlId: feature
 examples: []
@@ -14,7 +14,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: list
@@ -50,7 +50,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_feature_list
   name: az feature list
@@ -95,12 +95,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_feature_register
   name: az feature register
   description: ''
-  summary: Registers for a previewed feature of a resource provider.
+  summary: Registers the preview feature for the subscription.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -140,21 +140,21 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_feature_show
   name: az feature show
   description: ''
-  summary: Get all features under the subscription.
+  summary: Gets the preview feature with the specified name.
   Metadata: {}
 uid: az_feature
 name: 'Azure CLI 2.0 (Preview): Resource provider features - az feature'
 description: ''
 summary: Manage resource provider features, such as previews.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/95f33fff1d13589a362d2d0e15f5b77a83bcaff8/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 4/5/2017 11:44:17 PM
-  ms.date: 4/5/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/273e7ccb86b29ce0a86ae651e76fa9034c3e6cfc/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 4/18/2017 2:53:53 AM
+  ms.date: 4/18/2017

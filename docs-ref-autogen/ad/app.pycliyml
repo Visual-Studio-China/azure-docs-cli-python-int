@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -100,7 +100,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_app_create
   name: az ad app create
@@ -141,7 +141,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_app_delete
   name: az ad app delete
@@ -194,7 +194,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_app_list
   name: az ad app list
@@ -235,7 +235,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_app_show
   name: az ad app show
@@ -320,7 +320,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_app_update
   name: az ad app update
@@ -332,9 +332,9 @@ name: 'Azure CLI 2.0 (Preview): AAD applications - az ad app'
 description: ''
 summary: Manage Azure Active Directory applications.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
   updated_at: 3/23/2017 6:37:38 PM
   ms.date: 3/23/2017

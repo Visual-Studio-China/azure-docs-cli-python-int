@@ -68,7 +68,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: copy
@@ -136,7 +136,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_copy
   name: az sql db copy
@@ -213,7 +213,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_create
   name: az sql db create
@@ -266,7 +266,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_delete
   name: az sql db delete
@@ -348,7 +348,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_export
   name: az sql db export
@@ -430,7 +430,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_import
   name: az sql db import
@@ -479,7 +479,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_list
   name: az sql db list
@@ -552,7 +552,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_restore
   name: az sql db restore
@@ -601,7 +601,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_show
   name: az sql db show
@@ -674,7 +674,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_update
   name: az sql db update
@@ -686,9 +686,9 @@ name: 'Azure CLI 2.0 (Preview): SQL Databases - az sql db'
 description: ''
 summary: Manage databases.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   updated_at: 3/25/2017 3:36:46 PM
   ms.date: 3/25/2017
