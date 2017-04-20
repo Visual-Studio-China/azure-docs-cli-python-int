@@ -1,11 +1,11 @@
 commandList:
-- name: az network vnet-gateway revoked-cert create
-  description: Revoke a certificate.
-  href: revoked-cert#create
-- name: az network vnet-gateway revoked-cert delete
-  description: Delete a revoked certificate.
-  href: revoked-cert#delete
-htmlId: revoked-cert
+- name: az network watcher flow-log configure
+  description: Configure flow logging on a Network Security Group (NSG).
+  href: flow-log#configure
+- name: az network watcher flow-log show
+  description: Show flow log configuration for an NSG.
+  href: flow-log#show
+htmlId: flow-log
 examples: []
 source:
   remote:
@@ -14,24 +14,29 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: create
+  htmlId: configure
   examples: []
   parameters:
-  - name: --gateway-name
+  - name: --nsg
     isRequired: True
-    summary: Virtual network gateway name.
+    summary: Name or ID of the Network Security Group to target.
     description: ''
-  - name: --name -n
-    isRequired: True
-    summary: Root certificate name.
+  - name: --enabled
+    isRequired: False
+    summary: Enable logging.
     description: ''
+    parameterValueGroup: false, true
   - name: --resource-group -g
-    isRequired: True
+    isRequired: False
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
-  - name: --thumbprint
-    isRequired: True
-    summary: Certificate thumbprint.
+  - name: --retention
+    isRequired: False
+    summary: Number of days to retain logs.
+    description: ''
+  - name: --storage-account
+    isRequired: False
+    summary: Name or ID of the storage account in which to save the flow logs.
     description: ''
   - name: --debug
     isRequired: False
@@ -61,25 +66,21 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_vnet-gateway_revoked-cert_create
-  name: az network vnet-gateway revoked-cert create
+  uid: az_network_watcher_flow-log_configure
+  name: az network watcher flow-log configure
   description: ''
-  summary: Revoke a certificate.
+  summary: Configure flow logging on a Network Security Group (NSG).
   Metadata: {}
 - commandList: []
-  htmlId: delete
+  htmlId: show
   examples: []
   parameters:
-  - name: --gateway-name
+  - name: --nsg
     isRequired: True
-    summary: Virtual network gateway name.
-    description: ''
-  - name: --name -n
-    isRequired: True
-    summary: Root certificate name.
+    summary: ''
     description: ''
   - name: --resource-group -g
-    isRequired: True
+    isRequired: False
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
   - name: --debug
@@ -110,15 +111,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_vnet-gateway_revoked-cert_delete
-  name: az network vnet-gateway revoked-cert delete
+  uid: az_network_watcher_flow-log_show
+  name: az network watcher flow-log show
   description: ''
-  summary: Delete a revoked certificate.
+  summary: Show flow log configuration for an NSG.
   Metadata: {}
-uid: az_network_vnet-gateway_revoked-cert
-name: 'Azure CLI 2.0 (Preview): Revoked certificates - az network vnet-gateway revoked-cert'
+uid: az_network_watcher_flow-log
+name: az network watcher flow-log
 description: ''
-summary: Manage revoked certificates in a virtual network gateway.
+summary: (PREVIEW) Commands to manage NSG flow logging.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py

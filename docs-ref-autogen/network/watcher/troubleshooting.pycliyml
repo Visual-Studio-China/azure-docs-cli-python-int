@@ -1,11 +1,11 @@
 commandList:
-- name: az network vnet-gateway revoked-cert create
-  description: Revoke a certificate.
-  href: revoked-cert#create
-- name: az network vnet-gateway revoked-cert delete
-  description: Delete a revoked certificate.
-  href: revoked-cert#delete
-htmlId: revoked-cert
+- name: az network watcher troubleshooting show
+  description: Show results of the last troubleshooting operation.
+  href: troubleshooting#show
+- name: az network watcher troubleshooting start
+  description: Troubleshoot issues with VPN connections or gateway connectivity.
+  href: troubleshooting#start
+htmlId: troubleshooting
 examples: []
 source:
   remote:
@@ -14,25 +14,22 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: create
+  htmlId: show
   examples: []
   parameters:
-  - name: --gateway-name
+  - name: --resource
     isRequired: True
-    summary: Virtual network gateway name.
-    description: ''
-  - name: --name -n
-    isRequired: True
-    summary: Root certificate name.
+    summary: Name or ID of the resource to troubleshoot.
     description: ''
   - name: --resource-group -g
-    isRequired: True
+    isRequired: False
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
-  - name: --thumbprint
-    isRequired: True
-    summary: Certificate thumbprint.
+  - name: --resource-type -t
+    isRequired: False
+    summary: ''
     description: ''
+    parameterValueGroup: vnetGateway, vpnConnection
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -61,27 +58,40 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_vnet-gateway_revoked-cert_create
-  name: az network vnet-gateway revoked-cert create
+  uid: az_network_watcher_troubleshooting_show
+  name: az network watcher troubleshooting show
   description: ''
-  summary: Revoke a certificate.
+  summary: Show results of the last troubleshooting operation.
   Metadata: {}
 - commandList: []
-  htmlId: delete
+  htmlId: start
   examples: []
   parameters:
-  - name: --gateway-name
+  - name: --resource
     isRequired: True
-    summary: Virtual network gateway name.
+    summary: Name or ID of the resource to troubleshoot.
     description: ''
-  - name: --name -n
+  - name: --storage-account
     isRequired: True
-    summary: Root certificate name.
+    summary: Name or ID of the storage account in which to store the troubleshooting results.
+    description: ''
+  - name: --storage-path
+    isRequired: True
+    summary: Fully qualified URI to the storage blob container at which to store the troubleshooting results.
+    description: ''
+  - name: --no-wait
+    isRequired: False
+    summary: Do not wait for the long running operation to finish.
     description: ''
   - name: --resource-group -g
-    isRequired: True
+    isRequired: False
     summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
     description: ''
+  - name: --resource-type -t
+    isRequired: False
+    summary: The type of target resource to troubleshoot, if resource ID is not specified.
+    description: ''
+    parameterValueGroup: vnetGateway, vpnConnection
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -110,15 +120,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_vnet-gateway_revoked-cert_delete
-  name: az network vnet-gateway revoked-cert delete
+  uid: az_network_watcher_troubleshooting_start
+  name: az network watcher troubleshooting start
   description: ''
-  summary: Delete a revoked certificate.
+  summary: Troubleshoot issues with VPN connections or gateway connectivity.
   Metadata: {}
-uid: az_network_vnet-gateway_revoked-cert
-name: 'Azure CLI 2.0 (Preview): Revoked certificates - az network vnet-gateway revoked-cert'
+uid: az_network_watcher_troubleshooting
+name: az network watcher troubleshooting
 description: ''
-summary: Manage revoked certificates in a virtual network gateway.
+summary: (PREVIEW) Commands to manage Network Watcher troubleshooting sessions.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
