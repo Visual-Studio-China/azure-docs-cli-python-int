@@ -46,7 +46,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -142,7 +142,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_create
   name: az network vnet-gateway create
@@ -191,7 +191,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_delete
   name: az network vnet-gateway delete
@@ -232,7 +232,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_list
   name: az network vnet-gateway list
@@ -281,7 +281,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_reset
   name: az network vnet-gateway reset
@@ -326,7 +326,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_show
   name: az network vnet-gateway show
@@ -435,7 +435,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_update
   name: az network vnet-gateway update
@@ -510,7 +510,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_vnet-gateway_wait
   name: az network vnet-gateway wait
@@ -522,9 +522,9 @@ name: 'Azure CLI 2.0 (Preview): Virtual network gateways - az network vnet-gatew
 description: ''
 summary: Use an Azure Virtual Network Gateway to establish secure, cross-premises connectivity.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

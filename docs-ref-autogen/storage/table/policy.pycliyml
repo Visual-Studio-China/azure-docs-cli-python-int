@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -88,7 +88,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_policy_create
   name: az storage table policy create
@@ -149,7 +149,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_policy_delete
   name: az storage table policy delete
@@ -206,7 +206,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_policy_list
   name: az storage table policy list
@@ -267,7 +267,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_policy_show
   name: az storage table policy show
@@ -340,7 +340,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_policy_update
   name: az storage table policy update
@@ -352,9 +352,9 @@ name: 'Azure CLI 2.0 (Preview): Table policies - az storage table policy'
 description: ''
 summary: Manage shared access policies of a storage table.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 4/14/2017 11:08:50 PM
-  ms.date: 4/14/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/63ee4adfec132a8a489c1726d16a71c23ff42ae8/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 4/19/2017 8:19:14 PM
+  ms.date: 4/19/2017

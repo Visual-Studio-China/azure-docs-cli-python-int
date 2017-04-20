@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: auto-swap
@@ -73,7 +73,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_deployment_slot_auto-swap
   name: az appservice web deployment slot auto-swap
@@ -126,7 +126,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_deployment_slot_create
   name: az appservice web deployment slot create
@@ -175,7 +175,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_deployment_slot_delete
   name: az appservice web deployment slot delete
@@ -220,7 +220,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_deployment_slot_list
   name: az appservice web deployment slot list
@@ -275,7 +275,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_appservice_web_deployment_slot_swap
   name: az appservice web deployment slot swap
@@ -287,9 +287,9 @@ name: 'Azure CLI 2.0 (Preview): Web Apps deployment slots - az appservice web de
 description: ''
 summary: Manage deployment slots.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/62342bb48fa759f50675a994b107ddc6bc8479ed/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/62342bb48fa759f50675a994b107ddc6bc8479ed/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
   updated_at: 3/27/2017 9:44:14 PM
   ms.date: 3/27/2017

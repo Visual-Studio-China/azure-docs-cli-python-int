@@ -54,7 +54,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -135,7 +135,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_create
   name: az redis create
@@ -180,7 +180,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_delete
   name: az redis delete
@@ -237,7 +237,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_export
   name: az redis export
@@ -291,7 +291,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_force-reboot
   name: az redis force-reboot
@@ -344,7 +344,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_import-method
   name: az redis import-method
@@ -385,7 +385,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_list
   name: az redis list
@@ -422,7 +422,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_list-all
   name: az redis list-all
@@ -467,7 +467,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_list-keys
   name: az redis list-keys
@@ -517,7 +517,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_regenerate-keys
   name: az redis regenerate-keys
@@ -562,7 +562,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_show
   name: az redis show
@@ -628,7 +628,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_update
   name: az redis update
@@ -677,7 +677,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_redis_update-settings
   name: az redis update-settings
@@ -689,9 +689,9 @@ name: 'Azure CLI 2.0 (Preview): Redis cache - az redis'
 description: If you don't have the redis component installed, add it with az component update --add redis.
 summary: Access to a secure, dedicated cache for your Azure applications.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/3f4409b8f3fd5985b1b4d27c97b95b2397aa07e9/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/3f4409b8f3fd5985b1b4d27c97b95b2397aa07e9/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
   updated_at: 4/17/2017 6:08:19 PM
   ms.date: 4/17/2017

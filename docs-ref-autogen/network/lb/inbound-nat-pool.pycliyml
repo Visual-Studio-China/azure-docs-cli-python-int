@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -85,7 +85,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_lb_inbound-nat-pool_create
   name: az network lb inbound-nat-pool create
@@ -138,7 +138,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_lb_inbound-nat-pool_delete
   name: az network lb inbound-nat-pool delete
@@ -183,7 +183,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_lb_inbound-nat-pool_list
   name: az network lb inbound-nat-pool list
@@ -232,7 +232,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_lb_inbound-nat-pool_show
   name: az network lb inbound-nat-pool show
@@ -314,7 +314,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_network_lb_inbound-nat-pool_update
   name: az network lb inbound-nat-pool update
@@ -326,9 +326,9 @@ name: 'Azure CLI 2.0 (Preview): Inbound NAT address pools - az network lb inboun
 description: ''
 summary: Manage inbound NAT address pools for a load balancer.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/bd467e7eaf932a19ec3f68e60bdb4ba83c0a57b4/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 4/6/2017 4:05:51 PM
   ms.date: 4/6/2017

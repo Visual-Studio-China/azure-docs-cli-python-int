@@ -45,7 +45,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -121,7 +121,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_create
   name: az resource create
@@ -192,7 +192,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_delete
   name: az resource delete
@@ -263,7 +263,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_list
   name: az resource list
@@ -312,7 +312,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_move
   name: az resource move
@@ -387,7 +387,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_show
   name: az resource show
@@ -460,7 +460,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_tag
   name: az resource tag
@@ -537,7 +537,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_resource_update
   name: az resource update
@@ -549,9 +549,9 @@ name: 'Azure CLI 2.0 (Preview): Resources - az resource'
 description: ''
 summary: Manage Azure resources.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/273e7ccb86b29ce0a86ae651e76fa9034c3e6cfc/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 4/18/2017 2:53:53 AM
-  ms.date: 4/18/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/b291b168f497ca2cd4ca9f5c80da3f4545d2a71c/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 4/19/2017 7:38:00 PM
+  ms.date: 4/19/2017

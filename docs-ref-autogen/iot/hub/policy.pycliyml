@@ -17,7 +17,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -67,7 +67,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_policy_create
   name: az iot hub policy create
@@ -116,7 +116,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_policy_delete
   name: az iot hub policy delete
@@ -161,7 +161,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_policy_list
   name: az iot hub policy list
@@ -210,7 +210,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_iot_hub_policy_show
   name: az iot hub policy show
@@ -222,9 +222,9 @@ name: 'Azure CLI 2.0 (Preview): IoT hub policies - az iot hub policy'
 description: These commands are in preview.
 summary: Manage shared access policies of an IoT Hub.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/41ecccdaa900301ba84dcd9c017e58354f9da601/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/41ecccdaa900301ba84dcd9c017e58354f9da601/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   updated_at: 3/15/2017 8:51:19 PM
   ms.date: 3/15/2017

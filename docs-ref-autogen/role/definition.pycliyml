@@ -17,7 +17,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -72,7 +72,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_role_definition_create
   name: az role definition create
@@ -125,7 +125,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_role_definition_delete
   name: az role definition delete
@@ -178,7 +178,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_role_definition_list
   name: az role definition list
@@ -219,7 +219,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_role_definition_update
   name: az role definition update
@@ -231,9 +231,9 @@ name: 'Azure CLI 2.0 (Preview): Role definitions - az role definition'
 description: ''
 summary: Manage role definitions.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
   updated_at: 3/23/2017 6:37:38 PM
   ms.date: 3/23/2017

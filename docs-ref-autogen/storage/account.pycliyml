@@ -3,7 +3,7 @@ commandList:
   description: Checks that the storage account name is valid and is not already in use.
   href: account#check-name
 - name: az storage account create
-  description: Create a storage account.
+  description: Creates a storage account.
   href: account#create
 - name: az storage account delete
   description: Deletes a storage account.
@@ -42,7 +42,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: check-name
@@ -78,7 +78,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_check-name
   name: az storage account check-name
@@ -87,7 +87,9 @@ children:
   Metadata: {}
 - commandList: []
   htmlId: create
-  examples: []
+  examples:
+  - title: Create a storage account MyStorageAccount in resource group MyResourceGroup in the West US region with locally redundant storage.
+    code: az storage account create -n MyStorageAccount -g MyResourceGroup -l westus --sku Standard_LRS
   parameters:
   - name: --location -l
     isRequired: True
@@ -156,12 +158,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_create
   name: az storage account create
   description: ''
-  summary: Create a storage account.
+  summary: Creates a storage account.
   Metadata: {}
 - commandList: []
   htmlId: delete
@@ -209,7 +211,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_delete
   name: az storage account delete
@@ -286,7 +288,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_generate-sas
   name: az storage account generate-sas
@@ -331,7 +333,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_list
   name: az storage account list
@@ -380,7 +382,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_show
   name: az storage account show
@@ -455,7 +457,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_show-connection-string
   name: az storage account show-connection-string
@@ -492,7 +494,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_show-usage
   name: az storage account show-usage
@@ -577,7 +579,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_account_update
   name: az storage account update
@@ -589,9 +591,9 @@ name: 'Azure CLI 2.0 (Preview): Storage accounts - az storage account'
 description: ''
 summary: Manage storage accounts.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 4/14/2017 11:08:50 PM
-  ms.date: 4/14/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/63ee4adfec132a8a489c1726d16a71c23ff42ae8/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 4/19/2017 8:19:14 PM
+  ms.date: 4/19/2017

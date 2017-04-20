@@ -73,7 +73,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: delete
@@ -154,7 +154,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_node_delete
   name: az batch node delete
@@ -215,7 +215,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_node_list
   name: az batch node list
@@ -277,7 +277,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_node_reboot
   name: az batch node reboot
@@ -339,7 +339,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_node_reimage
   name: az batch node reimage
@@ -400,7 +400,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_node_show
   name: az batch node show
@@ -412,9 +412,9 @@ name: az batch node
 description: ''
 summary: Manage your Batch compute nodes.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
   updated_at: 2/18/2017 7:03:08 PM
   ms.date: 2/18/2017

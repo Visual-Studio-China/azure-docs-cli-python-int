@@ -171,7 +171,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -245,7 +245,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_create
   name: az keyvault create
@@ -290,7 +290,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_delete
   name: az keyvault delete
@@ -347,7 +347,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_delete-policy
   name: az keyvault delete-policy
@@ -388,7 +388,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_list
   name: az keyvault list
@@ -457,7 +457,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_set-policy
   name: az keyvault set-policy
@@ -502,7 +502,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_show
   name: az keyvault show
@@ -574,7 +574,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_keyvault_update
   name: az keyvault update
@@ -586,9 +586,9 @@ name: 'Azure CLI 2.0 (Preview): Key vaults - az keyvault'
 description: If you don't have the keyvault component installed, add it with az component update --add keyvault.
 summary: Safeguard and maintain control of keys, secrets, and certificates.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/e0ca649f8ec8b4f460edf829cb067ea1f00afb5f/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/e0ca649f8ec8b4f460edf829cb067ea1f00afb5f/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
   updated_at: 4/6/2017 7:49:04 PM
   ms.date: 4/6/2017
