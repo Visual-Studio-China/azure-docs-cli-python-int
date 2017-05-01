@@ -1,40 +1,43 @@
 commandList:
-- name: az appservice web config hostname add
-  description: ''
-  href: hostname#add
-- name: az appservice web config hostname delete
-  description: ''
-  href: hostname#delete
-- name: az appservice web config hostname get-external-ip
-  description: ''
-  href: hostname#get-external-ip
-- name: az appservice web config hostname list
-  description: ''
-  href: hostname#list
-htmlId: hostname
+- name: az webapp config ssl bind
+  description: Bind an SSL certificate to a web app.
+  href: ssl#bind
+- name: az webapp config ssl delete
+  description: Delete an SSL certificate from a web app.
+  href: ssl#delete
+- name: az webapp config ssl list
+  description: List SSL certificates within a resource group.
+  href: ssl#list
+- name: az webapp config ssl unbind
+  description: Unbind an SSL certificate from a web app.
+  href: ssl#unbind
+- name: az webapp config ssl upload
+  description: Upload an SSL certificate to a web app.
+  href: ssl#upload
+htmlId: ssl
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: add
+  htmlId: bind
   examples: []
   parameters:
-  - name: --hostname
+  - name: --certificate-thumbprint
     isRequired: True
-    summary: Hostname assigned to the site, such as custom domains.
+    summary: The ssl cert thumbprint.
+    description: ''
+  - name: --name -n
+    isRequired: True
+    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --webapp-name
+  - name: --ssl-type
     isRequired: True
-    summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: The ssl cert type.
     description: ''
+    parameterValueGroup: IP, SNI
   - name: --slot -s
     isRequired: False
     summary: The name of the slot. Default to the productions slot if not specified.
@@ -61,36 +64,23 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_config_hostname_add
-  name: az appservice web config hostname add
+  uid: az_webapp_config_ssl_bind
+  name: az webapp config ssl bind
   description: ''
-  summary: ''
+  summary: Bind an SSL certificate to a web app.
   Metadata: {}
 - commandList: []
   htmlId: delete
   examples: []
   parameters:
-  - name: --hostname
+  - name: --certificate-thumbprint
     isRequired: True
-    summary: Hostname assigned to the site, such as custom domains.
+    summary: The ssl cert thumbprint.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --webapp-name
-    isRequired: True
-    summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
-    description: ''
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -114,61 +104,11 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_config_hostname_delete
-  name: az appservice web config hostname delete
+  uid: az_webapp_config_ssl_delete
+  name: az webapp config ssl delete
   description: ''
-  summary: ''
-  Metadata: {}
-- commandList: []
-  htmlId: get-external-ip
-  examples: []
-  parameters:
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --webapp-name
-    isRequired: True
-    summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_appservice_web_config_hostname_get-external-ip
-  name: az appservice web config hostname get-external-ip
-  description: ''
-  summary: ''
+  summary: Delete an SSL certificate from a web app.
   Metadata: {}
 - commandList: []
   htmlId: list
@@ -178,9 +118,49 @@ children:
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --webapp-name
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_webapp_config_ssl_list
+  name: az webapp config ssl list
+  description: ''
+  summary: List SSL certificates within a resource group.
+  Metadata: {}
+- commandList: []
+  htmlId: unbind
+  examples: []
+  parameters:
+  - name: --certificate-thumbprint
     isRequired: True
-    summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: The ssl cert thumbprint.
+    description: ''
+  - name: --name -n
+    isRequired: True
+    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
   - name: --slot -s
     isRequired: False
@@ -208,25 +188,62 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_config_hostname_list
-  name: az appservice web config hostname list
+  uid: az_webapp_config_ssl_unbind
+  name: az webapp config ssl unbind
   description: ''
-  summary: ''
+  summary: Unbind an SSL certificate from a web app.
   Metadata: {}
-uid: az_appservice_web_config_hostname
-name: 'Azure CLI 2.0 (Preview): Web Apps hostnames - az appservice web config hostname'
+- commandList: []
+  htmlId: upload
+  examples: []
+  parameters:
+  - name: --certificate-file
+    isRequired: True
+    summary: The filepath for the .pfx file.
+    description: ''
+  - name: --certificate-password
+    isRequired: True
+    summary: The ssl cert password.
+    description: ''
+  - name: --name -n
+    isRequired: True
+    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_webapp_config_ssl_upload
+  name: az webapp config ssl upload
+  description: ''
+  summary: Upload an SSL certificate to a web app.
+  Metadata: {}
+uid: az_webapp_config_ssl
+name: az webapp config ssl
 description: ''
-summary: ''
-Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/51fbe6f5095a81f478dbb3da03a87a7589446ff8/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 5/1/2017 9:37:35 PM
-  ms.date: 5/1/2017
+summary: Configure SSL certificates.
+Metadata: {}
