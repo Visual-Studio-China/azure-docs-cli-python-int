@@ -1,35 +1,78 @@
 commandList:
-- name: az webapp config appsettings delete
-  description: ''
-  href: appsettings#delete
-- name: az webapp config appsettings set
-  description: Create or update web app settings.
-  href: appsettings#set
-- name: az webapp config appsettings show
-  description: Show web app settings.
-  href: appsettings#show
-htmlId: appsettings
+- name: az functionapp config hostname add
+  description: Bind a hostname (custom domain) to a function app.
+  href: hostname#add
+- name: az functionapp config hostname delete
+  description: Unbind a hostname (custom domain) from a function app.
+  href: hostname#delete
+- name: az functionapp config hostname get-external-ip
+  description: Get the ip address to configure your DNS settings for A records.
+  href: hostname#get-external-ip
+- name: az functionapp config hostname list
+  description: List all hostname bindings.
+  href: hostname#list
+htmlId: hostname
 examples: []
 children:
+- commandList: []
+  htmlId: add
+  examples: []
+  parameters:
+  - name: --hostname
+    isRequired: True
+    summary: Hostname assigned to the site, such as custom domains.
+    description: ''
+  - name: --name -n
+    isRequired: True
+    summary: Name of the function app.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_functionapp_config_hostname_add
+  name: az functionapp config hostname add
+  description: ''
+  summary: Bind a hostname (custom domain) to a function app.
+  Metadata: {}
 - commandList: []
   htmlId: delete
   examples: []
   parameters:
+  - name: --hostname
+    isRequired: True
+    summary: Hostname assigned to the site, such as custom domains.
+    description: ''
   - name: --name -n
     isRequired: True
-    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the function app.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --setting-names
-    isRequired: True
-    summary: Space separated appsettings names.
-    description: ''
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -54,80 +97,22 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_webapp_config_appsettings_delete
-  name: az webapp config appsettings delete
+  uid: az_functionapp_config_hostname_delete
+  name: az functionapp config hostname delete
   description: ''
-  summary: ''
+  summary: Unbind a hostname (custom domain) from a function app.
   Metadata: {}
 - commandList: []
-  htmlId: set
-  examples:
-  - title: Set the default node version for a specified web app.
-    code: az webapp config appsettings set -g MyResourceGroup -n MyUniqueApp --settings WEBSITE_NODE_DEFAULT_VERSION=6.9.1
-  parameters:
-  - name: --name -n
-    isRequired: True
-    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
-    description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --settings
-    isRequired: False
-    summary: Space separated appsettings in a format of <name>=<value>.
-    description: ''
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
-    description: ''
-  - name: --slot-settings
-    isRequired: False
-    summary: Space separated slot appsettings in a format of <name>=<value>.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  children: []
-  uid: az_webapp_config_appsettings_set
-  name: az webapp config appsettings set
-  description: ''
-  summary: Create or update web app settings.
-  Metadata: {}
-- commandList: []
-  htmlId: show
+  htmlId: get-external-ip
   examples: []
   parameters:
   - name: --name -n
     isRequired: True
-    summary: Name of the web. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the function app.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --slot -s
-    isRequired: False
-    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --debug
     isRequired: False
@@ -152,13 +137,53 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   children: []
-  uid: az_webapp_config_appsettings_show
-  name: az webapp config appsettings show
+  uid: az_functionapp_config_hostname_get-external-ip
+  name: az functionapp config hostname get-external-ip
   description: ''
-  summary: Show web app settings.
+  summary: Get the ip address to configure your DNS settings for A records.
   Metadata: {}
-uid: az_webapp_config_appsettings
-name: az webapp config appsettings
+- commandList: []
+  htmlId: list
+  examples: []
+  parameters:
+  - name: --name -n
+    isRequired: True
+    summary: Name of the function app.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_functionapp_config_hostname_list
+  name: az functionapp config hostname list
+  description: ''
+  summary: List all hostname bindings.
+  Metadata: {}
+uid: az_functionapp_config_hostname
+name: az functionapp config hostname
 description: ''
-summary: Configure web app settings.
+summary: Configure hostnames.
 Metadata: {}

@@ -1,52 +1,43 @@
 commandList:
-- name: az appservice web deployment slot auto-swap
-  description: ''
-  href: slot#auto-swap
-- name: az appservice web deployment slot create
-  description: ''
-  href: slot#create
-- name: az appservice web deployment slot delete
-  description: ''
-  href: slot#delete
-- name: az appservice web deployment slot list
-  description: ''
-  href: slot#list
-- name: az appservice web deployment slot swap
-  description: ''
-  href: slot#swap
-htmlId: slot
+- name: az functionapp config ssl bind
+  description: Bind an SSL certificate to a function app.
+  href: ssl#bind
+- name: az functionapp config ssl delete
+  description: Delete an SSL certificate from a function app.
+  href: ssl#delete
+- name: az functionapp config ssl list
+  description: List SSL certificates within a resource group.
+  href: ssl#list
+- name: az functionapp config ssl unbind
+  description: Unbind an SSL certificate from a function app.
+  href: ssl#unbind
+- name: az functionapp config ssl upload
+  description: Upload an SSL certificate to a function app.
+  href: ssl#upload
+htmlId: ssl
 examples: []
-source:
-  remote:
-    path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-    branch: master
-    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: auto-swap
+  htmlId: bind
   examples: []
   parameters:
+  - name: --certificate-thumbprint
+    isRequired: True
+    summary: The ssl cert thumbprint.
+    description: ''
   - name: --name -n
     isRequired: True
-    summary: Name of the webapp.
+    summary: Name of the function.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --slot -s
+  - name: --ssl-type
     isRequired: True
-    summary: The name of the slot.
+    summary: The ssl cert type.
     description: ''
-  - name: --auto-swap-slot
-    isRequired: False
-    summary: Target slot to auto swap.
-    description: ''
-    defaultValue: production
-  - name: --disable
-    isRequired: False
-    summary: Disable auto swap.
-    description: ''
+    parameterValueGroup: IP, SNI
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -69,85 +60,23 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_auto-swap
-  name: az appservice web deployment slot auto-swap
+  uid: az_functionapp_config_ssl_bind
+  name: az functionapp config ssl bind
   description: ''
-  summary: ''
-  Metadata: {}
-- commandList: []
-  htmlId: create
-  examples: []
-  parameters:
-  - name: --name -n
-    isRequired: True
-    summary: Name of the webapp.
-    description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --slot -s
-    isRequired: True
-    summary: The name of the slot.
-    description: ''
-  - name: --configuration-source
-    isRequired: False
-    summary: Source slot to clone configurations from. Use webapp's name to refer to the production slot.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_appservice_web_deployment_slot_create
-  name: az appservice web deployment slot create
-  description: ''
-  summary: ''
+  summary: Bind an SSL certificate to a function app.
   Metadata: {}
 - commandList: []
   htmlId: delete
   examples: []
   parameters:
-  - name: --name -n
+  - name: --certificate-thumbprint
     isRequired: True
-    summary: Name of the webapp.
+    summary: The ssl cert thumbprint.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --slot -s
-    isRequired: True
-    summary: The name of the slot.
     description: ''
   - name: --debug
     isRequired: False
@@ -171,25 +100,16 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_delete
-  name: az appservice web deployment slot delete
+  uid: az_functionapp_config_ssl_delete
+  name: az functionapp config ssl delete
   description: ''
-  summary: ''
+  summary: Delete an SSL certificate from a function app.
   Metadata: {}
 - commandList: []
   htmlId: list
   examples: []
   parameters:
-  - name: --name -n
-    isRequired: True
-    summary: Name of the webapp.
-    description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
@@ -216,36 +136,27 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_list
-  name: az appservice web deployment slot list
+  uid: az_functionapp_config_ssl_list
+  name: az functionapp config ssl list
   description: ''
-  summary: ''
+  summary: List SSL certificates within a resource group.
   Metadata: {}
 - commandList: []
-  htmlId: swap
+  htmlId: unbind
   examples: []
   parameters:
+  - name: --certificate-thumbprint
+    isRequired: True
+    summary: The ssl cert thumbprint.
+    description: ''
   - name: --name -n
     isRequired: True
-    summary: Name of the webapp.
+    summary: Name of the function.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --slot -s
-    isRequired: True
-    summary: The name of the slot.
-    description: ''
-  - name: --target-slot
-    isRequired: False
-    summary: Target slot to swap, default to 'production'.
     description: ''
   - name: --debug
     isRequired: False
@@ -269,25 +180,62 @@ children:
     isRequired: False
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_appservice_web_deployment_slot_swap
-  name: az appservice web deployment slot swap
+  uid: az_functionapp_config_ssl_unbind
+  name: az functionapp config ssl unbind
   description: ''
-  summary: ''
+  summary: Unbind an SSL certificate from a function app.
   Metadata: {}
-uid: az_appservice_web_deployment_slot
-name: 'Azure CLI 2.0 (Preview): Web Apps deployment slots - az appservice web deployment slot'
+- commandList: []
+  htmlId: upload
+  examples: []
+  parameters:
+  - name: --certificate-file
+    isRequired: True
+    summary: The filepath for the .pfx file.
+    description: ''
+  - name: --certificate-password
+    isRequired: True
+    summary: The ssl cert password.
+    description: ''
+  - name: --name -n
+    isRequired: True
+    summary: Name of the function.
+    description: ''
+  - name: --resource-group -g
+    isRequired: True
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    description: ''
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  children: []
+  uid: az_functionapp_config_ssl_upload
+  name: az functionapp config ssl upload
+  description: ''
+  summary: Upload an SSL certificate to a function app.
+  Metadata: {}
+uid: az_functionapp_config_ssl
+name: az functionapp config ssl
 description: ''
-summary: ''
-Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/eb1b2192bcd0da2693bef998916a9735fcab2908/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 5/3/2017 5:32:22 PM
-  ms.date: 5/3/2017
+summary: Configure SSL certificates.
+Metadata: {}
