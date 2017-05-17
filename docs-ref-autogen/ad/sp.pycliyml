@@ -12,7 +12,7 @@ commandList:
   description: ''
   href: sp#list
 - name: az ad sp reset-credentials
-  description: Reset service principal credentials.
+  description: Reset credential, on expiration or you forget it.
   href: sp#reset-credentials
 - name: az ad sp show
   description: ''
@@ -23,7 +23,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -59,7 +59,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_create
   name: az ad sp create
@@ -79,10 +79,6 @@ children:
     code: az ad sp create-for-rbac -n “http://MyApp” –role contributor –scopes /subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/MyResourceGroup /subscriptions/11111111-2222-3333-4444-666666666666/resourceGroups/MyAnotherResourceGroup
   - title: Create using self-signed certificte
     code: az ad sp create-for-rbac –create-cert
-  - title: Create self-signed certificate within KeyVault
-    code: az ad sp create-for-rbac –key-vault <vault name> –cert <name> –create-cert
-  - title: Create using existing certificate in KeyVault
-    code: az ad sp create-for-rbac –key-vault <vault name> –cert <name>
   - title: Login with a service principal.
     code: az login –service-principal -u <name> -p <password> –tenant <tenant>
   - title: Login with self-signed certificate
@@ -94,43 +90,44 @@ children:
   - title: Revoke the service principal when done with it.
     code: az ad app delete –id <name>
   parameters:
-  - name: –name -n
-    isRequired: False
-    summary: Display name or an app ID URI. Command will generate one if missing.
-    description: ''
-  - name: –role
-    isRequired: False
-    summary: Role the service principal has in regard to resources.
-    description: ''
-    defaultValue: Contributor
-  - name: –scopes
-    isRequired: False
-    summary: Space-separated list of scopes the service principal’s role assignment applies to. Defaults to the root of the current subscription.
-    description: ''
-  - name: –skip-assignment
-    isRequired: False
-    summary: Do not create default assignment.
-    description: ''
   - name: –cert
     isRequired: False
-    summary: Certificate to use for credentials in lieu of password.
-    description: When using –key-vault, indicates the name of the cert to use or create. Otherwise, supply a PEM or DER formatted public certificate string. Use @<file path> to load from a file. Do not include private key info.
+    summary: PEM formatted public certificate. Do not include private key info.
+    description: ''
   - name: –create-cert
     isRequired: False
-    summary: Create a self-signed certificate to use for the credential.
-    description: Use with –key-vault to create the certificate in Key Vault. Otherwise, a certificate will be created locally.
-  - name: –keyvault
+    summary: Create and upload self-signed certificate which you can use to login.
+    description: ''
+  - name: –expanded-view
     isRequired: False
-    summary: Name or ID of a KeyVault to use for creating or retrieving certificates.
+    summary: Once created, display more information like subscription and cloud environments.
+    description: ''
+  - name: –name -n
+    isRequired: False
+    summary: A display name or an app id uri. Command will generate one if missing.
     description: ''
   - name: –password -p
     isRequired: False
     summary: The password used to login. If missing, command will generate one.
     description: ''
+  - name: –role
+    isRequired: False
+    summary: Role the service principal has on the resources.
+    description: ''
+    defaultValue: Contributor
+  - name: –scopes
+    isRequired: False
+    summary: Space separated scopes the service principal’s role assignment applies to. Defaults to the root of the current subscription.
+    description: ''
+  - name: –skip-assignment
+    isRequired: False
+    summary: Do not create default assignment.
+    description: ''
   - name: –years
     isRequired: False
-    summary: 'Number of years for which the credentials will be valid. Default: 1 year.'
+    summary: Years the password will be valid.
     description: ''
+    defaultValue: 1
   - name: –debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -157,7 +154,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_create-for-rbac
   name: az ad sp create-for-rbac
@@ -198,7 +195,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_delete
   name: az ad sp delete
@@ -247,7 +244,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_list
   name: az ad sp list
@@ -260,28 +257,25 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Display name or an app ID URI.
+    summary: The name, can be the app id uri, app id guid, or display name.
     description: ''
   - name: –cert
     isRequired: False
-    summary: Certificate to use for credentials in lieu of password.
-    description: When using –key-vault, indicates the name of the cert to use or create. Otherwise, supply a PEM or DER formatted public certificate string. Use @<file path> to load from a file. Do not include private key info.
+    summary: PEM formatted public certificate. Do not include private key info.
+    description: ''
   - name: –create-cert
     isRequired: False
-    summary: Create a self-signed certificate to use for the credential.
-    description: Use with –key-vault to create the certificate in Key Vault. Otherwise, a certificate will be created locally.
-  - name: –keyvault
-    isRequired: False
-    summary: Name or ID of a KeyVault to use for creating or retrieving certificates.
+    summary: Re-create and upload self-signed certificate.
     description: ''
-  - name: –password -p
+  - name: –password
     isRequired: False
     summary: The password used to login. If missing, command will generate one.
     description: ''
   - name: –years
     isRequired: False
-    summary: 'Number of years for which the credentials will be valid. Default: 1 year.'
+    summary: Years the password will be valid.
     description: ''
+    defaultValue: 1
   - name: –debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -308,12 +302,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_reset-credentials
   name: az ad sp reset-credentials
-  description: Use upon expiration of the existing credentials or in the even that you forget them.
-  summary: Reset service principal credentials.
+  description: ''
+  summary: Reset credential, on expiration or you forget it.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -349,7 +343,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_ad_sp_show
   name: az ad sp show
@@ -361,9 +355,9 @@ name: 'Azure CLI 2.0 (Preview): AAD service principals - az ad sp'
 description: ''
 summary: Manage Azure Active Directory service principals for automation authentication.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/3e10c0fcee824e3a1d301e99da3299f008be8fee/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  updated_at: 5/11/2017 5:16:22 PM
-  ms.date: 5/11/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  updated_at: 3/23/2017 6:37:38 PM
+  ms.date: 3/23/2017

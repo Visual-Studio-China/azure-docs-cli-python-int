@@ -14,7 +14,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: cancel
@@ -82,7 +82,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_storage_blob_copy_cancel
   name: az storage blob copy cancel
@@ -227,7 +227,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_storage_blob_copy_start
   name: az storage blob copy start
@@ -316,7 +316,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_storage_blob_copy_start-batch
   name: az storage blob copy start-batch
@@ -328,9 +328,9 @@ name: 'Azure CLI 2.0 (Preview): Blob storage copy operations - az storage blob c
 description: ''
 summary: Manage blob copy operations.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/a6b8fd8a5306a66a96b52d245b13cc96c667fa13/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 4/28/2017 11:59:18 PM
-  ms.date: 4/28/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 4/14/2017 11:08:50 PM
+  ms.date: 4/14/2017

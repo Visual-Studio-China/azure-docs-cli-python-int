@@ -17,7 +17,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -42,7 +42,7 @@ children:
     defaultValue: events
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -70,7 +70,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_consumer-group_create
   name: az iot hub consumer-group create
@@ -96,7 +96,7 @@ children:
     defaultValue: events
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -124,7 +124,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_consumer-group_delete
   name: az iot hub consumer-group delete
@@ -146,7 +146,7 @@ children:
     defaultValue: events
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -174,7 +174,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_consumer-group_list
   name: az iot hub consumer-group list
@@ -200,7 +200,7 @@ children:
     defaultValue: events
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -228,7 +228,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_iot_hub_consumer-group_show
   name: az iot hub consumer-group show
@@ -240,9 +240,9 @@ name: 'Azure CLI 2.0 (Preview): IoT hub consumer groups - az iot hub consumer-gr
 description: These commands are in preview.
 summary: Manage event hub consumer groups of an IoT Hub.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/41ecccdaa900301ba84dcd9c017e58354f9da601/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/41ecccdaa900301ba84dcd9c017e58354f9da601/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
   updated_at: 3/15/2017 8:51:19 PM
   ms.date: 3/15/2017

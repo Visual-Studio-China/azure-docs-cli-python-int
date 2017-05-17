@@ -46,7 +46,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -98,7 +98,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_application_create
   name: az batch application create
@@ -151,7 +151,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_application_delete
   name: az batch application delete
@@ -200,7 +200,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_application_list
   name: az batch application list
@@ -261,7 +261,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_application_set
   name: az batch application set
@@ -310,7 +310,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_batch_application_show
   name: az batch application show
@@ -322,9 +322,9 @@ name: 'Azure CLI 2.0 (Preview): Batch applications - az batch application'
 description: ''
 summary: Manage your Batch applications.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
   updated_at: 2/18/2017 7:03:08 PM
   ms.date: 2/18/2017

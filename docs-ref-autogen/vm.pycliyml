@@ -238,7 +238,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: capture
@@ -257,11 +257,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –vhd-name-prefix
     isRequired: True
@@ -303,7 +303,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_capture
   name: az vm capture
@@ -320,11 +320,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -352,7 +352,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_convert
   name: az vm convert
@@ -387,7 +387,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –attach-os-disk
     isRequired: False
@@ -410,11 +410,6 @@ children:
                                           Example Custom Image Resource ID or Name: /subscriptions/subscription-id/resourceGroups/MyResourceGroup/providers/Microsoft.Compute/images/MyImage
                                           Example URI: http://<storageAccount>.blob.core.windows.net/vhds/osdiskimage.vhd.
     valueFrom: az vm image list, az vm image show
-  - name: –license-type
-    isRequired: False
-    summary: License type if the Windows image or disk used was licensed on-premises.
-    description: ''
-    parameterValueGroup: Windows_Client, Windows_Server
   - name: –location -l
     isRequired: False
     summary: Location in which to create VM and related resources. If default location is not configured, will default to the resource group’s location.
@@ -425,7 +420,7 @@ children:
     description: ''
   - name: –secrets
     isRequired: False
-    summary: 'One or many Key Vault secrets as JSON strings or files via @<file path> containing [{ “sourceVault”: { “id”: “value” }, “vaultCertificates”: [{ “certificateUrl”: “value”, “certificateStore”: “cert store name (only on windows)”}] }].'
+    summary: 'One or many Key Vault secrets as JSON strings or files via ‘@<file path>’ containing ‘[{ “sourceVault”: { “id”: “value” }, “vaultCertificates”: [{ “certificateUrl”: “value”, “certificateStore”: “cert store name (only on windows)”}] }]’.'
     description: ''
   - name: –size
     isRequired: False
@@ -581,7 +576,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_create
   name: az vm create
@@ -605,11 +600,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -641,7 +636,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_deallocate
   name: az vm deallocate
@@ -658,11 +653,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -698,7 +693,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_delete
   name: az vm delete
@@ -745,7 +740,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_format-secret
   name: az vm format-secret
@@ -769,11 +764,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -805,7 +800,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_generalize
   name: az vm generalize
@@ -822,11 +817,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -854,7 +849,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_get-instance-view
   name: az vm get-instance-view
@@ -873,7 +868,7 @@ children:
   parameters:
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –show-details -d
     isRequired: False
@@ -905,7 +900,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list
   name: az vm list
@@ -922,11 +917,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: False
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -954,7 +949,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-ip-addresses
   name: az vm list-ip-addresses
@@ -969,7 +964,7 @@ children:
   parameters:
   - name: –location -l
     isRequired: True
-    summary: Location. You can configure the default location using az configure –defaults location=<location>.
+    summary: Location. You can configure the default location using ‘az configure –defaults location=<location>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -997,7 +992,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-sizes
   name: az vm list-sizes
@@ -1012,7 +1007,7 @@ children:
   parameters:
   - name: –location -l
     isRequired: True
-    summary: Location. You can configure the default location using az configure –defaults location=<location>.
+    summary: Location. You can configure the default location using ‘az configure –defaults location=<location>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -1040,7 +1035,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-usage
   name: az vm list-usage
@@ -1057,11 +1052,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -1089,7 +1084,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_list-vm-resize-options
   name: az vm list-vm-resize-options
@@ -1116,7 +1111,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –apply-to-subnet
     isRequired: False
@@ -1157,7 +1152,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_open-port
   name: az vm open-port
@@ -1174,11 +1169,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1210,7 +1205,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_redeploy
   name: az vm redeploy
@@ -1227,11 +1222,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –size
     isRequired: True
@@ -1267,7 +1262,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_resize
   name: az vm resize
@@ -1284,11 +1279,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1320,7 +1315,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_restart
   name: az vm restart
@@ -1337,11 +1332,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –show-details -d
     isRequired: False
@@ -1373,7 +1368,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_show
   name: az vm show
@@ -1390,11 +1385,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1426,7 +1421,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_start
   name: az vm start
@@ -1443,11 +1438,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1479,7 +1474,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_stop
   name: az vm stop
@@ -1502,11 +1497,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1550,7 +1545,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_update
   name: az vm update
@@ -1567,11 +1562,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –created
     isRequired: False
@@ -1629,7 +1624,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_wait
   name: az vm wait
@@ -1641,9 +1636,9 @@ name: 'Azure CLI 2.0 (Preview): Virtual machines (VM) - az vm'
 description: ''
 summary: Provision Linux or Windows virtual machines in seconds.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/0fa7ba5ef9b8cfa6f23348de4d341361bad89534/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 5/10/2017 8:06:46 PM
-  ms.date: 5/10/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 4/5/2017 9:00:48 PM
+  ms.date: 4/5/2017

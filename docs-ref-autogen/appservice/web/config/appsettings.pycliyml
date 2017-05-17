@@ -1,12 +1,12 @@
 commandList:
 - name: az appservice web config appsettings delete
-  description: ''
+  description: Delete web app settings.
   href: appsettings#delete
 - name: az appservice web config appsettings show
-  description: ''
+  description: Show web app settings.
   href: appsettings#show
 - name: az appservice web config appsettings update
-  description: ''
+  description: Create or update web app settings.
   href: appsettings#update
 htmlId: appsettings
 examples: []
@@ -14,7 +14,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: delete
@@ -26,11 +26,11 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –setting-names
     isRequired: True
-    summary: Space separated sppsettings names.
+    summary: Space separated app setting names.
     description: ''
   - name: –slot -s
     isRequired: False
@@ -62,12 +62,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_config_appsettings_delete
   name: az appservice web config appsettings delete
   description: ''
-  summary: ''
+  summary: Delete web app settings.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -79,7 +79,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –slot -s
     isRequired: False
@@ -111,16 +111,18 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_config_appsettings_show
   name: az appservice web config appsettings show
   description: ''
-  summary: ''
+  summary: Show web app settings.
   Metadata: {}
 - commandList: []
   htmlId: update
-  examples: []
+  examples:
+  - title: Set the default node version for a specified web app.
+    code: az appservice web config appsettings update -g MyResourceGroup -n MyUniqueApp –settings WEBSITE_NODE_DEFAULT_VERSION=6.9.1
   parameters:
   - name: –name -n
     isRequired: True
@@ -128,11 +130,11 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –settings
     isRequired: False
-    summary: Space separated appsettings in a format of <name>=<value>.
+    summary: Space separated app settings in a format of <name>=<value>.
     description: ''
   - name: –slot -s
     isRequired: False
@@ -140,7 +142,7 @@ children:
     description: ''
   - name: –slot-settings
     isRequired: False
-    summary: Space separated slot appsettings in a format of <name>=<value>.
+    summary: Space separated slot app settings in a format of <name>=<value>.
     description: ''
   - name: –debug
     isRequired: False
@@ -168,21 +170,21 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_config_appsettings_update
   name: az appservice web config appsettings update
   description: ''
-  summary: ''
+  summary: Create or update web app settings.
   Metadata: {}
 uid: az_appservice_web_config_appsettings
 name: 'Azure CLI 2.0 (Preview): Web Apps application settings - az appservice web config appsettings'
 description: ''
-summary: ''
+summary: Configure web app settings.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/81419735fdc9087005ed4204b995707ff3892c49/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 5/8/2017 9:09:41 PM
-  ms.date: 5/8/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/62342bb48fa759f50675a994b107ddc6bc8479ed/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  updated_at: 3/27/2017 9:44:14 PM
+  ms.date: 3/27/2017

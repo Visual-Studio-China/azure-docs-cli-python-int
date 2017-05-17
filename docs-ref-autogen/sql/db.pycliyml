@@ -27,9 +27,6 @@ commandList:
 - name: az sql db list
   description: Lists all databases and data warehouses in a server, or all databases in an elastic pool.
   href: db#list
-- name: az sql db list-usages
-  description: Returns database usages.
-  href: db#list-usages
 - name: az sql db replica
   description: Manage replication between databases.
   href: db/replica
@@ -71,7 +68,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: copy
@@ -87,7 +84,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -139,7 +136,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_copy
   name: az sql db copy
@@ -156,7 +153,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -216,7 +213,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_create
   name: az sql db create
@@ -233,7 +230,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -269,7 +266,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_delete
   name: az sql db delete
@@ -300,7 +297,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -351,7 +348,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_export
   name: az sql db export
@@ -382,7 +379,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -433,7 +430,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_import
   name: az sql db import
@@ -446,7 +443,7 @@ children:
   parameters:
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -482,61 +479,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_list
   name: az sql db list
   description: ''
   summary: Lists all databases and data warehouses in a server, or all databases in an elastic pool.
-  Metadata: {}
-- commandList: []
-  htmlId: list-usages
-  examples: []
-  parameters:
-  - name: –name -n
-    isRequired: True
-    summary: Name of the Azure SQL Database.
-    description: ''
-  - name: –resource-group -g
-    isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
-    description: ''
-  - name: –server -s
-    isRequired: True
-    summary: Name of the Azure SQL server.
-    description: ''
-  - name: –debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: –help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: –output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: –verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_sql_db_list-usages
-  name: az sql db list-usages
-  description: ''
-  summary: Returns database usages.
   Metadata: {}
 - commandList: []
   htmlId: restore
@@ -552,7 +500,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -604,7 +552,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_restore
   name: az sql db restore
@@ -621,7 +569,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -653,7 +601,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_show
   name: az sql db show
@@ -670,7 +618,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –server -s
     isRequired: True
@@ -726,7 +674,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_sql_db_update
   name: az sql db update
@@ -738,9 +686,9 @@ name: 'Azure CLI 2.0 (Preview): SQL Databases - az sql db'
 description: ''
 summary: Manage databases.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   updated_at: 3/25/2017 3:36:46 PM
   ms.date: 3/25/2017

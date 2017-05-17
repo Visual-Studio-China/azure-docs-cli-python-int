@@ -31,9 +31,6 @@ commandList:
 - name: az sql db list
   description: Lists all databases and data warehouses in a server, or all databases in an elastic pool.
   href: sql/db#list
-- name: az sql db list-usages
-  description: Returns database usages.
-  href: sql/db#list-usages
 - name: az sql db replica
   description: Manage replication between databases.
   href: sql/db/replica
@@ -148,9 +145,6 @@ commandList:
 - name: az sql server list
   description: Lists servers.
   href: sql/server#list
-- name: az sql server list-usages
-  description: Returns server usages.
-  href: sql/server#list-usages
 - name: az sql server show
   description: Gets a server.
   href: sql/server#show
@@ -163,16 +157,16 @@ source:
   remote:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children: []
 uid: az_sql
 name: 'Azure CLI 2.0 (Preview): SQL - az sql'
 description: ''
 summary: Manage Azure SQL Databases and Data Warehouses.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/afee409b3374de98fb868cd0e5bcbb3161899b92/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/help.py
   updated_at: 3/25/2017 3:36:46 PM
   ms.date: 3/25/2017

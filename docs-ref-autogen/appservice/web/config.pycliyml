@@ -1,89 +1,89 @@
 commandList:
 - name: az appservice web config appsettings
-  description: ''
+  description: Configure web app settings.
   href: config/appsettings
   isGroup: true
 - name: az appservice web config appsettings delete
-  description: ''
+  description: Delete web app settings.
   href: config/appsettings#delete
 - name: az appservice web config appsettings show
-  description: ''
+  description: Show web app settings.
   href: config/appsettings#show
 - name: az appservice web config appsettings update
-  description: ''
+  description: Create or update web app settings.
   href: config/appsettings#update
 - name: az appservice web config backup
   description: ''
   href: config/backup
   isGroup: true
 - name: az appservice web config backup create
-  description: ''
+  description: Create a backup of a web app.
   href: config/backup#create
 - name: az appservice web config backup list
-  description: ''
+  description: List all backups of a web app.
   href: config/backup#list
 - name: az appservice web config backup restore
-  description: ''
+  description: Restore a web app from a backup.
   href: config/backup#restore
 - name: az appservice web config backup show
-  description: ''
+  description: Show the backup schedule of a web app.
   href: config/backup#show
 - name: az appservice web config backup update
-  description: ''
+  description: Configure a new backup schedule.
   href: config/backup#update
 - name: az appservice web config container
-  description: ''
+  description: Configure container specific settings.
   href: config/container
   isGroup: true
 - name: az appservice web config container delete
-  description: ''
+  description: Delete container settings.
   href: config/container#delete
 - name: az appservice web config container show
-  description: ''
+  description: Show container settings.
   href: config/container#show
 - name: az appservice web config container update
-  description: ''
+  description: Update container settings.
   href: config/container#update
 - name: az appservice web config hostname
-  description: ''
+  description: Configure hostnames.
   href: config/hostname
   isGroup: true
 - name: az appservice web config hostname add
-  description: ''
+  description: Bind a hostname (custom domain) to a web app.
   href: config/hostname#add
 - name: az appservice web config hostname delete
-  description: ''
+  description: Unbind a hostname (custom domain) from a web app.
   href: config/hostname#delete
 - name: az appservice web config hostname get-external-ip
-  description: ''
+  description: Get the ip address to configure your DNS settings for A records.
   href: config/hostname#get-external-ip
 - name: az appservice web config hostname list
-  description: ''
+  description: List all hostname bindings.
   href: config/hostname#list
 - name: az appservice web config show
-  description: ''
+  description: Show web app configurations.
   href: config#show
 - name: az appservice web config ssl
-  description: ''
+  description: Configure SSL certificates.
   href: config/ssl
   isGroup: true
 - name: az appservice web config ssl bind
-  description: ''
+  description: Bind an SSL certificate to a web app.
   href: config/ssl#bind
 - name: az appservice web config ssl delete
-  description: ''
+  description: Delete an SSL certificate from a web app.
   href: config/ssl#delete
 - name: az appservice web config ssl list
-  description: ''
+  description: List SSL certificates within a resource group.
   href: config/ssl#list
 - name: az appservice web config ssl unbind
-  description: ''
+  description: Unbind an SSL certificate from a web app.
   href: config/ssl#unbind
 - name: az appservice web config ssl upload
-  description: ''
+  description: Upload an SSL certificate to a web app.
   href: config/ssl#upload
 - name: az appservice web config update
-  description: ''
+  description: Update web app configurations.
   href: config#update
 htmlId: config
 examples: []
@@ -91,7 +91,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: show
@@ -103,7 +103,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –slot -s
     isRequired: False
@@ -135,12 +135,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_config_show
   name: az appservice web config show
   description: ''
-  summary: ''
+  summary: Show web app configurations.
   Metadata: {}
 - commandList: []
   htmlId: update
@@ -152,7 +152,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –always-on
     isRequired: False
@@ -245,21 +245,21 @@ children:
     remote:
       path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_appservice_web_config_update
   name: az appservice web config update
   description: ''
-  summary: ''
+  summary: Update web app configurations.
   Metadata: {}
 uid: az_appservice_web_config
 name: 'Azure CLI 2.0 (Preview): Web Apps configuration - az appservice web config'
 description: ''
-summary: ''
+summary: Configure a web app.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/81419735fdc9087005ed4204b995707ff3892c49/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-  updated_at: 5/8/2017 9:09:41 PM
-  ms.date: 5/8/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/62342bb48fa759f50675a994b107ddc6bc8479ed/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+  updated_at: 3/27/2017 9:44:14 PM
+  ms.date: 3/27/2017

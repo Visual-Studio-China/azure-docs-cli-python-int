@@ -26,10 +26,10 @@ commandList:
   href: acs/kubernetes
   isGroup: true
 - name: az acs kubernetes browse
-  description: Launch a proxy and browse the Kubernetes web UI.
+  description: Wrapper on the ‘kubectl proxy’ command, for consistency with ‘az dcos browse’.
   href: acs/kubernetes#browse
 - name: az acs kubernetes get-credentials
-  description: Download and install credentials to access your cluster.
+  description: Create a new Acs.
   href: acs/kubernetes#get-credentials
 - name: az acs kubernetes install-cli
   description: Downloads the kubectl command line from Kubernetes.
@@ -52,7 +52,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: browse
@@ -60,11 +60,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: ACS cluster name. You can configure the default using az configure –defaults acs=<name>.
+    summary: ACS cluster name. You can configure the default using ‘az configure –defaults acs=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –disable-browser
     isRequired: False
@@ -74,6 +74,7 @@ children:
     isRequired: False
     summary: If set a path to an SSH key to use, only applies to DCOS.
     description: ''
+    defaultValue: C:Usersappveyor.sshid_rsa
   - name: –debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -100,7 +101,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_browse
   name: az acs browse
@@ -111,15 +112,15 @@ children:
   htmlId: create
   examples:
   - title: Create a Kubernetes container service and generate keys.
-    code: az acs create -g MyResourceGroup -n MyContainerService –orchestrator-type kubernetes –generate-ssh-keys
+    code: az acs create -g MyResourceGroup -n MyContainer_service –orchestrator-type kubernetes –generate-ssh-keys
   parameters:
   - name: –name -n
     isRequired: True
-    summary: ACS cluster name. You can configure the default using az configure –defaults acs=<name>.
+    summary: ACS cluster name. You can configure the default using ‘az configure –defaults acs=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –admin-password
     isRequired: False
@@ -154,7 +155,7 @@ children:
     description: ''
   - name: –location -l
     isRequired: False
-    summary: Location. You can configure the default location using az configure –defaults location=<location>.
+    summary: Location. You can configure the default location using ‘az configure –defaults location=<location>’.
     description: ''
   - name: –master-count
     isRequired: False
@@ -182,7 +183,7 @@ children:
     defaultValue: ~.sshid_rsa.pub
   - name: –tags
     isRequired: False
-    summary: Space separated tags in ‘key[=value]’ format. Use “” to clear existing tags.
+    summary: Tags object.
     description: ''
   - name: –validate
     isRequired: False
@@ -218,7 +219,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_create
   name: az acs create
@@ -235,7 +236,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -263,7 +264,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_delete
   name: az acs delete
@@ -276,11 +277,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: ACS cluster name. You can configure the default using az configure –defaults acs=<name>.
+    summary: ACS cluster name. You can configure the default using ‘az configure –defaults acs=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –client-version
     isRequired: False
@@ -316,7 +317,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_install-cli
   name: az acs install-cli
@@ -329,7 +330,7 @@ children:
   parameters:
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -357,7 +358,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_list
   name: az acs list
@@ -378,7 +379,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -406,7 +407,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_scale
   name: az acs scale
@@ -423,7 +424,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -451,7 +452,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_show
   name: az acs show
@@ -468,7 +469,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –created
     isRequired: False
@@ -526,7 +527,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_acs_wait
   name: az acs wait
@@ -538,9 +539,9 @@ name: 'Azure CLI 2.0 (Preview): Container Service - az acs'
 description: ''
 summary: Manage Azure Container Services.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/e2802f4730d8c13151f8216605320d60a72a09d5/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-  updated_at: 4/25/2017 6:34:53 PM
-  ms.date: 4/25/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+  updated_at: 2/18/2017 7:03:08 PM
+  ms.date: 2/18/2017

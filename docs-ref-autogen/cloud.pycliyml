@@ -26,7 +26,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: list
@@ -58,7 +58,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_list
   name: az cloud list
@@ -104,7 +104,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_list-profiles
   name: az cloud list-profiles
@@ -155,7 +155,7 @@ children:
     isRequired: False
     summary: Profile to use for this cloud.
     description: ''
-    parameterValueGroup: 2017-03-09-profile-preview, latest
+    parameterValueGroup: 2015-sample, 2016-sample, latest
   - name: –suffix-azure-datalake-analytics-catalog-and-job-endpoint
     isRequired: False
     summary: The Data Lake analytics job and catalog service dns suffix.
@@ -202,7 +202,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_register
   name: az cloud register
@@ -243,7 +243,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_set
   name: az cloud set
@@ -285,7 +285,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_show
   name: az cloud show
@@ -326,7 +326,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_unregister
   name: az cloud unregister
@@ -378,7 +378,7 @@ children:
     isRequired: False
     summary: Profile to use for this cloud.
     description: ''
-    parameterValueGroup: 2017-03-09-profile-preview, latest
+    parameterValueGroup: 2015-sample, 2016-sample, latest
   - name: –suffix-azure-datalake-analytics-catalog-and-job-endpoint
     isRequired: False
     summary: The Data Lake analytics job and catalog service dns suffix.
@@ -425,7 +425,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_cloud_update
   name: az cloud update
@@ -437,9 +437,9 @@ name: 'Azure CLI 2.0 (Preview): Could Services - az cloud'
 description: ''
 summary: Manage the registered Azure clouds.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-cloud/azure/cli/command_modules/cloud/_help.py
   updated_at: 4/14/2017 11:08:50 PM
   ms.date: 4/14/2017

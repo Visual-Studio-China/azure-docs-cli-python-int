@@ -64,7 +64,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -74,7 +74,7 @@ children:
   parameters:
   - name: –location -l
     isRequired: True
-    summary: Location. You can configure the default location using az configure –defaults location=<location>.
+    summary: Location. You can configure the default location using ‘az configure –defaults location=<location>’.
     description: ''
   - name: –name -n
     isRequired: True
@@ -110,7 +110,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_create
   name: az group create
@@ -125,7 +125,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -161,7 +161,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_delete
   name: az group delete
@@ -176,7 +176,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -204,7 +204,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_exists
   name: az group exists
@@ -217,7 +217,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –include-comments
     isRequired: False
@@ -253,7 +253,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_export
   name: az group export
@@ -296,7 +296,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_list
   name: az group list
@@ -309,7 +309,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -337,7 +337,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_show
   name: az group show
@@ -350,7 +350,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –add
     isRequired: False
@@ -390,7 +390,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_update
   name: az group update
@@ -403,7 +403,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –created
     isRequired: False
@@ -461,7 +461,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_group_wait
   name: az group wait
@@ -473,9 +473,9 @@ name: 'Azure CLI 2.0 (Preview): Resource groups - az group'
 description: ''
 summary: Manage resource groups and template deployments.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/01aa8df57e43d6cd70954d521ee816df36e35e38/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  updated_at: 5/9/2017 2:17:18 AM
-  ms.date: 5/9/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/273e7ccb86b29ce0a86ae651e76fa9034c3e6cfc/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 4/18/2017 2:53:53 AM
+  ms.date: 4/18/2017

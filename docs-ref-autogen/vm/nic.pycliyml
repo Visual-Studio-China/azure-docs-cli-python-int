@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: add
@@ -34,11 +34,11 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –primary-nic
     isRequired: False
@@ -70,7 +70,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_nic_add
   name: az vm nic add
@@ -85,11 +85,11 @@ children:
   parameters:
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -117,7 +117,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_nic_list
   name: az vm nic list
@@ -136,11 +136,11 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –primary-nic
     isRequired: False
@@ -172,7 +172,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_nic_remove
   name: az vm nic remove
@@ -191,11 +191,11 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –primary-nic
     isRequired: False
@@ -227,7 +227,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_nic_set
   name: az vm nic set
@@ -246,11 +246,11 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using az configure –defaults vm=<name>.
+    summary: The name of the Virtual Machine. You can configure the default using ‘az configure –defaults vm=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -278,7 +278,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vm_nic_show
   name: az vm nic show
@@ -290,9 +290,9 @@ name: 'Azure CLI 2.0 (Preview): VM network interfaces - az vm nic'
 description: A network interface (NIC) is the interconnection between a VM and the underlying software network. For more information, see <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface-overview">https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface-overview</a>.
 summary: Manage network interfaces, see also ‘az network nic’.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/0fa7ba5ef9b8cfa6f23348de4d341361bad89534/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 5/10/2017 8:06:46 PM
-  ms.date: 5/10/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 4/5/2017 9:00:48 PM
+  ms.date: 4/5/2017

@@ -124,7 +124,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Azure/azure-cli.git
+    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
 children:
 - commandList: []
   htmlId: create
@@ -154,7 +154,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –custom-data
     isRequired: False
@@ -179,7 +179,7 @@ children:
     description: ''
   - name: –secrets
     isRequired: False
-    summary: 'One or many Key Vault secrets as JSON strings or files via @<file path> containing [{ “sourceVault”: { “id”: “value” }, “vaultCertificates”: [{ “certificateUrl”: “value”, “certificateStore”: “cert store name (only on windows)”}] }].'
+    summary: 'One or many Key Vault secrets as JSON strings or files via ‘@<file path>’ containing ‘[{ “sourceVault”: { “id”: “value” }, “vaultCertificates”: [{ “certificateUrl”: “value”, “certificateStore”: “cert store name (only on windows)”}] }]’.'
     description: ''
   - name: –single-placement-group
     isRequired: False
@@ -348,7 +348,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_create
   name: az vmss create
@@ -361,11 +361,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-ids
     isRequired: False
@@ -401,7 +401,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_deallocate
   name: az vmss deallocate
@@ -414,11 +414,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -450,7 +450,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_delete
   name: az vmss delete
@@ -467,11 +467,11 @@ children:
     description: ''
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -503,7 +503,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_delete-instances
   name: az vmss delete-instances
@@ -516,11 +516,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-id
     isRequired: False
@@ -552,7 +552,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_get-instance-view
   name: az vmss get-instance-view
@@ -565,7 +565,7 @@ children:
   parameters:
   - name: –resource-group -g
     isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -593,7 +593,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_list
   name: az vmss list
@@ -606,11 +606,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -638,7 +638,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_list-instance-connection-info
   name: az vmss list-instance-connection-info
@@ -651,11 +651,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –expand
     isRequired: False
@@ -695,7 +695,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_list-instances
   name: az vmss list-instances
@@ -708,11 +708,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –debug
     isRequired: False
@@ -740,7 +740,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_list-skus
   name: az vmss list-skus
@@ -753,11 +753,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-id
     isRequired: False
@@ -793,7 +793,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_reimage
   name: az vmss reimage
@@ -806,11 +806,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-ids
     isRequired: False
@@ -846,7 +846,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_restart
   name: az vmss restart
@@ -859,7 +859,7 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –new-capacity
     isRequired: True
@@ -867,7 +867,7 @@ children:
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -899,7 +899,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_scale
   name: az vmss scale
@@ -912,11 +912,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-id
     isRequired: False
@@ -948,7 +948,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_show
   name: az vmss show
@@ -961,11 +961,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-ids
     isRequired: False
@@ -1001,7 +1001,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_start
   name: az vmss start
@@ -1014,11 +1014,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –instance-ids
     isRequired: False
@@ -1054,7 +1054,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_stop
   name: az vmss stop
@@ -1067,11 +1067,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1115,7 +1115,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_update
   name: az vmss update
@@ -1132,11 +1132,11 @@ children:
     description: ''
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –no-wait
     isRequired: False
@@ -1168,7 +1168,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_update-instances
   name: az vmss update-instances
@@ -1181,11 +1181,11 @@ children:
   parameters:
   - name: –name -n
     isRequired: True
-    summary: Scale set name. You can configure the default using az configure –defaults vmss=<name>.
+    summary: Scale set name. You can configure the default using ‘az configure –defaults vmss=<name>’.
     description: ''
   - name: –resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure –defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using ‘az configure –defaults group=<name>’.
     description: ''
   - name: –created
     isRequired: False
@@ -1243,7 +1243,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
   children: []
   uid: az_vmss_wait
   name: az vmss wait
@@ -1255,9 +1255,9 @@ name: 'Azure CLI 2.0 (Preview): VM scale sets (VMSS) - az vmss'
 description: ''
 summary: Create highly available, auto-scalable Linux or Windows virtual machines.
 Metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/0fa7ba5ef9b8cfa6f23348de4d341361bad89534/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 5/10/2017 8:06:46 PM
-  ms.date: 5/10/2017
+  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 4/5/2017 9:00:48 PM
+  ms.date: 4/5/2017
