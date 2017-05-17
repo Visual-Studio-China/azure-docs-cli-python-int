@@ -29,31 +29,31 @@ children:
   htmlId: create
   examples: []
   parameters:
-  - name: –id
+  - name: --id
     isRequired: True
     summary: Identifier uri, application id, or object id of the associated application.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -72,83 +72,83 @@ children:
   - title: Create with a default role assignment.
     code: az ad sp create-for-rbac
   - title: Create using a custom name, and with a default assiggment.
-    code: az ad sp create-for-rbac -n “http://MyApp”
+    code: az ad sp create-for-rbac -n "http://MyApp"
   - title: Create without a default assignment.
-    code: az ad sp create-for-rbac –skip-assignment
+    code: az ad sp create-for-rbac --skip-assignment
   - title: Create with customized assignments
-    code: az ad sp create-for-rbac -n “http://MyApp” –role contributor –scopes /subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/MyResourceGroup /subscriptions/11111111-2222-3333-4444-666666666666/resourceGroups/MyAnotherResourceGroup
+    code: az ad sp create-for-rbac -n "http://MyApp" --role contributor --scopes /subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/MyResourceGroup /subscriptions/11111111-2222-3333-4444-666666666666/resourceGroups/MyAnotherResourceGroup
   - title: Create using self-signed certificte
-    code: az ad sp create-for-rbac –create-cert
+    code: az ad sp create-for-rbac --create-cert
   - title: Login with a service principal.
-    code: az login –service-principal -u <name> -p <password> –tenant <tenant>
+    code: az login --service-principal -u <name> -p <password> --tenant <tenant>
   - title: Login with self-signed certificate
-    code: az login –service-principal -u <name> -p <certificate file path> –tenant <tenant>
+    code: az login --service-principal -u <name> -p <certificate file path> --tenant <tenant>
   - title: Reset credentials on expiration.
-    code: az ad sp reset-credentials –name <name>
+    code: az ad sp reset-credentials --name <name>
   - title: Create extra role assignments in future.
-    code: az role assignment create –assignee <name> –role Contributor
+    code: az role assignment create --assignee <name> --role Contributor
   - title: Revoke the service principal when done with it.
-    code: az ad app delete –id <name>
+    code: az ad app delete --id <name>
   parameters:
-  - name: –cert
+  - name: --cert
     isRequired: False
     summary: PEM formatted public certificate. Do not include private key info.
     description: ''
-  - name: –create-cert
+  - name: --create-cert
     isRequired: False
     summary: Create and upload self-signed certificate which you can use to login.
     description: ''
-  - name: –expanded-view
+  - name: --expanded-view
     isRequired: False
     summary: Once created, display more information like subscription and cloud environments.
     description: ''
-  - name: –name -n
+  - name: --name -n
     isRequired: False
     summary: A display name or an app id uri. Command will generate one if missing.
     description: ''
-  - name: –password -p
+  - name: --password -p
     isRequired: False
     summary: The password used to login. If missing, command will generate one.
     description: ''
-  - name: –role
+  - name: --role
     isRequired: False
     summary: Role the service principal has on the resources.
     description: ''
     defaultValue: Contributor
-  - name: –scopes
+  - name: --scopes
     isRequired: False
-    summary: Space separated scopes the service principal’s role assignment applies to. Defaults to the root of the current subscription.
+    summary: Space separated scopes the service principal's role assignment applies to. Defaults to the root of the current subscription.
     description: ''
-  - name: –skip-assignment
+  - name: --skip-assignment
     isRequired: False
     summary: Do not create default assignment.
     description: ''
-  - name: –years
+  - name: --years
     isRequired: False
     summary: Years the password will be valid.
     description: ''
     defaultValue: 1
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -165,31 +165,31 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: –id
+  - name: --id
     isRequired: True
     summary: Service principal name, or object id.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -206,39 +206,39 @@ children:
   htmlId: list
   examples: []
   parameters:
-  - name: –display-name
+  - name: --display-name
     isRequired: False
-    summary: Object’s display name or its prefix.
+    summary: Object's display name or its prefix.
     description: ''
-  - name: –filter
+  - name: --filter
     isRequired: False
     summary: OData filter.
     description: ''
-  - name: –spn
+  - name: --spn
     isRequired: False
     summary: Service principal name.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -255,48 +255,48 @@ children:
   htmlId: reset-credentials
   examples: []
   parameters:
-  - name: –name -n
+  - name: --name -n
     isRequired: True
     summary: The name, can be the app id uri, app id guid, or display name.
     description: ''
-  - name: –cert
+  - name: --cert
     isRequired: False
     summary: PEM formatted public certificate. Do not include private key info.
     description: ''
-  - name: –create-cert
+  - name: --create-cert
     isRequired: False
     summary: Re-create and upload self-signed certificate.
     description: ''
-  - name: –password
+  - name: --password
     isRequired: False
     summary: The password used to login. If missing, command will generate one.
     description: ''
-  - name: –years
+  - name: --years
     isRequired: False
     summary: Years the password will be valid.
     description: ''
     defaultValue: 1
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -313,31 +313,31 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: –id
+  - name: --id
     isRequired: True
     summary: Service principal name, or object id.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:

@@ -20,31 +20,31 @@ children:
   htmlId: delete
   examples: []
   parameters:
-  - name: –group-object-id
+  - name: --group-object-id
     isRequired: True
     summary: Object id.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -61,35 +61,35 @@ children:
   htmlId: list
   examples: []
   parameters:
-  - name: –display-name
+  - name: --display-name
     isRequired: False
-    summary: Object’s display name or its prefix.
+    summary: Object's display name or its prefix.
     description: ''
-  - name: –filter
+  - name: --filter
     isRequired: False
     summary: OData filter.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
@@ -106,31 +106,31 @@ children:
   htmlId: show
   examples: []
   parameters:
-  - name: –object-id
+  - name: --object-id
     isRequired: True
     summary: User objectId to get group information.
     description: ''
-  - name: –debug
+  - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
     description: ''
-  - name: –help -h
+  - name: --help -h
     isRequired: False
     summary: Show this help message and exit.
     description: ''
-  - name: –output -o
+  - name: --output -o
     isRequired: False
     summary: Output format.
     description: ''
     defaultValue: json
     parameterValueGroup: json, jsonc, table, tsv
-  - name: –query
+  - name: --query
     isRequired: False
     summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
     description: ''
-  - name: –verbose
+  - name: --verbose
     isRequired: False
-    summary: Increase logging verbosity. Use –debug for full debug logs.
+    summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   source:
     remote:
