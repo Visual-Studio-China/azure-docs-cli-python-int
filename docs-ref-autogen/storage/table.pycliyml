@@ -42,7 +42,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -102,7 +102,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_create
   name: az storage table create
@@ -167,7 +167,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_delete
   name: az storage table delete
@@ -228,7 +228,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_exists
   name: az storage table exists
@@ -325,7 +325,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_generate-sas
   name: az storage table generate-sas
@@ -390,7 +390,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_list
   name: az storage table list
@@ -447,7 +447,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_storage_table_stats
   name: az storage table stats
@@ -459,9 +459,9 @@ name: 'Azure CLI 2.0 (Preview): Tables - az storage table'
 description: ''
 summary: NoSQL key-value storage using semi-structured datasets.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/bed55b19f9bb79b774da164dc39000933a5aa810/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  updated_at: 4/14/2017 11:08:50 PM
-  ms.date: 4/14/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/a6b8fd8a5306a66a96b52d245b13cc96c667fa13/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 4/28/2017 11:59:18 PM
+  ms.date: 4/28/2017

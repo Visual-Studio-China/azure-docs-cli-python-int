@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: list
@@ -38,7 +38,7 @@ children:
     description: ''
   - name: --location -l
     isRequired: False
-    summary: Location. You can configure the default location using 'az configure --defaults location=<location>'.
+    summary: Location. You can configure the default location using az configure --defaults location=<location>.
     description: ''
   - name: --offer -f
     isRequired: False
@@ -78,7 +78,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_image_list
   name: az vm image list
@@ -95,7 +95,7 @@ children:
   parameters:
   - name: --location -l
     isRequired: True
-    summary: Location. You can configure the default location using 'az configure --defaults location=<location>'.
+    summary: Location. You can configure the default location using az configure --defaults location=<location>.
     description: ''
   - name: --publisher -p
     isRequired: True
@@ -127,7 +127,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_image_list-offers
   name: az vm image list-offers
@@ -144,7 +144,7 @@ children:
   parameters:
   - name: --location -l
     isRequired: True
-    summary: Location. You can configure the default location using 'az configure --defaults location=<location>'.
+    summary: Location. You can configure the default location using az configure --defaults location=<location>.
     description: ''
   - name: --debug
     isRequired: False
@@ -172,7 +172,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_image_list-publishers
   name: az vm image list-publishers
@@ -187,7 +187,7 @@ children:
   parameters:
   - name: --location -l
     isRequired: True
-    summary: Location. You can configure the default location using 'az configure --defaults location=<location>'.
+    summary: Location. You can configure the default location using az configure --defaults location=<location>.
     description: ''
   - name: --offer -f
     isRequired: True
@@ -223,7 +223,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_image_list-skus
   name: az vm image list-skus
@@ -240,7 +240,7 @@ children:
   parameters:
   - name: --location -l
     isRequired: True
-    summary: Location. You can configure the default location using 'az configure --defaults location=<location>'.
+    summary: Location. You can configure the default location using az configure --defaults location=<location>.
     description: ''
   - name: --offer -f
     isRequired: True
@@ -284,7 +284,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_image_show
   name: az vm image show
@@ -296,9 +296,9 @@ name: 'Azure CLI 2.0 (Preview): VM images - az vm image'
 description: ''
 summary: Virtual machine images that are available in the Azure Marketplace.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 4/5/2017 9:00:48 PM
-  ms.date: 4/5/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/0fa7ba5ef9b8cfa6f23348de4d341361bad89534/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 5/10/2017 8:06:46 PM
+  ms.date: 5/10/2017

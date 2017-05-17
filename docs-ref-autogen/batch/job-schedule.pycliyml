@@ -32,7 +32,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -141,7 +141,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_create
   name: az batch job-schedule create
@@ -214,7 +214,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_delete
   name: az batch job-schedule delete
@@ -283,7 +283,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_disable
   name: az batch job-schedule disable
@@ -352,7 +352,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_enable
   name: az batch job-schedule enable
@@ -413,7 +413,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_list
   name: az batch job-schedule list
@@ -547,7 +547,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_reset
   name: az batch job-schedule reset
@@ -681,7 +681,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_set
   name: az batch job-schedule set
@@ -758,7 +758,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_show
   name: az batch job-schedule show
@@ -827,7 +827,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_batch_job-schedule_stop
   name: az batch job-schedule stop
@@ -839,9 +839,9 @@ name: az batch job-schedule
 description: ''
 summary: Manage your Batch job schedules.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/7f61e4356a0faea2fb23d4a6f36e1fa44639b7a2/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
   updated_at: 2/18/2017 7:03:08 PM
   ms.date: 2/18/2017

@@ -33,7 +33,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: delete
@@ -49,11 +49,11 @@ children:
     description: ''
   - name: --resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
   - name: --vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    summary: The name of the Virtual Machine. You can configure the default using az configure --defaults vm=<name>.
     description: ''
   - name: --debug
     isRequired: False
@@ -81,7 +81,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_extension_delete
   name: az vm extension delete
@@ -98,11 +98,11 @@ children:
   parameters:
   - name: --resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
   - name: --vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    summary: The name of the Virtual Machine. You can configure the default using az configure --defaults vm=<name>.
     description: ''
   - name: --debug
     isRequired: False
@@ -130,7 +130,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_extension_list
   name: az vm extension list
@@ -153,11 +153,11 @@ children:
     description: ''
   - name: --resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
   - name: --vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    summary: The name of the Virtual Machine. You can configure the default using az configure --defaults vm=<name>.
     description: ''
   - name: --no-auto-upgrade
     isRequired: False
@@ -201,7 +201,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_extension_set
   name: az vm extension set
@@ -220,11 +220,11 @@ children:
     description: ''
   - name: --resource-group -g
     isRequired: True
-    summary: Name of resource group. You can configure the default group using 'az configure --defaults group=<name>'.
+    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
   - name: --vm-name
     isRequired: True
-    summary: The name of the Virtual Machine. You can configure the default using 'az configure --defaults vm=<name>'.
+    summary: The name of the Virtual Machine. You can configure the default using az configure --defaults vm=<name>.
     description: ''
   - name: --expand
     isRequired: False
@@ -256,7 +256,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_vm_extension_show
   name: az vm extension show
@@ -268,9 +268,9 @@ name: 'Azure CLI 2.0 (Preview): VM extensions - az vm extension'
 description: Extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. For example, if a virtual machine requires software installation, anti-virus protection, or Docker configuration, a VM extension can be used to complete these tasks. Extensions can be bundled with a new virtual machine deployment or run against any existing system.
 summary: Extend the functionality of your VMs with extensions.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/fa855def74daa7ae77d556e0a9a2492268d92ea5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-  updated_at: 4/5/2017 9:00:48 PM
-  ms.date: 4/5/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/0fa7ba5ef9b8cfa6f23348de4d341361bad89534/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  updated_at: 5/10/2017 8:06:46 PM
+  ms.date: 5/10/2017

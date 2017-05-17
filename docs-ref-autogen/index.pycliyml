@@ -16,27 +16,35 @@ commandList:
   href: ad
   isGroup: true
 - name: az appservice
-  description: Manage your Azure Web apps and App Service plans.
+  description: Manage your App Service plans.
   href: appservice
   isGroup: true
 - name: az batch
   description: Manage Azure Batch.
   href: batch
   isGroup: true
+- name: az cdn
+  description: Manage Azure Content Delivery Networks (CDN).
+  href: cdn
+  isGroup: true
 - name: az cloud
   description: Manage the registered Azure clouds.
   href: cloud
   isGroup: true
+- name: az cognitiveservices
+  description: Manage Cognitive Services accounts in Azure Resource Manager.
+  href: cognitiveservices
+  isGroup: true
 - name: az component
-  description: Manage and update Azure CLI 2.0 (Preview) components.
+  description: Manage and update Azure CLI 2.0 components.
   href: component
   isGroup: true
 - name: az configure
-  description: Configure Azure CLI 2.0 Preview or view your configuration. The command is interactive, so just type az configure and respond to the prompts.
+  description: Configure Azure CLI 2.0 or view your configuration. The command is interactive, so just type az configure and respond to the prompts.
   href: '#configure'
-- name: az container
-  description: Set up automated builds and deployments for multi-container Docker applications.
-  href: container
+- name: az cosmosdb
+  description: Manage Azure Cosmos DB database accounts.
+  href: cosmosdb
   isGroup: true
 - name: az disk
   description: Manage Azure Managed Disks.
@@ -50,10 +58,6 @@ commandList:
   description: Commands to manage Data Lake Store accounts, and filesystems.
   href: dls
   isGroup: true
-- name: az documentdb
-  description: Manage your Azure DocumentDB (NoSQL) database accounts.
-  href: documentdb
-  isGroup: true
 - name: az feature
   description: Manage resource provider features, such as previews.
   href: feature
@@ -64,6 +68,10 @@ commandList:
 - name: az find
   description: Find Azure CLI commands based on a given query.
   href: '#find'
+- name: az functionapp
+  description: Manage your function app.
+  href: functionapp
+  isGroup: true
 - name: az group
   description: Manage resource groups and template deployments.
   href: group
@@ -72,6 +80,9 @@ commandList:
   description: Manage custom Virtual Machine Images.
   href: image
   isGroup: true
+- name: az interactive
+  description: Start the interactive experience.
+  href: '#interactive'
 - name: az iot
   description: Connect, monitor, and control millions of IoT assets.
   href: iot
@@ -94,9 +105,17 @@ commandList:
 - name: az logout
   description: Log out to remove access to Azure subscriptions.
   href: '#logout'
+- name: az managedapp
+  description: Manage template solutions provided and maintained by the ISV using managedapp and managedapp definitions.
+  href: managedapp
+  isGroup: true
 - name: az monitor
   description: Commands to manage Azure Monitor service.
   href: monitor
+  isGroup: true
+- name: az mysql
+  description: Commands to manage Azure MySQL servers.
+  href: mysql
   isGroup: true
 - name: az network
   description: Manages Azure Network resources.
@@ -105,6 +124,10 @@ commandList:
 - name: az policy
   description: Manage resource policies.
   href: policy
+  isGroup: true
+- name: az postgres
+  description: Commands to manage Azure PostgreSQL servers.
+  href: postgres
   isGroup: true
 - name: az provider
   description: Manage resource providers.
@@ -121,6 +144,10 @@ commandList:
 - name: az role
   description: Use role assignments to manage access to your Azure resources.
   href: role
+  isGroup: true
+- name: az sf
+  description: Manage and administer a Service Fabric cluster.
+  href: sf
   isGroup: true
 - name: az snapshot
   description: Manage point-in-time copies of managed disks, native blobs, or other snapshots.
@@ -150,13 +177,17 @@ commandList:
   description: Create highly available, auto-scalable Linux or Windows virtual machines.
   href: vmss
   isGroup: true
+- name: az webapp
+  description: Manage web apps.
+  href: webapp
+  isGroup: true
 htmlId: az
 examples: []
 source:
   remote:
     path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: configure
@@ -192,12 +223,12 @@ children:
     remote:
       path: src/command_modules/azure-cli-configure/azure/cli/command_modules/configure/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_configure
   name: az configure
   description: ''
-  summary: Configure Azure CLI 2.0 Preview or view your configuration. The command is interactive, so just type az configure and respond to the prompts.
+  summary: Configure Azure CLI 2.0 or view your configuration. The command is interactive, so just type az configure and respond to the prompts.
   Metadata: {}
 - commandList: []
   htmlId: feedback
@@ -229,7 +260,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-feedback/azure/cli/command_modules/feedback/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_feedback
   name: az feedback
@@ -279,6 +310,48 @@ children:
   summary: Find Azure CLI commands based on a given query.
   Metadata: {}
 - commandList: []
+  htmlId: interactive
+  examples: []
+  parameters:
+  - name: --style -s
+    isRequired: False
+    summary: The colors of the shell.
+    description: ''
+    parameterValueGroup: bg, br, contrast, default, grey, halloween, neon, none, pastel, primary, purple, quiet
+  - name: --debug
+    isRequired: False
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    isRequired: False
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    isRequired: False
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup: json, jsonc, table, tsv
+  - name: --query
+    isRequired: False
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    isRequired: False
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  source:
+    remote:
+      path: src/command_modules/azure-cli-interactive/azure/cli/command_modules/interactive/_help.py
+      branch: master
+      repo: https://github.com/Azure/azure-cli.git
+  children: []
+  uid: az_interactive
+  name: az interactive
+  description: An interactive environment that makes it easier to learn and use Azure CLI commands. see <a href="https://azure.microsoft.com/en-us/blog/welcome-to-azure-cli-shell/">https://azure.microsoft.com/en-us/blog/welcome-to-azure-cli-shell/</a>.
+  summary: Start the interactive experience.
+  Metadata: {}
+- commandList: []
   htmlId: login
   examples:
   - title: Log in interactively.
@@ -290,6 +363,10 @@ children:
   - title: Log in with a service principal using client certificate.
     code: az login --service-principal -u http://azure-cli-2016-08-05-14-31-15 -p ~/mycertfile.pem --tenant contoso.onmicrosoft.com
   parameters:
+  - name: --allow-no-subscriptions
+    isRequired: False
+    summary: Support access tenants without subscriptions. It's uncommon but useful to run tenant level commands, such as 'az ad'.
+    description: ''
   - name: --password -p
     isRequired: False
     summary: Credentials like user password, or for a service principal, provide client secret or a pem file with key and public certificate. Will prompt if not given.
@@ -332,7 +409,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_login
   name: az login
@@ -373,7 +450,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_logout
   name: az logout
@@ -385,9 +462,9 @@ name: 'Azure CLI 2.0 (Preview): Command reference - az'
 description: ''
 summary: ''
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/96fd150a68b6f81444df6c6aa0f1e8bd4e9874e1/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/96fd150a68b6f81444df6c6aa0f1e8bd4e9874e1/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
   updated_at: 3/15/2017 8:57:14 PM
   ms.date: 3/15/2017

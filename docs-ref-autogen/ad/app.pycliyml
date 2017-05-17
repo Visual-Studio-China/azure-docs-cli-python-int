@@ -20,7 +20,7 @@ source:
   remote:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     branch: master
-    repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+    repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
   htmlId: create
@@ -44,7 +44,7 @@ children:
     description: ''
   - name: --end-date
     isRequired: False
-    summary: The end date till which password or key is valid. Default value is one year after current time.
+    summary: Date or datetime after which credentials expire(e.g. '2017-12-31T11:59:59+00:00' or '2017-12-31'). Default value is one year after current time.
     description: ''
   - name: --key-type
     isRequired: False
@@ -72,7 +72,7 @@ children:
     description: ''
   - name: --start-date
     isRequired: False
-    summary: The start date after which password or key would be valid. Default value is current time.
+    summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.
     description: ''
   - name: --debug
     isRequired: False
@@ -100,7 +100,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_app_create
   name: az ad app create
@@ -141,7 +141,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_app_delete
   name: az ad app delete
@@ -194,7 +194,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_app_list
   name: az ad app list
@@ -235,7 +235,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_app_show
   name: az ad app show
@@ -256,7 +256,7 @@ children:
     description: ''
   - name: --end-date
     isRequired: False
-    summary: The end date till which password or key is valid. Default value is one year after current time.
+    summary: Date or datetime after which credentials expire(e.g. '2017-12-31T11:59:59+00:00' or '2017-12-31'). Default value is one year after current time.
     description: ''
   - name: --homepage
     isRequired: False
@@ -292,7 +292,7 @@ children:
     description: ''
   - name: --start-date
     isRequired: False
-    summary: The start date after which password or key would be valid. Default value is current time.
+    summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.
     description: ''
   - name: --debug
     isRequired: False
@@ -320,7 +320,7 @@ children:
     remote:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       branch: master
-      repo: https://github.com/Visual-Studio-China/azure-cli-int.git
+      repo: https://github.com/Azure/azure-cli.git
   children: []
   uid: az_ad_app_update
   name: az ad app update
@@ -332,9 +332,9 @@ name: 'Azure CLI 2.0 (Preview): AAD applications - az ad app'
 description: ''
 summary: Manage Azure Active Directory applications.
 Metadata:
-  doc_source_url_repo: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  original_content_git_url: https://github.com/Visual-Studio-China/azure-cli-int/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Visual-Studio-China/azure-cli-int/blob/c719f2a79e36c91e249db19c30c06e534dc6ac23/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  updated_at: 3/23/2017 6:37:38 PM
-  ms.date: 3/23/2017
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/3e10c0fcee824e3a1d301e99da3299f008be8fee/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  updated_at: 5/11/2017 5:16:22 PM
+  ms.date: 5/11/2017
