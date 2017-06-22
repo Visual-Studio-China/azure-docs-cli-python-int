@@ -1,11 +1,11 @@
 commandList:
-- name: az dla catalog table-partition list
-  description: Retrieves the list of table partitions from the Data Lake Analytics catalog.
-  href: table-partition#list
-- name: az dla catalog table-partition show
-  description: Retrieves the specified table partition from the Data Lake Analytics catalog.
-  href: table-partition#show
-htmlId: table-partition
+- name: az dla job recurrence list
+  description: Lists job recurrences in the Data Lake Analytics account.
+  href: recurrence#list
+- name: az dla job recurrence show
+  description: Retrieves a specific job recurrence in the Data Lake Analytics account.
+  href: recurrence#show
+htmlId: recurrence
 examples: []
 source:
   remote:
@@ -21,41 +21,13 @@ children:
     isRequired: True
     summary: Name of the Data Lake Analytics account.
     description: ''
-  - name: --database-name
-    isRequired: True
-    summary: The name of the database containing the partitions.
-    description: ''
-  - name: --schema-name
-    isRequired: True
-    summary: The name of the schema containing the partitions.
-    description: ''
-  - name: --table-name
-    isRequired: True
-    summary: The name of the table containing the partitions.
-    description: ''
-  - name: --count
+  - name: --end-date-time
     isRequired: False
-    summary: The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true.
+    summary: The end date for when to get the list of recurrences. The startDateTime and endDateTime can be no more than 30 days apart.
     description: ''
-  - name: --filter
+  - name: --start-date-time
     isRequired: False
-    summary: OData filter. Optional.
-    description: ''
-  - name: --orderby
-    isRequired: False
-    summary: OrderBy clause. One or more comma-separated expressions with an optional "asc" (the default) or "desc" depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.
-    description: ''
-  - name: --select
-    isRequired: False
-    summary: OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.
-    description: ''
-  - name: --skip
-    isRequired: False
-    summary: The number of items to skip over before returning elements.
-    description: ''
-  - name: --top
-    isRequired: False
-    summary: Maximum number of items to return.
+    summary: The start date for when to get the list of recurrences. The startDateTime and endDateTime can be no more than 30 days apart.
     description: ''
   - name: --debug
     isRequired: False
@@ -85,10 +57,10 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_dla_catalog_table-partition_list
-  name: az dla catalog table-partition list
+  uid: az_dla_job_recurrence_list
+  name: az dla job recurrence list
   description: ''
-  summary: Retrieves the list of table partitions from the Data Lake Analytics catalog.
+  summary: Lists job recurrences in the Data Lake Analytics account.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -98,21 +70,17 @@ children:
     isRequired: True
     summary: Name of the Data Lake Analytics account.
     description: ''
-  - name: --database-name
+  - name: --recurrence-identity
     isRequired: True
-    summary: The name of the database containing the partition.
+    summary: Recurrence ID.
     description: ''
-  - name: --partition-name
-    isRequired: True
-    summary: The name of the table partition.
+  - name: --end-date-time
+    isRequired: False
+    summary: The end date for when to get recurrence and aggregate its data. The startDateTime and endDateTime can be no more than 30 days apart.
     description: ''
-  - name: --schema-name
-    isRequired: True
-    summary: The name of the schema containing the partition.
-    description: ''
-  - name: --table-name
-    isRequired: True
-    summary: The name of the table containing the partition.
+  - name: --start-date-time
+    isRequired: False
+    summary: The start date for when to get the recurrence and aggregate its data. The startDateTime and endDateTime can be no more than 30 days apart.
     description: ''
   - name: --debug
     isRequired: False
@@ -142,15 +110,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_dla_catalog_table-partition_show
-  name: az dla catalog table-partition show
+  uid: az_dla_job_recurrence_show
+  name: az dla job recurrence show
   description: ''
-  summary: Retrieves the specified table partition from the Data Lake Analytics catalog.
+  summary: Retrieves a specific job recurrence in the Data Lake Analytics account.
   Metadata: {}
-uid: az_dla_catalog_table-partition
-name: az dla catalog table-partition
+uid: az_dla_job_recurrence
+name: az dla job recurrence
 description: These commands are in preview.
-summary: Commands to manage Data Lake Analytics catalog table partitions.
+summary: Commands to manage Data Lake Analytics job recurrences.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py

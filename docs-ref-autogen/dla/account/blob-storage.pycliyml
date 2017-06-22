@@ -1,6 +1,6 @@
 commandList:
 - name: az dla account blob-storage add
-  description: Updates the specified Data Lake Analytics account to add an Azure Storage account.
+  description: ''
   href: blob-storage#add
 - name: az dla account blob-storage delete
   description: Updates the specified Data Lake Analytics account to remove an Azure Storage account.
@@ -12,7 +12,7 @@ commandList:
   description: Gets the specified Azure Storage account linked to the given Data Lake Analytics account.
   href: blob-storage#show
 - name: az dla account blob-storage update
-  description: Updates the Data Lake Analytics account to replace Azure Storage blob account details, such as the access key and/or suffix.
+  description: ''
   href: blob-storage#update
 htmlId: blob-storage
 examples: []
@@ -36,7 +36,7 @@ children:
     description: ''
   - name: --storage-account-name
     isRequired: True
-    summary: The name of the Azure Storage account to add.
+    summary: ''
     description: ''
   - name: --resource-group -g
     isRequired: False
@@ -77,7 +77,7 @@ children:
   uid: az_dla_account_blob-storage_add
   name: az dla account blob-storage add
   description: ''
-  summary: Updates the specified Data Lake Analytics account to add an Azure Storage account.
+  summary: ''
   Metadata: {}
 - commandList: []
   htmlId: delete
@@ -250,17 +250,17 @@ children:
   htmlId: update
   examples: []
   parameters:
+  - name: --access-key
+    isRequired: True
+    summary: The access key associated with this Azure Storage account that will be used to connect to it.
+    description: ''
   - name: --account -n
     isRequired: True
     summary: Name of the Data Lake Analytics account.
     description: ''
   - name: --storage-account-name
     isRequired: True
-    summary: The Azure Storage account to modify.
-    description: ''
-  - name: --access-key
-    isRequired: False
-    summary: The updated access key associated with this Azure Storage account that will be used to connect to it.
+    summary: ''
     description: ''
   - name: --resource-group -g
     isRequired: False
@@ -301,7 +301,7 @@ children:
   uid: az_dla_account_blob-storage_update
   name: az dla account blob-storage update
   description: ''
-  summary: Updates the Data Lake Analytics account to replace Azure Storage blob account details, such as the access key and/or suffix.
+  summary: ''
   Metadata: {}
 uid: az_dla_account_blob-storage
 name: az dla account blob-storage
@@ -311,6 +311,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/71c76c65a64e7dd4788a51d85644b01012f80356/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-  updated_at: 6/8/2017 4:07:47 PM
-  ms.date: 6/8/2017
+  gitcommit: https://github.com/Azure/azure-cli/blob/26153c63665bec8524ecd1db42ae8e7ac9c32ccf/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
+  updated_at: 6/22/2017 5:46:42 PM
+  ms.date: 6/22/2017
