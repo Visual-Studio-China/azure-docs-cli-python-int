@@ -1,11 +1,11 @@
 commandList:
-- name: az network watcher flow-log configure
-  description: Configure flow logging on a Network Security Group (NSG).
-  href: flow-log#configure
-- name: az network watcher flow-log show
-  description: Show flow log configuration for an NSG.
-  href: flow-log#show
-htmlId: flow-log
+- name: az network application-gateway ssl-policy predefined list
+  description: Lists all SSL predefined policies for configuring Ssl policy.
+  href: predefined#list
+- name: az network application-gateway ssl-policy predefined show
+  description: Gets Ssl predefined policy with the specified policy name.
+  href: predefined#show
+htmlId: predefined
 examples: []
 source:
   remote:
@@ -14,30 +14,9 @@ source:
     repo: https://github.com/Azure/azure-cli.git
 children:
 - commandList: []
-  htmlId: configure
+  htmlId: list
   examples: []
   parameters:
-  - name: --nsg
-    isRequired: True
-    summary: Name or ID of the Network Security Group to target.
-    description: ''
-  - name: --enabled
-    isRequired: False
-    summary: Enable logging.
-    description: ''
-    parameterValueGroup: false, true
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --retention
-    isRequired: False
-    summary: Number of days to retain logs.
-    description: ''
-  - name: --storage-account
-    isRequired: False
-    summary: Name or ID of the storage account in which to save the flow logs.
-    description: ''
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -66,22 +45,18 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_watcher_flow-log_configure
-  name: az network watcher flow-log configure
+  uid: az_network_application-gateway_ssl-policy_predefined_list
+  name: az network application-gateway ssl-policy predefined list
   description: ''
-  summary: Configure flow logging on a Network Security Group (NSG).
+  summary: Lists all SSL predefined policies for configuring Ssl policy.
   Metadata: {}
 - commandList: []
   htmlId: show
   examples: []
   parameters:
-  - name: --nsg
+  - name: --name -n
     isRequired: True
-    summary: ''
-    description: ''
-  - name: --resource-group -g
-    isRequired: False
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of Ssl predefined policy.
     description: ''
   - name: --debug
     isRequired: False
@@ -111,15 +86,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_watcher_flow-log_show
-  name: az network watcher flow-log show
+  uid: az_network_application-gateway_ssl-policy_predefined_show
+  name: az network application-gateway ssl-policy predefined show
   description: ''
-  summary: Show flow log configuration for an NSG.
+  summary: Gets Ssl predefined policy with the specified policy name.
   Metadata: {}
-uid: az_network_watcher_flow-log
-name: az network watcher flow-log
+uid: az_network_application-gateway_ssl-policy_predefined
+name: az network application-gateway ssl-policy predefined
 description: ''
-summary: (PREVIEW) Commands to manage NSG flow logging.
+summary: Information on predefined SSL policies.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py

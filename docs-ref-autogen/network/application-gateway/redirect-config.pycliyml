@@ -1,30 +1,20 @@
 commandList:
-- name: az network application-gateway url-path-map create
-  description: Create a URL path map.
-  href: url-path-map#create
-- name: az network application-gateway url-path-map delete
-  description: Delete a URL path map.
-  href: url-path-map#delete
-- name: az network application-gateway url-path-map list
-  description: List URL path maps.
-  href: url-path-map#list
-- name: az network application-gateway url-path-map rule
-  description: Manage the rules for a URL path map.
-  href: url-path-map/rule
-  isGroup: true
-- name: az network application-gateway url-path-map rule create
-  description: Create a rule for a URL path map.
-  href: url-path-map/rule#create
-- name: az network application-gateway url-path-map rule delete
-  description: Delete a rule for a URL path map.
-  href: url-path-map/rule#delete
-- name: az network application-gateway url-path-map show
-  description: Show details of a URL path map.
-  href: url-path-map#show
-- name: az network application-gateway url-path-map update
-  description: Update a URL path map.
-  href: url-path-map#update
-htmlId: url-path-map
+- name: az network application-gateway redirect-config create
+  description: Create a redirect configuration.
+  href: redirect-config#create
+- name: az network application-gateway redirect-config delete
+  description: Delete a redirect configuration.
+  href: redirect-config#delete
+- name: az network application-gateway redirect-config list
+  description: List redirect configurations.
+  href: redirect-config#list
+- name: az network application-gateway redirect-config show
+  description: Show details of a redirect configuration.
+  href: redirect-config#show
+- name: az network application-gateway redirect-config update
+  description: Update a redirect configuration.
+  href: redirect-config#update
+htmlId: redirect-config
 examples: []
 source:
   remote:
@@ -42,49 +32,39 @@ children:
     description: ''
   - name: --name -n
     isRequired: True
-    summary: The name of the URL path map.
+    summary: The name of the redirect configuration.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --default-address-pool
-    isRequired: False
-    summary: The name or ID of the default backend address pool, if different from --address-pool.
+  - name: --type -t
+    isRequired: True
+    summary: HTTP redirection type.
     description: ''
-  - name: --default-http-settings
+    parameterValueGroup: Found, Permanent, SeeOther, Temporary
+  - name: --include-path
     isRequired: False
-    summary: The name or ID of the default HTTP settings, if different from --http-settings.
+    summary: ''
     description: ''
-  - name: --default-redirect-config
+    parameterValueGroup: false, true
+  - name: --include-query-string
     isRequired: False
-    summary: The name or ID of the default redirect configuration.
+    summary: ''
     description: ''
+    parameterValueGroup: false, true
   - name: --no-wait
     isRequired: False
     summary: Do not wait for the long running operation to finish.
     description: ''
-  - name: --paths
-    isRequired: True
-    summary: 'Space separated list of paths to associate with the rule. Valid paths start and end with "/" (ex: "/bar/").'
-    description: ''
-  - name: --address-pool
+  - name: --target-listener
     isRequired: False
-    summary: The name or ID of the backend address pool to use with the created rule.
+    summary: Name or ID of the HTTP listener to redirect the request to.
     description: ''
-  - name: --http-settings
+  - name: --target-url
     isRequired: False
-    summary: The name or ID of the HTTP settings to use with the created rule.
+    summary: URL to redirect the request to.
     description: ''
-  - name: --redirect-config
-    isRequired: False
-    summary: The name or ID of the redirect configuration to use with the created rule.
-    description: ''
-  - name: --rule-name
-    isRequired: False
-    summary: The name of the url-path-map rule.
-    description: ''
-    defaultValue: default
   - name: --debug
     isRequired: False
     summary: Increase logging verbosity to show all debug logs.
@@ -113,10 +93,10 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_url-path-map_create
-  name: az network application-gateway url-path-map create
-  description: The map must be created with at least one rule. This command requires the creation of the first rule at the time the map is created. To create additional rules (using different address pools or HTTP settings) use the 'url-path-map rule create' command. To update the rule created using this command, use the 'url-path-map rule update' command.
-  summary: Create a URL path map.
+  uid: az_network_application-gateway_redirect-config_create
+  name: az network application-gateway redirect-config create
+  description: ''
+  summary: Create a redirect configuration.
   Metadata: {}
 - commandList: []
   htmlId: delete
@@ -128,7 +108,7 @@ children:
     description: ''
   - name: --name -n
     isRequired: True
-    summary: The name of the URL path map.
+    summary: The name of the redirect configuration.
     description: ''
   - name: --resource-group -g
     isRequired: True
@@ -166,10 +146,10 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_url-path-map_delete
-  name: az network application-gateway url-path-map delete
+  uid: az_network_application-gateway_redirect-config_delete
+  name: az network application-gateway redirect-config delete
   description: ''
-  summary: Delete a URL path map.
+  summary: Delete a redirect configuration.
   Metadata: {}
 - commandList: []
   htmlId: list
@@ -211,10 +191,10 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_url-path-map_list
-  name: az network application-gateway url-path-map list
+  uid: az_network_application-gateway_redirect-config_list
+  name: az network application-gateway redirect-config list
   description: ''
-  summary: List URL path maps.
+  summary: List redirect configurations.
   Metadata: {}
 - commandList: []
   htmlId: show
@@ -226,7 +206,7 @@ children:
     description: ''
   - name: --name -n
     isRequired: True
-    summary: The name of the URL path map.
+    summary: The name of the redirect configuration.
     description: ''
   - name: --resource-group -g
     isRequired: True
@@ -260,10 +240,10 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_url-path-map_show
-  name: az network application-gateway url-path-map show
+  uid: az_network_application-gateway_redirect-config_show
+  name: az network application-gateway redirect-config show
   description: ''
-  summary: Show details of a URL path map.
+  summary: Show details of a redirect configuration.
   Metadata: {}
 - commandList: []
   htmlId: update
@@ -275,28 +255,39 @@ children:
     description: ''
   - name: --name -n
     isRequired: True
-    summary: The name of the URL path map.
+    summary: The name of the redirect configuration.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --default-address-pool
+  - name: --include-path
     isRequired: False
-    summary: The name or ID of the default backend address pool.
+    summary: ''
     description: ''
-  - name: --default-http-settings
+    parameterValueGroup: false, true
+  - name: --include-query-string
     isRequired: False
-    summary: The name or ID of the default HTTP settings.
+    summary: ''
     description: ''
-  - name: --default-redirect-config
-    isRequired: False
-    summary: The name or ID of the default redirect configuration.
-    description: ''
+    parameterValueGroup: false, true
   - name: --no-wait
     isRequired: False
-    summary: Do not wait for the long running operation to finish.
+    summary: ''
     description: ''
+  - name: --target-listener
+    isRequired: False
+    summary: Name or ID of the HTTP listener to redirect the request to.
+    description: ''
+  - name: --target-url
+    isRequired: False
+    summary: URL to redirect the request to.
+    description: ''
+  - name: --type -t
+    isRequired: False
+    summary: HTTP redirection type.
+    description: ''
+    parameterValueGroup: Found, Permanent, SeeOther, Temporary
   - name: --add
     isRequired: False
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
@@ -337,15 +328,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_network_application-gateway_url-path-map_update
-  name: az network application-gateway url-path-map update
+  uid: az_network_application-gateway_redirect-config_update
+  name: az network application-gateway redirect-config update
   description: ''
-  summary: Update a URL path map.
+  summary: Update a redirect configuration.
   Metadata: {}
-uid: az_network_application-gateway_url-path-map
-name: 'Azure CLI 2.0 (Preview): URL path maps - az network application-gateway url-path-map'
+uid: az_network_application-gateway_redirect-config
+name: az network application-gateway redirect-config
 description: ''
-summary: Manage URL path maps for an application gateway.
+summary: Manage redirect configurations.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
