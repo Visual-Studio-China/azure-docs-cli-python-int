@@ -1,4 +1,20 @@
 commandList:
+- name: az sql server ad-admin
+  description: Manage a server's Active Directory administrator.
+  href: server/ad-admin
+  isGroup: true
+- name: az sql server ad-admin create
+  description: Creates a new server Active Directory administrator.
+  href: server/ad-admin#create
+- name: az sql server ad-admin delete
+  description: Deletes an existing server Active Directory Administrator.
+  href: server/ad-admin#delete
+- name: az sql server ad-admin list
+  description: Returns a list of server Administrators.
+  href: server/ad-admin#list
+- name: az sql server ad-admin update
+  description: Updates an existing server Active Directory administrator.
+  href: server/ad-admin#update
 - name: az sql server create
   description: Creates a server.
   href: server#create
@@ -354,6 +370,6 @@ Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/71c76c65a64e7dd4788a51d85644b01012f80356/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-  updated_at: 6/8/2017 4:07:47 PM
-  ms.date: 6/8/2017
+  gitcommit: https://github.com/Azure/azure-cli/blob/f6c8d19bd4f04aaad601cb58c0c07999bf123f52/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+  updated_at: 7/6/2017 3:46:49 PM
+  ms.date: 7/6/2017

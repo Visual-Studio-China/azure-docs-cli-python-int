@@ -1,20 +1,17 @@
 commandList:
-- name: az sql server firewall-rule create
-  description: Creates a firewall rule.
-  href: firewall-rule#create
-- name: az sql server firewall-rule delete
-  description: Deletes a firewall rule.
-  href: firewall-rule#delete
-- name: az sql server firewall-rule list
-  description: Lists the firewall rules.
-  href: firewall-rule#list
-- name: az sql server firewall-rule show
-  description: Shows the detail of a firewall rule.
-  href: firewall-rule#show
-- name: az sql server firewall-rule update
-  description: Updates a firewall rule.
-  href: firewall-rule#update
-htmlId: firewall-rule
+- name: az sql server ad-admin create
+  description: Creates a new server Active Directory administrator.
+  href: ad-admin#create
+- name: az sql server ad-admin delete
+  description: Deletes an existing server Active Directory Administrator.
+  href: ad-admin#delete
+- name: az sql server ad-admin list
+  description: Returns a list of server Administrators.
+  href: ad-admin#list
+- name: az sql server ad-admin update
+  description: Updates an existing server Active Directory administrator.
+  href: ad-admin#update
+htmlId: ad-admin
 examples: []
 source:
   remote:
@@ -26,25 +23,21 @@ children:
   htmlId: create
   examples: []
   parameters:
-  - name: --end-ip-address
+  - name: --display-name -u
     isRequired: True
-    summary: The end IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses.
+    summary: Display name of the Azure AD administrator user or group.
     description: ''
-  - name: --name -n
+  - name: --object-id -i
     isRequired: True
-    summary: The name of the firewall rule.
+    summary: The unique ID of the Azure AD administrator.
     description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --server -s
+  - name: --server-name -s
     isRequired: True
-    summary: The name of the Azure SQL server.
-    description: ''
-  - name: --start-ip-address
-    isRequired: True
-    summary: The start IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses.
+    summary: The name of the SQL Server.
     description: ''
   - name: --debug
     isRequired: False
@@ -74,26 +67,22 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_sql_server_firewall-rule_create
-  name: az sql server firewall-rule create
+  uid: az_sql_server_ad-admin_create
+  name: az sql server ad-admin create
   description: ''
-  summary: Creates a firewall rule.
+  summary: Creates a new server Active Directory administrator.
   Metadata: {}
 - commandList: []
   htmlId: delete
   examples: []
   parameters:
-  - name: --name -n
-    isRequired: True
-    summary: The name of the firewall rule.
-    description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --server -s
+  - name: --server-name -s
     isRequired: True
-    summary: The name of the Azure SQL server.
+    summary: The name of the SQL Server.
     description: ''
   - name: --debug
     isRequired: False
@@ -123,10 +112,10 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_sql_server_firewall-rule_delete
-  name: az sql server firewall-rule delete
+  uid: az_sql_server_ad-admin_delete
+  name: az sql server ad-admin delete
   description: ''
-  summary: Deletes a firewall rule.
+  summary: Deletes an existing server Active Directory Administrator.
   Metadata: {}
 - commandList: []
   htmlId: list
@@ -136,9 +125,9 @@ children:
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --server -s
+  - name: --server-name -s
     isRequired: True
-    summary: The name of the Azure SQL server.
+    summary: The name of the SQL Server.
     description: ''
   - name: --debug
     isRequired: False
@@ -168,83 +157,42 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_sql_server_firewall-rule_list
-  name: az sql server firewall-rule list
+  uid: az_sql_server_ad-admin_list
+  name: az sql server ad-admin list
   description: ''
-  summary: Lists the firewall rules.
-  Metadata: {}
-- commandList: []
-  htmlId: show
-  examples: []
-  parameters:
-  - name: --name -n
-    isRequired: True
-    summary: The name of the firewall rule.
-    description: ''
-  - name: --resource-group -g
-    isRequired: True
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
-    description: ''
-  - name: --server -s
-    isRequired: True
-    summary: The name of the Azure SQL server.
-    description: ''
-  - name: --debug
-    isRequired: False
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    isRequired: False
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    isRequired: False
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup: json, jsonc, table, tsv
-  - name: --query
-    isRequired: False
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    isRequired: False
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  source:
-    remote:
-      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      branch: master
-      repo: https://github.com/Azure/azure-cli.git
-  children: []
-  uid: az_sql_server_firewall-rule_show
-  name: az sql server firewall-rule show
-  description: ''
-  summary: Shows the detail of a firewall rule.
+  summary: Returns a list of server Administrators.
   Metadata: {}
 - commandList: []
   htmlId: update
   examples: []
   parameters:
-  - name: --name -n
-    isRequired: True
-    summary: The name of the firewall rule.
-    description: ''
   - name: --resource-group -g
     isRequired: True
     summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
     description: ''
-  - name: --server -s
+  - name: --server-name -s
     isRequired: True
-    summary: The name of the Azure SQL server.
+    summary: The name of the SQL Server.
     description: ''
-  - name: --end-ip-address
+  - name: --display-name -u
     isRequired: False
-    summary: The end IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses.
+    summary: Display name of the Azure AD administrator user or group.
     description: ''
-  - name: --start-ip-address
+  - name: --object-id -i
     isRequired: False
-    summary: The start IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses.
+    summary: The unique ID of the Azure AD administrator.
+    description: ''
+  - name: --add
+    isRequired: False
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --remove
+    isRequired: False
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --set
+    isRequired: False
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
   - name: --debug
     isRequired: False
@@ -274,15 +222,15 @@ children:
       branch: master
       repo: https://github.com/Azure/azure-cli.git
   children: []
-  uid: az_sql_server_firewall-rule_update
-  name: az sql server firewall-rule update
+  uid: az_sql_server_ad-admin_update
+  name: az sql server ad-admin update
   description: ''
-  summary: Updates a firewall rule.
+  summary: Updates an existing server Active Directory administrator.
   Metadata: {}
-uid: az_sql_server_firewall-rule
-name: az sql server firewall-rule
+uid: az_sql_server_ad-admin
+name: az sql server ad-admin
 description: ''
-summary: Manage a server's firewall rules.
+summary: Manage a server's Active Directory administrator.
 Metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
