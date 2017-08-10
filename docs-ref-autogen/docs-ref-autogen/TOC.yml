@@ -5327,6 +5327,16 @@
       - name: List-Publishing-Profiles
         uid: az_webapp_deployment_list_publishing_profiles
         displayName: az webapp deployment list-publishing-profiles
+      - name: Container
+        uid: az_webapp_deployment_container
+        displayName: az webapp deployment container
+        items:
+        - name: Config
+          uid: az_webapp_deployment_container_config
+          displayName: az webapp deployment container config
+        - name: Show-Cd-Url
+          uid: az_webapp_deployment_container_show_cd_url
+          displayName: az webapp deployment container show-cd-url
       - name: Slot
         uid: az_webapp_deployment_slot
         displayName: az webapp deployment slot
