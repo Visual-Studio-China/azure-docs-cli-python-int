@@ -1522,6 +1522,110 @@
       - name: Stop
         uid: az_lab_vm_stop
         displayName: az lab vm stop
+  - name: Eventgrid
+    uid: az_eventgrid
+    displayName: az eventgrid
+    items:
+    - name: Event-Subscription
+      uid: az_eventgrid_event_subscription
+      displayName: az eventgrid event-subscription
+      items:
+      - name: Create
+        uid: az_eventgrid_event_subscription_create
+        displayName: az eventgrid event-subscription create
+      - name: Delete
+        uid: az_eventgrid_event_subscription_delete
+        displayName: az eventgrid event-subscription delete
+      - name: List
+        uid: az_eventgrid_event_subscription_list
+        displayName: az eventgrid event-subscription list
+      - name: Show
+        uid: az_eventgrid_event_subscription_show
+        displayName: az eventgrid event-subscription show
+      - name: Show-Endpoint-Url
+        uid: az_eventgrid_event_subscription_show_endpoint_url
+        displayName: az eventgrid event-subscription show-endpoint-url
+    - name: Resource
+      uid: az_eventgrid_resource
+      displayName: az eventgrid resource
+      items:
+      - name: Event-Subscription
+        uid: az_eventgrid_resource_event_subscription
+        displayName: az eventgrid resource event-subscription
+        items:
+        - name: Create
+          uid: az_eventgrid_resource_event_subscription_create
+          displayName: az eventgrid resource event-subscription create
+        - name: Delete
+          uid: az_eventgrid_resource_event_subscription_delete
+          displayName: az eventgrid resource event-subscription delete
+        - name: List
+          uid: az_eventgrid_resource_event_subscription_list
+          displayName: az eventgrid resource event-subscription list
+        - name: Show
+          uid: az_eventgrid_resource_event_subscription_show
+          displayName: az eventgrid resource event-subscription show
+        - name: Show-Endpoint-Url
+          uid: az_eventgrid_resource_event_subscription_show_endpoint_url
+          displayName: az eventgrid resource event-subscription show-endpoint-url
+    - name: Topic
+      uid: az_eventgrid_topic
+      displayName: az eventgrid topic
+      items:
+      - name: Create
+        uid: az_eventgrid_topic_create
+        displayName: az eventgrid topic create
+      - name: Delete
+        uid: az_eventgrid_topic_delete
+        displayName: az eventgrid topic delete
+      - name: List
+        uid: az_eventgrid_topic_list
+        displayName: az eventgrid topic list
+      - name: Show
+        uid: az_eventgrid_topic_show
+        displayName: az eventgrid topic show
+      - name: Event-Subscription
+        uid: az_eventgrid_topic_event_subscription
+        displayName: az eventgrid topic event-subscription
+        items:
+        - name: Create
+          uid: az_eventgrid_topic_event_subscription_create
+          displayName: az eventgrid topic event-subscription create
+        - name: Delete
+          uid: az_eventgrid_topic_event_subscription_delete
+          displayName: az eventgrid topic event-subscription delete
+        - name: List
+          uid: az_eventgrid_topic_event_subscription_list
+          displayName: az eventgrid topic event-subscription list
+        - name: Show
+          uid: az_eventgrid_topic_event_subscription_show
+          displayName: az eventgrid topic event-subscription show
+        - name: Show-Endpoint-Url
+          uid: az_eventgrid_topic_event_subscription_show_endpoint_url
+          displayName: az eventgrid topic event-subscription show-endpoint-url
+      - name: Key
+        uid: az_eventgrid_topic_key
+        displayName: az eventgrid topic key
+        items:
+        - name: List
+          uid: az_eventgrid_topic_key_list
+          displayName: az eventgrid topic key list
+        - name: Regenerate
+          uid: az_eventgrid_topic_key_regenerate
+          displayName: az eventgrid topic key regenerate
+    - name: Topic-Type
+      uid: az_eventgrid_topic_type
+      displayName: az eventgrid topic-type
+      items:
+      - name: List
+        uid: az_eventgrid_topic_type_list
+        displayName: az eventgrid topic-type list
+      - name: List-Event-Types
+        uid: az_eventgrid_topic_type_list_event_types
+        displayName: az eventgrid topic-type list-event-types
+      - name: Show
+        uid: az_eventgrid_topic_type_show
+        displayName: az eventgrid topic-type show
   - name: Functions
     uid: az_functionapp
     displayName: az functionapp

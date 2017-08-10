@@ -181,6 +181,9 @@ commands:
 - uid: az_dls
   name: az dls
   summary: Commands to manage Data Lake Store accounts, and filesystems.
+- uid: az_eventgrid
+  name: az eventgrid
+  summary: Manage Azure EventGrid Topics and Event Subscriptions.
 - uid: az_feature
   name: az feature
   summary: Manage resource provider features, such as previews.
