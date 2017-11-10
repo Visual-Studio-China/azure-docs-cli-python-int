@@ -56,6 +56,30 @@ commands:
 - uid: az_iot_hub
   name: az iot hub
   summary: (PREVIEW) Manage Azure IoT hubs.
+- uid: az_iot_hub_certificate
+  name: az iot hub certificate
+  summary: Manage IoT Hub certificates.
+- uid: az_iot_hub_certificate_create
+  name: az iot hub certificate create
+  summary: Create/upload an Azure IoT Hub certificate.
+- uid: az_iot_hub_certificate_delete
+  name: az iot hub certificate delete
+  summary: Deletes an Azure IoT Hub certificate.
+- uid: az_iot_hub_certificate_generate_verification_code
+  name: az iot hub certificate generate-verification-code
+  summary: Generates a verification code for an Azure IoT Hub certificate.
+- uid: az_iot_hub_certificate_list
+  name: az iot hub certificate list
+  summary: Lists all certificates contained within an Azure IoT Hub.
+- uid: az_iot_hub_certificate_show
+  name: az iot hub certificate show
+  summary: Shows information about a particular Azure IoT Hub certificate.
+- uid: az_iot_hub_certificate_update
+  name: az iot hub certificate update
+  summary: Update an Azure IoT Hub certificate.
+- uid: az_iot_hub_certificate_verify
+  name: az iot hub certificate verify
+  summary: Verifies an Azure IoT Hub certificate.
 - uid: az_iot_hub_consumer_group
   name: az iot hub consumer-group
   summary: (PREVIEW) Manage the event hub consumer groups of an IoT hub.
@@ -141,6 +165,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/c85bdbe4002a5e52a2402bf5add66bdaf84d000d/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-updated_at: 9/14/2017 9:54:13 PM
-ms.date: 9/14/2017
+gitcommit: https://github.com/Azure/azure-cli/blob/55b7b73170829180a8da64092e6e9f938cd0e746/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+updated_at: 11/7/2017 11:20:56 PM
+ms.date: 11/7/2017

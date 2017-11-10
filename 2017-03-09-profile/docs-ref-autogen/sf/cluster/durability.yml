@@ -10,12 +10,12 @@ items:
   - az_sf_cluster_durability_update
 - uid: az_sf_cluster_durability_update
   name: az sf cluster durability update
-  summary: Update the durability tier or VmSku of a node type in the cluster.
+  summary: Update the durability tier or VM SKU of a node type in the cluster.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Update cluster durability
+  - summary: Change the cluster durability level to 'Silver'.
     syntax:
       content: az sf cluster durability update -g group-name -n cluster1 --durability-level Silver
   parameters:
@@ -34,18 +34,12 @@ items:
     description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: The resouce group name.
+    summary: The resource group name.
     description: ''
-  source:
-    path: src/command_modules/azure-cli-sf/azure/cli/command_modules/sf/_help.py
-    remote:
-      branch: master
-      path: src/command_modules/azure-cli-sf/azure/cli/command_modules/sf/_help.py
-      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_sf_cluster_durability_update
   name: az sf cluster durability update
-  summary: Update the durability tier or VmSku of a node type in the cluster.
+  summary: Update the durability tier or VM SKU of a node type in the cluster.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -59,9 +53,3 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-doc_source_url_path: src/command_modules/azure-cli-sf/azure/cli/command_modules/sf/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-sf/azure/cli/command_modules/sf/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/71c76c65a64e7dd4788a51d85644b01012f80356/src/command_modules/azure-cli-sf/azure/cli/command_modules/sf/_help.py
-updated_at: 6/8/2017 4:07:47 PM
-ms.date: 6/8/2017

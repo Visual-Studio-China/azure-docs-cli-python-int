@@ -3,6 +3,7 @@ items:
 - uid: az_ad_group_member
   name: az ad group member
   summary: Manage Azure Active Directory group members.
+  description: ''
   langs:
   - azurecli
   children:
@@ -12,16 +13,19 @@ items:
   - az_ad_group_member_remove
 - uid: az_ad_group_member_add
   name: az ad group member add
-  summary: Add a memeber to a group.
+  summary: Add a member to a group.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
+    description: ''
   - isRequired: true
     name: --member-id
     summary: The object ID of the contact, group, user, or service principal.
+    description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     remote:
@@ -30,16 +34,19 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_ad_group_member_check
   name: az ad group member check
-  summary: Checks whether the specified user, group, contact, or service principal is a direct or a transitive member of the specified group.
+  summary: Checks whether the specified user, group, contact, or service principal is a direct or transitive member of the specified group.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
+    description: ''
   - isRequired: true
     name: --member-id
     summary: The object ID of the contact, group, user, or service principal to check for membership in the specified group.
+    description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     remote:
@@ -49,12 +56,14 @@ items:
 - uid: az_ad_group_member_list
   name: az ad group member list
   summary: Gets the members of a group.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
+    description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     remote:
@@ -63,16 +72,19 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_ad_group_member_remove
   name: az ad group member remove
-  summary: Remove a memeber from a group.
+  summary: Remove a member from a group.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
+    description: ''
   - isRequired: true
     name: --member-id
     summary: The object ID of the contact, group, user, or service principal.
+    description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
     remote:
@@ -82,16 +94,16 @@ items:
 commands:
 - uid: az_ad_group_member_add
   name: az ad group member add
-  summary: Add a memeber to a group.
+  summary: Add a member to a group.
 - uid: az_ad_group_member_check
   name: az ad group member check
-  summary: Checks whether the specified user, group, contact, or service principal is a direct or a transitive member of the specified group.
+  summary: Checks whether the specified user, group, contact, or service principal is a direct or transitive member of the specified group.
 - uid: az_ad_group_member_list
   name: az ad group member list
   summary: Gets the members of a group.
 - uid: az_ad_group_member_remove
   name: az ad group member remove
-  summary: Remove a memeber from a group.
+  summary: Remove a member from a group.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -105,3 +117,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/c85bdbe4002a5e52a2402bf5add66bdaf84d000d/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 9/14/2017 9:54:13 PM
+ms.date: 9/14/2017

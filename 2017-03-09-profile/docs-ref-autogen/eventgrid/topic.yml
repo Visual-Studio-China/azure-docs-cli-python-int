@@ -2,7 +2,8 @@
 items:
 - uid: az_eventgrid_topic
   name: az eventgrid topic
-  summary: Manage topics and their event subscriptions.
+  summary: Manage Azure Event Grid topics.
+  description: ''
   langs:
   - azurecli
   children:
@@ -13,24 +14,29 @@ items:
 - uid: az_eventgrid_topic_create
   name: az eventgrid topic create
   summary: Create a topic.
+  description: ''
   langs:
   - azurecli
   examples:
-  - summary: Create a new topic
+  - summary: Create a new topic.
     syntax:
       content: az eventgrid topic create -g rg1 --name topic1
   parameters:
   - isRequired: true
     name: --location -l
-    summary: Location. You can configure the default location using az configure --defaults location=<location>.
+    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
   - isRequired: true
     name: --name -n
     summary: Name of the topic.
+    description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   - name: --tags
     summary: Space separated tags in 'key[=value]' format.
+    description: ''
   source:
     path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
     remote:
@@ -40,15 +46,18 @@ items:
 - uid: az_eventgrid_topic_delete
   name: az eventgrid topic delete
   summary: Delete a topic.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --name -n
     summary: Name of the topic.
+    description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   source:
     path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
     remote:
@@ -57,12 +66,14 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventgrid_topic_list
   name: az eventgrid topic list
-  summary: List all topics in a subscription or resource group.
+  summary: List available topics.
+  description: ''
   langs:
   - azurecli
   parameters:
   - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   source:
     path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
     remote:
@@ -71,16 +82,19 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventgrid_topic_show
   name: az eventgrid topic show
-  summary: Get properties of a topic.
+  summary: Get the details of a topic.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --name -n
     summary: Name of the topic.
+    description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   source:
     path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
     remote:
@@ -105,10 +119,10 @@ commands:
   summary: Delete an event subscription for a topic.
 - uid: az_eventgrid_topic_event_subscription_list
   name: az eventgrid topic event-subscription list
-  summary: List the event subscriptions for a topic.
+  summary: List event subscriptions for a topic.
 - uid: az_eventgrid_topic_event_subscription_show
   name: az eventgrid topic event-subscription show
-  summary: Get the properties of an event subscription for a topic.
+  summary: Get the details of an event subscription for a topic.
 - uid: az_eventgrid_topic_event_subscription_show_endpoint_url
   name: az eventgrid topic event-subscription show-endpoint-url
   summary: Get the full endpoint URL of an event subscription for a topic.
@@ -123,10 +137,10 @@ commands:
   summary: Regenerate a shared access key of a topic.
 - uid: az_eventgrid_topic_list
   name: az eventgrid topic list
-  summary: List all topics in a subscription or resource group.
+  summary: List available topics.
 - uid: az_eventgrid_topic_show
   name: az eventgrid topic show
-  summary: Get properties of a topic.
+  summary: Get the details of a topic.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -140,3 +154,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/db283fe59a83ce9b604af62da750dffe886ce0ff/src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
+updated_at: 9/18/2017 6:24:04 PM
+ms.date: 9/18/2017

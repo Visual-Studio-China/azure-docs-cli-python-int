@@ -136,13 +136,13 @@ items:
   - name: --no-wait
     summary: Do not wait for the long running operation to finish.
     description: ''
-  - name: --orchestrator-release
-    summary: Feature in preview, only in ukwest, uksouth, westcentralus, westus2, canadaeast, canadacentral, westindia, southindia, centralindia. Use Orchestrator Release to specify the major.minor part of the semantic version for your choice of orchestrator. For example, you can specify 1.7, which will resolve to 1.7.x based on ACS latest well tested batch version.
-    description: ''
   - name: --orchestrator-type -t
     defaultValue: DCOS
     parameterValueGroup: Custom, DCOS, DockerCE, Kubernetes, Swarm
     summary: DockerCE - Feature in preview, only in ukwest, uksouth, westcentralus, westus2, canadaeast, canadacentral, westindia, southindia, centralindia.
+    description: ''
+  - name: --orchestrator-version
+    summary: Feature in preview, only in ukwest, uksouth, westcentralus, westus2, canadaeast, canadacentral, westindia, southindia, centralindia. Use Orchestrator Version to specify the semantic version for your choice of orchestrator.
     description: ''
   - name: --service-principal
     summary: Service principal for making calls into Azure APIs. If not set, auto generate a new service principal of Contributor role, and save it locally for reusing.
@@ -398,6 +398,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/2fc97c25c7cb1233ff5c759760ccccef5979adbf/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-updated_at: 10/18/2017 2:05:20 AM
-ms.date: 10/18/2017
+gitcommit: https://github.com/Azure/azure-cli/blob/703a407a2f2098d50b446ec50bdb984c3c54cd98/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+updated_at: 10/24/2017 9:35:07 PM
+ms.date: 10/24/2017

@@ -2,7 +2,8 @@
 items:
 - uid: az_postgres_server_configuration
   name: az postgres server configuration
-  summary: Commands to configure an Azure Database for PostgreSQL server.
+  summary: Manage configuration values for a server.
+  description: ''
   langs:
   - azurecli
   children:
@@ -11,65 +12,77 @@ items:
   - az_postgres_server_configuration_show
 - uid: az_postgres_server_configuration_list
   name: az postgres server configuration list
-  summary: List the configurations of an Azure Database for PostgreSQL server.
+  summary: List the configuration values for a server.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   - isRequired: true
     name: --server-name -s
     summary: Name of the server.
+    description: ''
 - uid: az_postgres_server_configuration_set
   name: az postgres server configuration set
-  summary: Update the configuration of an Azure Database for PostgreSQL server.
+  summary: Update the configuration of a server.
+  description: ''
   langs:
   - azurecli
   examples:
-  - summary: Set new value for a configuration.
+  - summary: Set a new configuration value.
     syntax:
       content: az postgres server configuration set -g testgroup -s testsvr -n <config_name> --value <config_value>
-  - summary: Set configuration's value to default.
+  - summary: Set a configuration value to its default.
     syntax:
       content: az postgres server configuration set -g testgroup -s testsvr -n <config_name>
   parameters:
   - isRequired: true
     name: --name -n
     summary: The name of the server configuration.
+    description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   - isRequired: true
     name: --server-name -s
     summary: Name of the server.
+    description: ''
   - name: --value
     summary: Value of the configuration. If not provided, configuration value will be set to default.
+    description: ''
 - uid: az_postgres_server_configuration_show
   name: az postgres server configuration show
-  summary: Show the configuration of an Azure Database for PostgreSQL server.
+  summary: Get the configuration for a server.".
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --name -n
     summary: The name of the server configuration to be retrieved.
+    description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using az configure --defaults group=<name>.
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
   - isRequired: true
     name: --server-name -s
     summary: Name of the server.
+    description: ''
 commands:
 - uid: az_postgres_server_configuration_list
   name: az postgres server configuration list
-  summary: List the configurations of an Azure Database for PostgreSQL server.
+  summary: List the configuration values for a server.
 - uid: az_postgres_server_configuration_set
   name: az postgres server configuration set
-  summary: Update the configuration of an Azure Database for PostgreSQL server.
+  summary: Update the configuration of a server.
 - uid: az_postgres_server_configuration_show
   name: az postgres server configuration show
-  summary: Show the configuration of an Azure Database for PostgreSQL server.
+  summary: Get the configuration for a server.".
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
