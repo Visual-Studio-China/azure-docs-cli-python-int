@@ -36,9 +36,6 @@ items:
     name: --properties -p
     summary: A JSON-formatted string containing resource properties.
     description: ''
-  - name: --api-version
-    summary: The api version of the resource (omit for latest).
-    description: ''
   - name: --id
     summary: Resource ID.
     description: ''
@@ -47,6 +44,9 @@ items:
     description: ''
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
+  - name: --api-version
+    summary: The api version of the resource (omit for latest).
     description: ''
   - name: --name -n
     summary: 'The resource name. (Ex: myC).'
@@ -66,7 +66,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_delete
@@ -110,7 +110,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_invoke_action
@@ -131,6 +131,9 @@ items:
     name: --action
     summary: The action that will be invoked on the specified resource.
     description: ''
+  - name: --request-body
+    summary: JSON encoded parameter arguments for the action that will be passed along in the post request body. Use @{file} to load from a file.
+    description: ''
   - name: --api-version
     summary: The api version of the resource (omit for latest).
     description: ''
@@ -146,9 +149,6 @@ items:
   - name: --parent
     summary: "The parent path (Ex: 'resA/myA/resB/myB')."
     description: ''
-  - name: --request-body
-    summary: JSON encoded parameter arguments for the action that will be passed along in the post request body. Use @{file} to load from a file.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
@@ -158,7 +158,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_list
@@ -190,6 +190,9 @@ items:
   - name: --name -n
     summary: 'The resource name. (Ex: myC).'
     description: ''
+  - name: --tag
+    summary: A single tag in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
   - name: --namespace
     summary: "Provider namespace (Ex: 'Microsoft.Provider')."
     description: ''
@@ -199,13 +202,10 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --tag
-    summary: A single tag in 'key[=value]' format. Use "" to clear existing tags.
-    description: ''
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_move
@@ -229,7 +229,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_show
@@ -255,14 +255,15 @@ items:
     syntax:
       content: az resource show -g MyResourceGroup --namespace Microsoft.Network --parent applicationGateways/ag1/urlPathMaps/map1 --resource-type pathRules -n rule1
   parameters:
+  - name: --include-response-body
+    parameterValueGroup: false, true
+    summary: Use if the default command output doesn't capture all of the property data.
+    description: ''
   - name: --api-version
     summary: The api version of the resource (omit for latest).
     description: ''
   - name: --ids
     summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
-    description: ''
-  - name: --include-response-body
-    summary: Use it if the default command output doesn't capture all on the wire.
     description: ''
   - name: --name -n
     summary: 'The resource name. (Ex: myC).'
@@ -282,7 +283,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_tag
@@ -327,7 +328,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_resource_update
@@ -337,14 +338,15 @@ items:
   langs:
   - azurecli
   parameters:
+  - name: --include-response-body
+    parameterValueGroup: false, true
+    summary: Use if the default command output doesn't capture all of the property data.
+    description: ''
   - name: --api-version
     summary: The api version of the resource (omit for latest).
     description: ''
   - name: --ids
     summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
-    description: ''
-  - name: --include-response-body
-    summary: ''
     description: ''
   - name: --name -n
     summary: 'The resource name. (Ex: myC).'
@@ -373,7 +375,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -450,9 +452,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/KnackConversion/
 doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/6bf288b40ef65fda76f1a4bddf2d56153cd5e7bb/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-updated_at: 10/25/2017 6:34:49 PM
-ms.date: 10/25/2017
+original_content_git_url: https://github.com/Azure/azure-cli/blob/KnackConversion/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+updated_at: 11/13/2017 7:42:14 PM
+ms.date: 11/13/2017

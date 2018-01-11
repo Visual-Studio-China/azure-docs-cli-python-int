@@ -47,20 +47,13 @@ items:
   - name: --display-name
     summary: Display name of policy definition.
     description: ''
-  - name: --mode -m
-    parameterValueGroup: All, Indexed, NotSpecified
-    summary: Mode of the new policy definition.
-    description: ''
-  - name: --params
-    summary: JSON formatted string or a path to a file or uri with parameter definitions.
-    description: ''
   - name: --rules
     summary: Policy rules in JSON format, or a path to a file containing JSON rules.
     description: ''
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_policy_definition_delete
@@ -77,7 +70,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_policy_definition_list
@@ -86,11 +79,14 @@ items:
   description: ''
   langs:
   - azurecli
-  parameters: []
+  parameters:
+  - name: --filter
+    summary: The filter to apply on the operation.
+    description: ''
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_policy_definition_show
@@ -107,7 +103,7 @@ items:
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_policy_definition_update
@@ -127,16 +123,13 @@ items:
   - name: --display-name
     summary: Display name of policy definition.
     description: ''
-  - name: --params
-    summary: JSON formatted string or a path to a file or uri with parameter definitions.
-    description: ''
   - name: --rules
-    summary: JSON formatted string or a path to a file or uri with such content.
+    summary: JSON formatted string or a path to a file with such content.
     description: ''
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -168,9 +161,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/KnackConversion/
 doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/6bf288b40ef65fda76f1a4bddf2d56153cd5e7bb/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-updated_at: 10/25/2017 6:34:49 PM
-ms.date: 10/25/2017
+original_content_git_url: https://github.com/Azure/azure-cli/blob/KnackConversion/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+updated_at: 11/13/2017 7:42:14 PM
+ms.date: 11/13/2017

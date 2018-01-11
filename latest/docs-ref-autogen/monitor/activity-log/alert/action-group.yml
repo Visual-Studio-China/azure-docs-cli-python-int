@@ -57,7 +57,7 @@ items:
   source:
     path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_monitor_activity_log_alert_action_group_remove
@@ -82,7 +82,7 @@ items:
   source:
     path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -105,9 +105,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/KnackConversion/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/518f08f0c51382675ac10c0f3681d3e21dea88f1/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-updated_at: 11/28/2017 2:03:35 AM
+original_content_git_url: https://github.com/Azure/azure-cli/blob/KnackConversion/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/9b7005681eb0c5a74feb82f276fa3b81823d3485/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+updated_at: 11/28/2017 5:56:18 PM
 ms.date: 11/28/2017

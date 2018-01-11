@@ -45,7 +45,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_directory_metadata_update
@@ -84,7 +84,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: master
+      branch: KnackConversion
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -107,9 +107,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/KnackConversion/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/3c635141b04f5ccc42b77f8641896bb205a2e950/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 10/30/2017 7:14:20 PM
-ms.date: 10/30/2017
+original_content_git_url: https://github.com/Azure/azure-cli/blob/KnackConversion/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/bc2368b4c97b1b0686ed88470f1b26b4a9477865/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 12/14/2017 8:20:29 PM
+ms.date: 12/14/2017
